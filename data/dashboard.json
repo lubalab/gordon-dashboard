@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-02-11T19:36:34.707610+00:00",
+  "generated_at": "2026-02-11T19:39:25.385763+00:00",
   "next_update": "2026-02-11T21:00:00+00:00",
   "market_mood": {
-    "composite": -0.3863,
+    "composite": -0.3851,
     "cnn_fear_greed": {
-      "value": 50.3714285714286,
+      "value": 50.4857142857143,
       "label": "Neutral"
     },
     "crypto_fear_greed": {
@@ -12,7 +12,7 @@
       "label": "Extreme Fear"
     },
     "vix": {
-      "value": 17.280001,
+      "value": 17.209999,
       "label": "Normal"
     },
     "google_trends": {
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1940.4613,
-      "pnl_dollar": 0.1,
-      "pnl_percent": 0.03
+      "current_price": 1947.6818,
+      "pnl_dollar": 2.33,
+      "pnl_percent": 0.78
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67339.9141,
-      "pnl_dollar": 0.01,
-      "pnl_percent": 0.0
+      "current_price": 67567.4141,
+      "pnl_dollar": 3.39,
+      "pnl_percent": 0.68
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 800.11,
-    "total_pnl": 0.11,
-    "total_pnl_pct": 0.01
+    "total_current_value": 805.72,
+    "total_pnl": 5.72,
+    "total_pnl_pct": 0.72
   },
   "strategies": {
     "gekko": {
@@ -94,6 +94,11 @@
       }
     ],
     "portfolio_snapshots": [
+      {
+        "d": "2026-02-11",
+        "total_value": 0.0,
+        "total_pnl": 0.0
+      },
       {
         "d": "2026-02-11",
         "total_value": 0.0,
@@ -596,6 +601,72 @@
   "signals": {
     "top_signals": [],
     "sentiment_history": [
+      {
+        "source": "vix",
+        "score": 0.5193,
+        "raw_score": 17.209999,
+        "timestamp": "2026-02-11T20:39:22.848313"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.78,
+        "raw_score": 11.0,
+        "timestamp": "2026-02-11T20:39:22.799924"
+      },
+      {
+        "source": "cnn_fear_greed",
+        "score": 0.0097,
+        "raw_score": 50.4857142857143,
+        "timestamp": "2026-02-11T20:39:22.368883"
+      },
+      {
+        "source": "binance_futures",
+        "score": 0.0,
+        "raw_score": 1789907.611,
+        "timestamp": "2026-02-11T20:37:51.887713"
+      },
+      {
+        "source": "binance_futures",
+        "score": 0.0,
+        "raw_score": 81812.523,
+        "timestamp": "2026-02-11T20:37:49.404714"
+      },
+      {
+        "source": "coingecko_global",
+        "score": 0.0,
+        "raw_score": 18939.0,
+        "timestamp": "2026-02-11T20:37:49.289697"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.1929,
+        "raw_score": -1.9288829123145823,
+        "timestamp": "2026-02-11T20:37:49.289697"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.456,
+        "raw_score": 56.84066402364045,
+        "timestamp": "2026-02-11T20:37:49.289697"
+      },
+      {
+        "source": "vix",
+        "score": 0.52,
+        "raw_score": 17.200001,
+        "timestamp": "2026-02-11T20:37:15.834917"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.78,
+        "raw_score": 11.0,
+        "timestamp": "2026-02-11T20:37:15.781965"
+      },
+      {
+        "source": "cnn_fear_greed",
+        "score": 0.0074,
+        "raw_score": 50.3714285714286,
+        "timestamp": "2026-02-11T20:37:15.318882"
+      },
       {
         "source": "binance_futures",
         "score": 0.0,
@@ -1129,72 +1200,6 @@
         "score": -0.0709,
         "raw_score": 46.4571428571429,
         "timestamp": "2026-02-11T12:59:58.070155"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.03,
-        "raw_score": 3.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": 0.04,
-        "raw_score": 4.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.51,
-        "raw_score": 51.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.01,
-        "raw_score": 1.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.04,
-        "raw_score": 4.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.17,
-        "raw_score": 17.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.03,
-        "raw_score": 3.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.04,
-        "raw_score": 4.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.17,
-        "raw_score": 17.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.03,
-        "raw_score": 3.0,
-        "timestamp": "2026-02-11T12:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.04,
-        "raw_score": 4.0,
-        "timestamp": "2026-02-11T11:00:00"
       }
     ],
     "sentiment_history_chart": [
@@ -1301,17 +1306,17 @@
       {
         "d": "2026-02-11",
         "source": "binance_futures",
-        "avg_score": -0.4684
+        "avg_score": -0.46840000000000004
       },
       {
         "d": "2026-02-11",
         "source": "cnn_fear_greed",
-        "avg_score": -0.06727272727272728
+        "avg_score": -0.05560769230769231
       },
       {
         "d": "2026-02-11",
         "source": "coingecko_global",
-        "avg_score": -0.21945
+        "avg_score": -0.21910000000000002
       },
       {
         "d": "2026-02-11",
@@ -1386,12 +1391,12 @@
       {
         "d": "2026-02-11",
         "source": "technical_analysis",
-        "avg_score": -0.0409090909090909
+        "avg_score": -0.04242424242424242
       },
       {
         "d": "2026-02-11",
         "source": "vix",
-        "avg_score": 0.4870545454545455
+        "avg_score": 0.4920692307692308
       },
       {
         "d": "2026-02-11",

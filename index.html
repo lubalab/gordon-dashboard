@@ -87,19 +87,29 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
     </div>
   </div>
 
+  ${(()=>{const ps=data.portfolio_summary||{};const pnl=ps.total_pnl||0;const pnlPct=ps.total_pnl_pct||0;const clr=pnl>=0?'var(--green,#4caf50)':'var(--red,#f44336)';return `
+  <div class="grid grid-4" style="margin-bottom:20px">
+    <div class="card metric-card"><div class="card-title">Total Invested</div><div class="card-value">${fmt$(ps.total_invested)}</div></div>
+    <div class="card metric-card"><div class="card-title">Current Value</div><div class="card-value">${fmt$(ps.total_current_value)}</div></div>
+    <div class="card metric-card"><div class="card-title">Total P&L</div><div class="card-value" style="color:${clr}">${pnl>=0?'+':''}${fmt$(pnl)}</div></div>
+    <div class="card metric-card"><div class="card-title">P&L %</div><div class="card-value" style="color:${clr}">${pnl>=0?'+':''}${pnlPct.toFixed(2)}%</div></div>
+  </div>`;})()}
+
   <div class="card" style="margin-bottom:20px">
     <div class="card-title">Active Positions</div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Symbol</th><th>Direction</th><th>Entry</th><th>Amount</th><th>Leverage</th><th>Strategy</th><th>Notes</th></tr></thead>
-      <tbody>${(data.positions||[]).map(p=>`<tr>
+      <thead><tr><th>Symbol</th><th>Direction</th><th>Entry</th><th>Current</th><th>Amount</th><th>Leverage</th><th>P&L ($)</th><th>P&L (%)</th><th>Strategy</th></tr></thead>
+      <tbody>${(data.positions||[]).map(p=>{const pclr=(p.pnl_dollar||0)>=0?'var(--green,#4caf50)':'var(--red,#f44336)';return `<tr>
         <td><strong>${p.symbol}</strong></td>
         <td>${dirBadge(p.direction||'—')}</td>
         <td>${fmt$(p.entry_price)}</td>
+        <td>${p.current_price!=null?fmt$(p.current_price):'—'}</td>
         <td>${fmt$(p.amount)}</td>
         <td>${p.leverage||1}x</td>
+        <td style="color:${pclr};font-weight:600">${p.pnl_dollar!=null?((p.pnl_dollar>=0?'+':'')+fmt$(p.pnl_dollar)):'—'}</td>
+        <td style="color:${pclr};font-weight:600">${p.pnl_percent!=null?((p.pnl_percent>=0?'+':'')+p.pnl_percent.toFixed(2)+'%'):'—'}</td>
         <td>${stratBadge(p.strategy||'—')}</td>
-        <td style="font-size:0.8rem;color:var(--text-dim)">${p.notes||'—'}</td>
-      </tr>`).join('')}</tbody>
+      </tr>`}).join('')}</tbody>
     </table></div>
   </div>
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-11T14:45:37.354898+00:00",
+  "generated_at": "2026-02-11T16:47:24.405232+00:00",
   "next_update": "2026-02-11T21:00:00+00:00",
   "market_mood": {
     "composite": -0.4254,
@@ -33,7 +33,10 @@
       "take_profit": null,
       "opened_at": "2026-02-11 13:50:41",
       "etoro_order_id": "327087798",
-      "notes": "First contrarian trade - Crypto Fear at 11/100"
+      "notes": "First contrarian trade - Crypto Fear at 11/100",
+      "current_price": 66283.2656,
+      "pnl_dollar": -13.91,
+      "pnl_percent": -2.78
     },
     {
       "symbol": "ETH-USD",
@@ -46,9 +49,18 @@
       "take_profit": null,
       "opened_at": "2026-02-11 13:50:41",
       "etoro_order_id": "327087813",
-      "notes": "First contrarian trade - Crypto Fear at 11/100"
+      "notes": "First contrarian trade - Crypto Fear at 11/100",
+      "current_price": 1921.6691,
+      "pnl_dollar": -10.18,
+      "pnl_percent": -3.39
     }
   ],
+  "portfolio_summary": {
+    "total_invested": 800.0,
+    "total_current_value": 775.9,
+    "total_pnl": -24.09,
+    "total_pnl_pct": -3.01
+  },
   "strategies": {
     "gekko": {
       "name": "Gekko",

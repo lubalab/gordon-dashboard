@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-11T19:39:25.385763+00:00",
+  "generated_at": "2026-02-11T19:41:48.795696+00:00",
   "next_update": "2026-02-11T21:00:00+00:00",
   "market_mood": {
     "composite": -0.3851,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1947.6818,
-      "pnl_dollar": 2.33,
-      "pnl_percent": 0.78
+      "current_price": 1948.7969,
+      "pnl_dollar": 2.68,
+      "pnl_percent": 0.89
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67567.4141,
-      "pnl_dollar": 3.39,
-      "pnl_percent": 0.68
+      "current_price": 67602.3672,
+      "pnl_dollar": 3.91,
+      "pnl_percent": 0.78
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 805.72,
-    "total_pnl": 5.72,
-    "total_pnl_pct": 0.72
+    "total_current_value": 806.59,
+    "total_pnl": 6.59,
+    "total_pnl_pct": 0.82
   },
   "strategies": {
     "gekko": {
@@ -94,6 +94,11 @@
       }
     ],
     "portfolio_snapshots": [
+      {
+        "d": "2026-02-11",
+        "total_value": 0.0,
+        "total_pnl": 0.0
+      },
       {
         "d": "2026-02-11",
         "total_value": 0.0,
@@ -601,6 +606,36 @@
   "signals": {
     "top_signals": [],
     "sentiment_history": [
+      {
+        "source": "binance_futures",
+        "score": 0.0,
+        "raw_score": 1789684.924,
+        "timestamp": "2026-02-11T20:39:58.462984"
+      },
+      {
+        "source": "binance_futures",
+        "score": 0.0,
+        "raw_score": 81790.648,
+        "timestamp": "2026-02-11T20:39:55.978819"
+      },
+      {
+        "source": "coingecko_global",
+        "score": 0.0,
+        "raw_score": 18939.0,
+        "timestamp": "2026-02-11T20:39:55.832685"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.1844,
+        "raw_score": -1.8437428987415696,
+        "timestamp": "2026-02-11T20:39:55.832685"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.4572,
+        "raw_score": 56.857604735093126,
+        "timestamp": "2026-02-11T20:39:55.832685"
+      },
       {
         "source": "vix",
         "score": 0.5193,
@@ -1170,36 +1205,6 @@
         "score": -0.05,
         "raw_score": 5.0,
         "timestamp": "2026-02-11T13:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.19,
-        "raw_score": 19.0,
-        "timestamp": "2026-02-11T13:00:00"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.05,
-        "raw_score": 5.0,
-        "timestamp": "2026-02-11T13:00:00"
-      },
-      {
-        "source": "vix",
-        "score": 0.456,
-        "raw_score": 18.16,
-        "timestamp": "2026-02-11T12:59:58.595050"
-      },
-      {
-        "source": "crypto_fear_greed",
-        "score": -0.78,
-        "raw_score": 11.0,
-        "timestamp": "2026-02-11T12:59:58.528858"
-      },
-      {
-        "source": "cnn_fear_greed",
-        "score": -0.0709,
-        "raw_score": 46.4571428571429,
-        "timestamp": "2026-02-11T12:59:58.070155"
       }
     ],
     "sentiment_history_chart": [
@@ -1231,7 +1236,7 @@
       {
         "d": "2026-02-06",
         "source": "binance_futures",
-        "avg_score": 0.0314
+        "avg_score": 0.031400000000000004
       },
       {
         "d": "2026-02-06",
@@ -1261,7 +1266,7 @@
       {
         "d": "2026-02-08",
         "source": "binance_futures",
-        "avg_score": -0.6838
+        "avg_score": -0.6838000000000001
       },
       {
         "d": "2026-02-08",
@@ -1276,7 +1281,7 @@
       {
         "d": "2026-02-09",
         "source": "binance_futures",
-        "avg_score": -0.8193999999999999
+        "avg_score": -0.8194
       },
       {
         "d": "2026-02-09",
@@ -1316,7 +1321,7 @@
       {
         "d": "2026-02-11",
         "source": "coingecko_global",
-        "avg_score": -0.21910000000000002
+        "avg_score": -0.21857666666666667
       },
       {
         "d": "2026-02-11",
@@ -1972,10 +1977,10 @@
     }
   ],
   "pipeline_status": {
-    "last_run": "2026-02-11 04:23:51",
-    "steps_completed": 24,
+    "last_run": "2026-02-11 20:36:44",
+    "steps_completed": 23,
     "steps_failed": 0,
-    "elapsed_seconds": 249.5,
+    "elapsed_seconds": 167.5,
     "next_run": null
   }
 }

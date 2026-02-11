@@ -23,45 +23,43 @@
   <script src="assets/charts.js"></script>
   <script>
 fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
-  const trades=data.trades;
+  console.log('Dashboard data:', data);
+  try {
+  const wv=data.worldview||{};
+  const theses=wv.theses||[];
   const c=document.getElementById('content');
 
-  c.innerHTML=data.worldview.map(w=>{
-    const driven=w.trades_driven.map(id=>trades.find(t=>t.id===id)).filter(Boolean);
-    const convColor=w.conviction>=0.7?'var(--green)':w.conviction>=0.5?'var(--gold)':'var(--red)';
+  if(!theses.length) {
+    c.innerHTML='<div class="card"><div class="card-title">Worldview</div><p style="color:var(--text-dim)">No active theses yet.</p></div>';
+    return;
+  }
+
+  c.innerHTML=theses.map(w=>{
+    const conv = w.conviction || 'medium';
+    const convMap = {high:0.85, medium:0.6, low:0.3};
+    const convNum = typeof conv === 'number' ? conv : (convMap[conv.toLowerCase()]||0.5);
+    const convColor=convNum>=0.7?'var(--green)':convNum>=0.5?'var(--gold)':'var(--red)';
+    const tickers = w.tickers || [];
     return `<div class="card thesis-card" style="margin-bottom:20px">
       <div style="display:flex;justify-content:space-between;align-items:start;flex-wrap:wrap;gap:12px">
         <div>
-          <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:4px">${w.title}</h3>
-          <p style="font-size:0.85rem;color:var(--text-dim);max-width:700px">${w.description}</p>
+          <h3 style="font-size:1.1rem;font-weight:700;color:var(--text);margin-bottom:4px">${w.title||'Untitled'}</h3>
+          <p style="font-size:0.85rem;color:var(--text-dim);max-width:700px">${w.description||''}</p>
         </div>
         <div style="text-align:right">
           <div style="font-size:0.75rem;text-transform:uppercase;color:var(--text-dim);letter-spacing:1px">Conviction</div>
-          <div style="font-size:1.4rem;font-weight:700;color:${convColor}">${(w.conviction*100).toFixed(0)}%</div>
+          <div style="font-size:1.4rem;font-weight:700;color:${convColor}">${typeof conv==='string' ? conv.toUpperCase() : (convNum*100).toFixed(0)+'%'}</div>
         </div>
       </div>
-      <div class="progress-bar" style="margin:12px 0"><div class="progress-fill" style="width:${w.conviction*100}%;background:${convColor}"></div></div>
-      <div style="margin:12px 0">${w.tickers.map(t=>`<span class="ticker-badge">${t}</span>`).join(' ')}</div>
-      <div class="grid grid-2" style="margin-top:16px">
-        <div>
-          <div style="font-size:0.75rem;text-transform:uppercase;color:var(--green);letter-spacing:1px;margin-bottom:8px">✅ Confirming Evidence</div>
-          <ul class="evidence-list confirm">${w.evidence.confirming.map(e=>`<li>${e}</li>`).join('')}</ul>
-        </div>
-        <div>
-          <div style="font-size:0.75rem;text-transform:uppercase;color:var(--red);letter-spacing:1px;margin-bottom:8px">❌ Contradicting Evidence</div>
-          <ul class="evidence-list contradict">${w.evidence.contradicting.map(e=>`<li>${e}</li>`).join('')}</ul>
-        </div>
-      </div>
-      ${driven.length?`<div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--card-border)">
-        <div style="font-size:0.75rem;text-transform:uppercase;color:var(--text-dim);letter-spacing:1px;margin-bottom:8px">Thesis-Driven Trades</div>
-        <div style="display:flex;gap:12px;flex-wrap:wrap">${driven.map(t=>`<div style="font-size:0.85rem">
-          ${t.symbol} ${dirBadge(t.direction)} <span class="${pnlClass(t.pnl_dollar)}">${fmt$(t.pnl_dollar)}</span>
-        </div>`).join('')}</div>
-        <div style="margin-top:8px;font-size:0.9rem">Total Return: <strong class="${pnlClass(w.total_return)}">${fmt$(w.total_return)}</strong></div>
-      </div>`:''}
+      <div class="progress-bar" style="margin:12px 0"><div class="progress-fill" style="width:${convNum*100}%;background:${convColor}"></div></div>
+      ${tickers.length ? `<div style="margin:12px 0">${tickers.map(t=>`<span class="ticker-badge">${t}</span>`).join(' ')}</div>` : ''}
     </div>`;
   }).join('');
-}).catch(()=>{document.getElementById('content').innerHTML='<div class="loading">Data loading...</div>';});
+  } catch(e) {
+    console.error('Worldview render error:', e);
+    document.getElementById('content').innerHTML='<div class="loading">Error: '+e.message+'</div>';
+  }
+}).catch(e=>{console.error('Fetch error:',e);document.getElementById('content').innerHTML='<div class="loading">Failed to load data</div>';});
   </script>
 </body>
 </html>

@@ -23,72 +23,55 @@
   <script src="assets/charts.js"></script>
   <script>
 fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
-  const preds=data.predictions;
-  const open=preds.filter(p=>p.status==='open');
-  const resolved=preds.filter(p=>p.status==='resolved');
-  const stats=data.prediction_stats;
+  console.log('Dashboard data:', data);
+  try {
+  const preds=data.predictions||{};
+  const open=preds.open||[];
+  const resolved=preds.resolved||[];
+  const stats=preds.stats||{};
   const c=document.getElementById('content');
 
   c.innerHTML=`
   <div class="grid grid-4" style="margin-bottom:20px">
-    <div class="card metric-card"><div class="card-title">Overall Win Rate</div><div class="card-value">${stats.overall_win_rate}%</div></div>
-    <div class="card metric-card"><div class="card-title">High Conviction WR</div><div class="card-value" style="color:var(--green)">${stats.by_conviction.high.win_rate}%</div><div class="card-label">${stats.by_conviction.high.count} predictions</div></div>
-    <div class="card metric-card"><div class="card-title">Medium Conviction WR</div><div class="card-value">${stats.by_conviction.medium.win_rate}%</div><div class="card-label">${stats.by_conviction.medium.count} predictions</div></div>
-    <div class="card metric-card"><div class="card-title">Low Conviction WR</div><div class="card-value" style="color:var(--red)">${stats.by_conviction.low.win_rate}%</div><div class="card-label">${stats.by_conviction.low.count} predictions</div></div>
+    <div class="card metric-card"><div class="card-title">Total Predictions</div><div class="card-value">${stats.total||0}</div></div>
+    <div class="card metric-card"><div class="card-title">Correct</div><div class="card-value" style="color:var(--green)">${stats.correct||0}</div></div>
+    <div class="card metric-card"><div class="card-title">Win Rate</div><div class="card-value">${stats.win_rate!=null ? stats.win_rate.toFixed(1)+'%' : 'N/A'}</div></div>
+    <div class="card metric-card"><div class="card-title">Open</div><div class="card-value" style="color:var(--gold)">${open.length}</div></div>
   </div>
 
   <div class="card" style="margin-bottom:20px">
-    <div class="card-title">Open Predictions</div>
+    <div class="card-title">Open Predictions (${open.length})</div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Symbol</th><th>Direction</th><th>Conviction</th><th>Target</th><th>Timeframe</th><th>Strategy</th><th>Date</th></tr></thead>
+      <thead><tr><th>Symbol</th><th>Direction</th><th>Conviction</th><th>Target</th><th>Horizon</th><th>Strategy</th><th>Date</th></tr></thead>
       <tbody>${open.map(p=>`<tr>
         <td><strong>${p.symbol}</strong></td>
-        <td>${dirBadge(p.direction)}</td>
-        <td>${convictionBar(p.conviction)} <span style="font-size:0.8rem">${(p.conviction*100).toFixed(0)}%</span></td>
-        <td>${fmt$(p.target_price)}</td><td>${p.timeframe}</td>
-        <td>${stratBadge(p.strategy)}</td><td>${p.date}</td>
+        <td>${dirBadge(p.direction||'—')}</td>
+        <td>${convictionBar(p.conviction/100)} <span style="font-size:0.8rem">${p.conviction}%</span></td>
+        <td>${p.target_price!=null ? fmt$(p.target_price) : '—'}</td>
+        <td>${p.horizon||'—'}</td>
+        <td>${stratBadge(p.strategy||'—')}</td>
+        <td class="timestamp">${fmtDate(p.created_at)}</td>
       </tr>`).join('')}</tbody>
     </table></div>
   </div>
 
-  <div class="card" style="margin-bottom:20px">
-    <div class="card-title">Resolved Predictions</div>
+  ${resolved.length ? `<div class="card" style="margin-bottom:20px">
+    <div class="card-title">Resolved Predictions (${resolved.length})</div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Symbol</th><th>Direction</th><th>Predicted</th><th>Actual</th><th>Score</th><th>P&L</th></tr></thead>
+      <thead><tr><th>Symbol</th><th>Direction</th><th>Conviction</th><th>Score</th><th>Post-Mortem</th></tr></thead>
       <tbody>${resolved.map(p=>`<tr>
         <td><strong>${p.symbol}</strong></td>
-        <td>${dirBadge(p.direction)}</td>
-        <td>${fmtPct(p.predicted_move)}</td>
-        <td class="${pnlClass(p.actual_move)}">${fmtPct(p.actual_move)}</td>
-        <td>${(p.score*100).toFixed(0)}%</td>
-        <td class="${pnlClass(p.pnl)}">${fmt$(p.pnl)}</td>
+        <td>${dirBadge(p.direction||'—')}</td>
+        <td>${p.conviction}%</td>
+        <td>${p.score!=null ? p.score : '—'}</td>
+        <td style="font-size:0.8rem;color:var(--text-dim)">${p.post_mortem||'—'}</td>
       </tr>`).join('')}</tbody>
-    </table></div>
-  </div>
-
-  <div class="grid grid-2">
-    <div class="card">
-      <div class="card-title">Calibration Chart</div>
-      <div class="chart-container" style="height:280px"><canvas id="calibChart"></canvas></div>
-    </div>
-    <div class="card">
-      <div class="card-title">Conviction vs Return</div>
-      <div class="chart-container" style="height:280px"><canvas id="scatterChart"></canvas></div>
-    </div>
-  </div>`;
-
-  const cal=stats.calibration;
-  renderLineChart('calibChart',
-    cal.map(c=>(c.predicted*100).toFixed(0)+'%'),
-    [
-      {label:'Actual Outcome',data:cal.map(c=>c.actual*100),color:COLORS.gold},
-      {label:'Perfect Calibration',data:cal.map(c=>c.predicted*100),color:COLORS.dim},
-    ]
-  );
-
-  const scatterData=resolved.map(p=>({x:p.conviction,y:p.pnl}));
-  renderScatter('scatterChart',scatterData);
-}).catch(()=>{document.getElementById('content').innerHTML='<div class="loading">Data loading...</div>';});
+    </table></div>` : ''}`;
+  } catch(e) {
+    console.error('Predictions render error:', e);
+    document.getElementById('content').innerHTML='<div class="loading">Error: '+e.message+'</div>';
+  }
+}).catch(e=>{console.error('Fetch error:',e);document.getElementById('content').innerHTML='<div class="loading">Failed to load data</div>';});
   </script>
 </body>
 </html>

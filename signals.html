@@ -22,75 +22,68 @@
   <footer class="footer">Powered by Gordon 💰 | Data updates every 12h | Not financial advice</footer>
   <script src="assets/charts.js"></script>
   <script>
-function heatColor(v){
-  if(v>0.3)return 'rgba(0,200,83,0.6)';
-  if(v>0.1)return 'rgba(0,200,83,0.25)';
-  if(v<-0.3)return 'rgba(255,23,68,0.6)';
-  if(v<-0.1)return 'rgba(255,23,68,0.25)';
-  return 'rgba(255,255,255,0.05)';
-}
-
 fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
-  const h=data.ensemble_heatmap;
-  const gt=data.google_trends;
-  const ct=data.congress_trades;
-  const sh=data.sentiment.history;
+  console.log('Dashboard data:', data);
+  try {
+  const sig=data.signals||{};
+  const topSignals=sig.top_signals||[];
+  const sentHistory=sig.sentiment_history||[];
+  const congress=sig.congress_recent||[];
+  const gt=sig.google_trends||{};
   const c=document.getElementById('content');
 
   c.innerHTML=`
   <div class="card" style="margin-bottom:20px">
-    <div class="card-title">5-Layer Ensemble Heatmap</div>
+    <div class="card-title">Top Signals</div>
     <div class="table-wrap"><table>
-      <thead><tr><th>Layer</th>${h.instruments.map(i=>`<th style="font-size:0.7rem">${i}</th>`).join('')}</tr></thead>
-      <tbody>${h.layers.map((layer,li)=>`<tr>
-        <td><strong>${layer}</strong></td>
-        ${h.scores[li].map(v=>`<td><div class="heatmap-cell" style="background:${heatColor(v)}">${v>=0?'+':''}${v.toFixed(1)}</div></td>`).join('')}
+      <thead><tr><th>Symbol</th><th>Source</th><th>Score</th><th>Date</th></tr></thead>
+      <tbody>${topSignals.map(s=>`<tr>
+        <td><strong>${s.symbol}</strong></td>
+        <td>${s.source||'—'}</td>
+        <td style="color:${(s.score||0)>0?'var(--green)':'var(--red)'}">${s.score!=null ? (s.score>=0?'+':'')+s.score.toFixed(2) : '—'}</td>
+        <td class="timestamp">${fmtDate(s.created_at)}</td>
       </tr>`).join('')}</tbody>
     </table></div>
   </div>
 
   <div class="grid grid-2" style="margin-bottom:20px">
     <div class="card">
-      <div class="card-title">Google Trends — Fear vs Greed Keywords</div>
-      <div class="chart-container" style="height:280px"><canvas id="trendsChart"></canvas></div>
-      <p style="margin-top:12px;font-size:0.85rem;color:var(--text-dim)">📊 ${gt.mood}</p>
+      <div class="card-title">Google Trends Keywords</div>
+      ${gt.keywords && gt.keywords.length ? `<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
+        ${gt.keywords.map(k=>`<span class="ticker-badge">${typeof k==='string'?k:k.keyword||k}</span>`).join('')}
+      </div>` : '<p style="color:var(--text-dim)">No keyword data available</p>'}
     </div>
     <div class="card">
       <div class="card-title">Congress Trading</div>
-      <div class="table-wrap"><table>
-        <thead><tr><th>Member</th><th>Symbol</th><th>Dir</th><th>Amount</th><th>Trade</th><th>Disclosed</th></tr></thead>
-        <tbody>${ct.map(t=>`<tr>
-          <td><strong>${t.member}</strong>${t.member.includes('Pelosi')?'  🔥':''}</td>
-          <td>${t.symbol}</td>
-          <td>${dirBadge(t.direction==='BUY'?'LONG':'SHORT')}</td>
-          <td>${t.amount}</td>
-          <td>${t.date}</td><td>${t.disclosure_date}</td>
+      ${congress.length ? `<div class="table-wrap"><table>
+        <thead><tr><th>Member</th><th>Symbol</th><th>Type</th><th>Amount</th><th>Date</th></tr></thead>
+        <tbody>${congress.map(t=>`<tr>
+          <td><strong>${t.member_name||t.member||'—'}</strong></td>
+          <td>${t.symbol||'—'}</td>
+          <td>${t.transaction_type||'—'}</td>
+          <td>${t.amount||'—'}</td>
+          <td class="timestamp">${t.transaction_date||'—'}</td>
         </tr>`).join('')}</tbody>
-      </table></div>
+      </table></div>` : '<p style="color:var(--text-dim)">No recent congress trades</p>'}
     </div>
   </div>
 
-  <div class="card">
-    <div class="card-title">Sentiment Timeline (30 Days)</div>
+  ${sentHistory.length ? `<div class="card">
+    <div class="card-title">Sentiment History</div>
     <div class="chart-container" style="height:280px"><canvas id="sentChart"></canvas></div>
-  </div>`;
+  </div>` : ''}`;
 
-  // Trends bar chart
-  const allKw=[...gt.fear_keywords,...gt.greed_keywords];
-  const labels=allKw.map(k=>k.keyword);
-  const vals=allKw.map((k,i)=>i<gt.fear_keywords.length?-k.score:k.score);
-  renderBarChart('trendsChart',labels,vals,{
-    colors:vals.map(v=>v<0?COLORS.red+'aa':COLORS.green+'aa'),
-    indexAxis:'y',
-    scales:{x:{ticks:{color:COLORS.dim},grid:{color:COLORS.gridLine}},y:{ticks:{color:COLORS.dim,font:{size:10}},grid:{display:false}}},
-  });
-
-  // Sentiment line
-  renderLineChart('sentChart',
-    sh.map(s=>s.date.slice(5)),
-    [{label:'Composite Sentiment',data:sh.map(s=>s.value),color:COLORS.gold,fill:true}]
-  );
-}).catch(()=>{document.getElementById('content').innerHTML='<div class="loading">Data loading...</div>';});
+  if(sentHistory.length) {
+    renderLineChart('sentChart',
+      sentHistory.map(s=>{const d=s.created_at||s.date||''; return d.slice(5,10);}),
+      [{label:'Sentiment Score',data:sentHistory.map(s=>s.score||0),color:COLORS.gold,fill:true}]
+    );
+  }
+  } catch(e) {
+    console.error('Signals render error:', e);
+    document.getElementById('content').innerHTML='<div class="loading">Error: '+e.message+'</div>';
+  }
+}).catch(e=>{console.error('Fetch error:',e);document.getElementById('content').innerHTML='<div class="loading">Failed to load data</div>';});
   </script>
 </body>
 </html>

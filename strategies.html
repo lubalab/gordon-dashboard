@@ -33,7 +33,7 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
     const color=(s.total_pnl||0)>=0?'var(--green)':'var(--red)';
     return `<div class="card">
       <div class="card-title">${stratBadge(s.name||key)} Strategy <span style="font-size:0.75rem;color:var(--text-dim)">(${s.environment||'unknown'})</span></div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px">
+      <div class="grid grid-3" style="margin-top:12px">
         <div><div class="card-label">Total Trades</div><div style="font-size:1.4rem;font-weight:700">${s.total_trades||0}</div></div>
         <div><div class="card-label">Win Rate</div><div style="font-size:1.4rem;font-weight:700;color:${(s.win_rate||0)>=55?'var(--green)':'var(--text-dim)'}">${s.win_rate||0}%</div></div>
         <div><div class="card-label">Total P&L</div><div style="font-size:1.4rem;font-weight:700;color:${color}">${fmt$(s.total_pnl||0)}</div></div>

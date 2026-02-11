@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8"><meta http-equiv="refresh" content="300">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Gordon — Signals</title>
   <link rel="icon" href="assets/gordon-logo.svg">
   <link rel="stylesheet" href="assets/style.css">
@@ -17,6 +18,7 @@
       <a href="signals.html" class="active">Signals</a>
       <a href="worldview.html">Worldview</a>
     </div>
+      <span class="timestamp" id="refreshCountdown" style="margin-left:auto;padding-right:16px;color:var(--text-dim,#888);font-size:0.75rem"></span>
   </nav>
   <div class="container" id="content"><div class="loading">Loading signals</div></div>
   <footer class="footer">Powered by Gordon 💰 | Data updates every 12h | Not financial advice</footer>
@@ -68,16 +70,67 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
     </div>
   </div>
 
-  ${sentHistory.length ? `<div class="card">
-    <div class="card-title">Sentiment History</div>
+  ${sentHistory.length ? `<div class="card" style="margin-bottom:20px">
+    <div class="card-title">Sentiment History (Raw)</div>
     <div class="chart-container" style="height:280px"><canvas id="sentChart"></canvas></div>
+  </div>` : ''}
+
+  ${(sig.sentiment_history_chart||[]).length ? `<div class="card">
+    <div class="card-title">Sentiment Trends (30 Days)</div>
+    <div class="chart-container" style="height:320px"><canvas id="sentTrendChart"></canvas></div>
   </div>` : ''}`;
 
   if(sentHistory.length) {
     renderLineChart('sentChart',
-      sentHistory.map(s=>{const d=s.created_at||s.date||''; return d.slice(5,10);}),
+      sentHistory.map(s=>{const d=s.created_at||s.date||s.timestamp||''; return d.slice(5,10);}),
       [{label:'Sentiment Score',data:sentHistory.map(s=>s.score||0),color:COLORS.gold,fill:true}]
     );
+  }
+
+  // Multi-line sentiment trend chart
+  const sentChart = sig.sentiment_history_chart || [];
+  if(sentChart.length && document.getElementById('sentTrendChart')) {
+    const sourceMap = {};
+    const dates = [];
+    const dateSet = new Set();
+    sentChart.forEach(r => {
+      if(!dateSet.has(r.d)) { dates.push(r.d); dateSet.add(r.d); }
+      if(!sourceMap[r.source]) sourceMap[r.source] = {};
+      sourceMap[r.source][r.d] = r.avg_score;
+    });
+    const colorMap = {
+      'cnn_fear_greed': '#ff6384',
+      'crypto_fear_greed': '#ffc107',
+      'vix': '#36a2eb',
+      'google_trends_composite': '#4caf50'
+    };
+    const labelMap = {
+      'cnn_fear_greed': 'CNN F&G',
+      'crypto_fear_greed': 'Crypto F&G',
+      'vix': 'VIX',
+      'google_trends_composite': 'Google Trends'
+    };
+    const datasets = Object.keys(sourceMap).map(src => ({
+      label: labelMap[src] || src,
+      data: dates.map(d => sourceMap[src][d] != null ? +sourceMap[src][d].toFixed(2) : null),
+      borderColor: colorMap[src] || '#888',
+      backgroundColor: 'transparent',
+      tension: 0.3,
+      spanGaps: true,
+      pointRadius: 2,
+    }));
+    new Chart(document.getElementById('sentTrendChart'), {
+      type: 'line',
+      data: { labels: dates.map(d=>d.slice(5)), datasets },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        scales: {
+          y: { ticks:{color:'#888'}, grid:{color:'rgba(255,255,255,0.05)'} },
+          x: { ticks:{color:'#888',maxTicksLimit:15}, grid:{display:false} }
+        },
+        plugins: { legend:{labels:{color:'#ccc'}} }
+      }
+    });
   }
   } catch(e) {
     console.error('Signals render error:', e);
@@ -85,5 +138,20 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
   }
 }).catch(e=>{console.error('Fetch error:',e);document.getElementById('content').innerHTML='<div class="loading">Failed to load data</div>';});
   </script>
+
+<script>
+// Auto-refresh countdown
+(function(){
+  var total=300, left=total;
+  var el=document.getElementById('refreshCountdown');
+  if(!el) return;
+  setInterval(function(){
+    left--;
+    if(left<0) left=0;
+    var m=Math.floor(left/60), s=left%60;
+    el.textContent='Next refresh in '+m+'m '+s+'s';
+  },1000);
+})();
+</script>
 </body>
 </html>

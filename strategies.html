@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8"><meta http-equiv="refresh" content="300">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Gordon — Strategies</title>
   <link rel="icon" href="assets/gordon-logo.svg">
   <link rel="stylesheet" href="assets/style.css">
@@ -17,6 +18,7 @@
       <a href="signals.html">Signals</a>
       <a href="worldview.html">Worldview</a>
     </div>
+      <span class="timestamp" id="refreshCountdown" style="margin-left:auto;padding-right:16px;color:var(--text-dim,#888);font-size:0.75rem"></span>
   </nav>
   <div class="container" id="content"><div class="loading">Loading strategies</div></div>
   <footer class="footer">Powered by Gordon 💰 | Data updates every 12h | Not financial advice</footer>
@@ -44,11 +46,17 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
     </div>`;
   }
 
+  const pnlHistory = strats.pnl_history || [];
+
   c.innerHTML=`
   <div class="grid grid-2" style="margin-bottom:20px">
     ${stratCard('gekko',strats.gekko)}
     ${stratCard('buffett',strats.buffett)}
   </div>
+  ${pnlHistory.length > 1 ? `<div class="card" style="margin-bottom:20px">
+    <div class="card-title">Cumulative P&L Over Time</div>
+    <div class="chart-container" style="height:300px"><canvas id="pnlChart"></canvas></div>
+  </div>` : ''}
   <div class="card" style="margin-bottom:20px">
     <div class="card-title">Trade History</div>
     <div class="table-wrap"><table id="tradeTable">
@@ -81,11 +89,37 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
       rows.forEach(r=>tbody.appendChild(r));
     });
   });
+
+  // P&L history chart
+  if(pnlHistory.length > 1 && document.getElementById('pnlChart')) {
+    renderLineChart('pnlChart',
+      pnlHistory.map(h=>h.date.slice(5)),
+      [
+        {label:'Gekko P&L', data:pnlHistory.map(h=>h.gekko_pnl||0), color:COLORS.gold, fill:false},
+        {label:'Buffett P&L', data:pnlHistory.map(h=>h.buffett_pnl||0), color:COLORS.green||'#4caf50', fill:false}
+      ]
+    );
+  }
   } catch(e) {
     console.error('Strategies render error:', e);
     document.getElementById('content').innerHTML='<div class="loading">Error: '+e.message+'</div>';
   }
 }).catch(e=>{console.error('Fetch error:',e);document.getElementById('content').innerHTML='<div class="loading">Failed to load data</div>';});
   </script>
+
+<script>
+// Auto-refresh countdown
+(function(){
+  var total=300, left=total;
+  var el=document.getElementById('refreshCountdown');
+  if(!el) return;
+  setInterval(function(){
+    left--;
+    if(left<0) left=0;
+    var m=Math.floor(left/60), s=left%60;
+    el.textContent='Next refresh in '+m+'m '+s+'s';
+  },1000);
+})();
+</script>
 </body>
 </html>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8"><meta http-equiv="refresh" content="300">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Gordon — Worldview</title>
   <link rel="icon" href="assets/gordon-logo.svg">
   <link rel="stylesheet" href="assets/style.css">
@@ -17,6 +18,7 @@
       <a href="signals.html">Signals</a>
       <a href="worldview.html" class="active">Worldview</a>
     </div>
+      <span class="timestamp" id="refreshCountdown" style="margin-left:auto;padding-right:16px;color:var(--text-dim,#888);font-size:0.75rem"></span>
   </nav>
   <div class="container" id="content"><div class="loading">Loading worldview</div></div>
   <footer class="footer">Powered by Gordon 💰 | Data updates every 12h | Not financial advice</footer>
@@ -61,5 +63,20 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
   }
 }).catch(e=>{console.error('Fetch error:',e);document.getElementById('content').innerHTML='<div class="loading">Failed to load data</div>';});
   </script>
+
+<script>
+// Auto-refresh countdown
+(function(){
+  var total=300, left=total;
+  var el=document.getElementById('refreshCountdown');
+  if(!el) return;
+  setInterval(function(){
+    left--;
+    if(left<0) left=0;
+    var m=Math.floor(left/60), s=left%60;
+    el.textContent='Next refresh in '+m+'m '+s+'s';
+  },1000);
+})();
+</script>
 </body>
 </html>

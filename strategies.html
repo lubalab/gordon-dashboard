@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gordon — Strategies</title>
+  <link rel="icon" href="assets/gordon-logo.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-brand"><img src="assets/gordon-logo.svg" alt="G">gordon.money</a>
+    <div class="nav-links">
+      <a href="index.html">Overview</a>
+      <a href="strategies.html" class="active">Strategies</a>
+      <a href="predictions.html">Predictions</a>
+      <a href="signals.html">Signals</a>
+      <a href="worldview.html">Worldview</a>
+    </div>
+  </nav>
+  <div class="container" id="content"><div class="loading">Loading strategies</div></div>
+  <footer class="footer">Powered by Gordon 💰 | Data updates every 12h | Not financial advice</footer>
+  <script src="assets/charts.js"></script>
+  <script>
+fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
+  const strats=data.strategies;
+  const c=document.getElementById('content');
+
+  function stratCard(name,s){
+    const color=s.total_pnl>=0?'var(--green)':'var(--red)';
+    return `<div class="card">
+      <div class="card-title">${stratBadge(name)} Strategy</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px">
+        <div><div class="card-label">Total Trades</div><div style="font-size:1.4rem;font-weight:700">${s.total_trades}</div></div>
+        <div><div class="card-label">Win Rate</div><div style="font-size:1.4rem;font-weight:700;color:${s.win_rate>=55?'var(--green)':'var(--red)'}">${s.win_rate}%</div></div>
+        <div><div class="card-label">Total P&L</div><div style="font-size:1.4rem;font-weight:700;color:${color}">${fmt$(s.total_pnl)}</div></div>
+        <div><div class="card-label">Sharpe Ratio</div><div style="font-size:1.2rem;font-weight:600">${s.sharpe_ratio.toFixed(2)}</div></div>
+        <div><div class="card-label">Max Drawdown</div><div style="font-size:1.2rem;font-weight:600;color:var(--red)">${s.max_drawdown}%</div></div>
+        <div><div class="card-label">Open Positions</div><div style="font-size:1.2rem;font-weight:600">${s.open_positions}</div></div>
+      </div>
+      <p style="margin-top:12px;font-size:0.85rem;color:var(--text-dim)">${s.description}</p>
+    </div>`;
+  }
+
+  c.innerHTML=`
+  <div class="grid grid-2" style="margin-bottom:20px">
+    ${stratCard('Gekko',strats.Gekko)}
+    ${stratCard('Buffett',strats.Buffett)}
+  </div>
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-title">Cumulative P&L</div>
+    <div class="chart-container" style="height:300px"><canvas id="pnlChart"></canvas></div>
+  </div>
+  <div class="card" style="margin-bottom:20px">
+    <div class="card-title">Trade History</div>
+    <div class="table-wrap"><table id="tradeTable">
+      <thead><tr><th data-col="symbol">Symbol</th><th data-col="direction">Dir</th><th data-col="entry_price">Entry</th><th data-col="exit_price">Exit</th><th data-col="pnl_dollar">P&L ($)</th><th data-col="pnl_percent">P&L (%)</th><th data-col="strategy">Strategy</th><th data-col="opened_at">Date</th></tr></thead>
+      <tbody>${data.trades.map(t=>`<tr>
+        <td><strong>${t.symbol}</strong></td><td>${dirBadge(t.direction)}</td>
+        <td>${fmt$(t.entry_price)}</td><td>${t.exit_price?fmt$(t.exit_price):'—'}</td>
+        <td class="${pnlClass(t.pnl_dollar)}">${fmt$(t.pnl_dollar)}</td>
+        <td class="${pnlClass(t.pnl_percent)}">${fmtPct(t.pnl_percent)}</td>
+        <td>${stratBadge(t.strategy)}</td><td class="timestamp">${fmtDate(t.opened_at)}</td>
+      </tr>`).join('')}</tbody>
+    </table></div>
+  </div>
+  ${strats.promotion_candidates&&strats.promotion_candidates.length?`
+  <div class="card">
+    <div class="card-title">Promotion Candidates</div>
+    ${strats.promotion_candidates.map(p=>`<div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+      <strong>${p.symbol}</strong>
+      <span>${stratBadge(p.from)} → ${stratBadge(p.to)}</span>
+      <span style="color:var(--text-dim);font-size:0.85rem">${p.reason}</span>
+      <span style="font-size:0.85rem">Conviction: ${(p.conviction*100).toFixed(0)}%</span>
+    </div>`).join('')}
+  </div>`:''}`;
+
+  const labels=strats.Gekko.pnl_history.map(h=>h.date);
+  renderLineChart('pnlChart',labels,[
+    {label:'Gekko',data:strats.Gekko.pnl_history.map(h=>h.cumulative_pnl),color:COLORS.blue},
+    {label:'Buffett',data:strats.Buffett.pnl_history.map(h=>h.cumulative_pnl),color:COLORS.gold},
+  ]);
+
+  // simple sort
+  document.querySelectorAll('#tradeTable th').forEach(th=>{
+    th.addEventListener('click',()=>{
+      const tbody=document.querySelector('#tradeTable tbody');
+      const rows=[...tbody.rows];
+      const idx=th.cellIndex;
+      const asc=!th.classList.contains('sorted-asc');
+      document.querySelectorAll('#tradeTable th').forEach(h=>{h.classList.remove('sorted-asc','sorted-desc')});
+      th.classList.add(asc?'sorted-asc':'sorted-desc');
+      rows.sort((a,b)=>{
+        let av=a.cells[idx].textContent, bv=b.cells[idx].textContent;
+        const an=parseFloat(av.replace(/[$,%+]/g,'')), bn=parseFloat(bv.replace(/[$,%+]/g,''));
+        if(!isNaN(an)&&!isNaN(bn)) return asc?an-bn:bn-an;
+        return asc?av.localeCompare(bv):bv.localeCompare(av);
+      });
+      rows.forEach(r=>tbody.appendChild(r));
+    });
+  });
+}).catch(()=>{document.getElementById('content').innerHTML='<div class="loading">Data loading...</div>';});
+  </script>
+</body>
+</html>

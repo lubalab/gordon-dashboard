@@ -1,0 +1,1688 @@
+{
+  "generated_at": "2026-02-11T14:45:37.354898+00:00",
+  "next_update": "2026-02-11T21:00:00+00:00",
+  "market_mood": {
+    "composite": -0.4254,
+    "cnn_fear_greed": {
+      "value": 46.4571428571429,
+      "label": "Neutral"
+    },
+    "crypto_fear_greed": {
+      "value": 11.0,
+      "label": "Extreme Fear"
+    },
+    "vix": {
+      "value": 17.09,
+      "label": "Normal"
+    },
+    "google_trends": {
+      "composite": null,
+      "fear_total": null,
+      "greed_total": null
+    }
+  },
+  "positions": [
+    {
+      "symbol": "BTC-USD",
+      "direction": "buy",
+      "entry_price": 67218.5,
+      "amount": 500.0,
+      "leverage": 2.0,
+      "strategy": "gekko",
+      "stop_loss": null,
+      "take_profit": null,
+      "opened_at": "2026-02-11 13:50:41",
+      "etoro_order_id": "327087798",
+      "notes": "First contrarian trade - Crypto Fear at 11/100"
+    },
+    {
+      "symbol": "ETH-USD",
+      "direction": "buy",
+      "entry_price": 1954.85,
+      "amount": 300.0,
+      "leverage": 2.0,
+      "strategy": "gekko",
+      "stop_loss": null,
+      "take_profit": null,
+      "opened_at": "2026-02-11 13:50:41",
+      "etoro_order_id": "327087813",
+      "notes": "First contrarian trade - Crypto Fear at 11/100"
+    }
+  ],
+  "strategies": {
+    "gekko": {
+      "name": "Gekko",
+      "environment": "demo",
+      "total_trades": 0,
+      "winning_trades": 0,
+      "losing_trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "sharpe_ratio": null,
+      "max_drawdown": null,
+      "open_positions": 2
+    },
+    "buffett": {
+      "name": "Buffett",
+      "environment": "production",
+      "total_trades": 0,
+      "winning_trades": 0,
+      "losing_trades": 0,
+      "total_pnl": 0.0,
+      "win_rate": 0.0,
+      "sharpe_ratio": null,
+      "max_drawdown": null,
+      "open_positions": 0
+    }
+  },
+  "predictions": {
+    "open": [
+      {
+        "id": 1,
+        "symbol": "SPY",
+        "direction": "bearish",
+        "conviction": 45,
+        "thesis": "SPY bearish next week.",
+        "horizon": "1W",
+        "deadline": "2026-02-18T02:53:44.495115",
+        "target_price": 681.74,
+        "entry_price": 692.119995,
+        "status": "open",
+        "created_at": "2026-02-11T02:53:44.505089",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 2,
+        "symbol": "BTC-USD",
+        "direction": "bullish",
+        "conviction": 55,
+        "thesis": "BTC mildly bullish. Crypto sentiment in fear zone (-0.78), historically good entry.",
+        "horizon": "1W",
+        "deadline": "2026-02-18T02:53:44.495115",
+        "target_price": null,
+        "entry_price": 69131.039062,
+        "status": "open",
+        "created_at": "2026-02-11T02:53:44.531827",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 5,
+        "symbol": "SPY",
+        "direction": "bearish",
+        "conviction": 45,
+        "thesis": "SPY bearish next week.",
+        "horizon": "1W",
+        "deadline": "2026-02-18T03:19:06.504894",
+        "target_price": 681.74,
+        "entry_price": 692.119995,
+        "status": "open",
+        "created_at": "2026-02-11T03:19:06.524944",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 6,
+        "symbol": "BTC-USD",
+        "direction": "bullish",
+        "conviction": 55,
+        "thesis": "BTC mildly bullish. Crypto sentiment in fear zone (-0.78), historically good entry.",
+        "horizon": "1W",
+        "deadline": "2026-02-18T03:19:06.504894",
+        "target_price": null,
+        "entry_price": 69131.039062,
+        "status": "open",
+        "created_at": "2026-02-11T03:19:06.555622",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 13,
+        "symbol": "SPY",
+        "direction": "bearish",
+        "conviction": 45,
+        "thesis": "SPY bearish next week.",
+        "horizon": "1W",
+        "deadline": "2026-02-18T04:14:23.715713",
+        "target_price": 681.74,
+        "entry_price": 692.119995,
+        "status": "open",
+        "created_at": "2026-02-11T04:14:23.739755",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 14,
+        "symbol": "BTC-USD",
+        "direction": "bullish",
+        "conviction": 55,
+        "thesis": "BTC mildly bullish. Crypto sentiment in fear zone (-0.78), historically good entry.",
+        "horizon": "1W",
+        "deadline": "2026-02-18T04:14:23.715713",
+        "target_price": null,
+        "entry_price": 68582.257812,
+        "status": "open",
+        "created_at": "2026-02-11T04:14:23.773688",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 21,
+        "symbol": "SPY",
+        "direction": "bearish",
+        "conviction": 45,
+        "thesis": "SPY bearish next week.",
+        "horizon": "1W",
+        "deadline": "2026-02-18T14:50:22.766252",
+        "target_price": 681.74,
+        "entry_price": 692.119995,
+        "status": "open",
+        "created_at": "2026-02-11T14:50:22.791614",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 22,
+        "symbol": "BTC-USD",
+        "direction": "bullish",
+        "conviction": 55,
+        "thesis": "BTC mildly bullish. Crypto sentiment in fear zone (-0.78), historically good entry.",
+        "horizon": "1W",
+        "deadline": "2026-02-18T14:50:22.766252",
+        "target_price": null,
+        "entry_price": 67300.671875,
+        "status": "open",
+        "created_at": "2026-02-11T14:50:22.828635",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 3,
+        "symbol": "NVDA",
+        "direction": "neutral",
+        "conviction": 30,
+        "thesis": "NVDA neutral. AI buzz lower than usual \u2014 sector may be cooling.",
+        "horizon": "1M",
+        "deadline": "2026-03-13T02:53:44.495115",
+        "target_price": null,
+        "entry_price": 188.539993,
+        "status": "open",
+        "created_at": "2026-02-11T02:53:44.566913",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 7,
+        "symbol": "NVDA",
+        "direction": "neutral",
+        "conviction": 30,
+        "thesis": "NVDA neutral. AI buzz lower than usual \u2014 sector may be cooling.",
+        "horizon": "1M",
+        "deadline": "2026-03-13T03:19:06.504894",
+        "target_price": null,
+        "entry_price": 188.539993,
+        "status": "open",
+        "created_at": "2026-02-11T03:19:06.583082",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 9,
+        "symbol": "GC=F",
+        "direction": "neutral",
+        "conviction": 40,
+        "thesis": "Gold neutral outlook. Mixed signals \u2014 watching for catalyst.",
+        "horizon": "1M",
+        "deadline": "2026-03-13T03:19:06.504894",
+        "target_price": null,
+        "entry_price": 5062.799805,
+        "status": "open",
+        "created_at": "2026-02-11T03:19:06.667411",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 10,
+        "symbol": "TSLA",
+        "direction": "neutral",
+        "conviction": 30,
+        "thesis": "TSLA range-bound. Multiple competing theses (AI bullish vs political risk bearish).",
+        "horizon": "1M",
+        "deadline": "2026-03-13T03:19:06.504894",
+        "target_price": null,
+        "entry_price": 425.209991,
+        "status": "open",
+        "created_at": "2026-02-11T03:19:06.696179",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 15,
+        "symbol": "NVDA",
+        "direction": "neutral",
+        "conviction": 30,
+        "thesis": "NVDA neutral. AI buzz lower than usual \u2014 sector may be cooling.",
+        "horizon": "1M",
+        "deadline": "2026-03-13T04:14:23.715713",
+        "target_price": null,
+        "entry_price": 188.539993,
+        "status": "open",
+        "created_at": "2026-02-11T04:14:23.806895",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 17,
+        "symbol": "GC=F",
+        "direction": "neutral",
+        "conviction": 40,
+        "thesis": "Gold neutral outlook. Mixed signals \u2014 watching for catalyst.",
+        "horizon": "1M",
+        "deadline": "2026-03-13T04:14:23.715713",
+        "target_price": null,
+        "entry_price": 5077.899902,
+        "status": "open",
+        "created_at": "2026-02-11T04:14:23.869165",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 18,
+        "symbol": "TSLA",
+        "direction": "neutral",
+        "conviction": 30,
+        "thesis": "TSLA range-bound. Multiple competing theses (AI bullish vs political risk bearish).",
+        "horizon": "1M",
+        "deadline": "2026-03-13T04:14:23.715713",
+        "target_price": null,
+        "entry_price": 425.209991,
+        "status": "open",
+        "created_at": "2026-02-11T04:14:23.906047",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 23,
+        "symbol": "NVDA",
+        "direction": "neutral",
+        "conviction": 30,
+        "thesis": "NVDA neutral. AI buzz lower than usual \u2014 sector may be cooling.",
+        "horizon": "1M",
+        "deadline": "2026-03-13T14:50:22.766252",
+        "target_price": null,
+        "entry_price": 188.539993,
+        "status": "open",
+        "created_at": "2026-02-11T14:50:22.859702",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 25,
+        "symbol": "GC=F",
+        "direction": "neutral",
+        "conviction": 40,
+        "thesis": "Gold neutral outlook. Mixed signals \u2014 watching for catalyst.",
+        "horizon": "1M",
+        "deadline": "2026-03-13T14:50:22.766252",
+        "target_price": null,
+        "entry_price": 5086.600098,
+        "status": "open",
+        "created_at": "2026-02-11T14:50:22.964614",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 26,
+        "symbol": "TSLA",
+        "direction": "neutral",
+        "conviction": 30,
+        "thesis": "TSLA range-bound. Multiple competing theses (AI bullish vs political risk bearish).",
+        "horizon": "1M",
+        "deadline": "2026-03-13T14:50:22.766252",
+        "target_price": null,
+        "entry_price": 425.209991,
+        "status": "open",
+        "created_at": "2026-02-11T14:50:23.004664",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 11,
+        "symbol": "EURUSD=X",
+        "direction": "bullish",
+        "conviction": 60,
+        "thesis": "EUR/USD mildly bullish. Europe decoupling thesis + US political instability supports structural EUR strength.",
+        "horizon": "3M",
+        "deadline": "2026-05-12T03:19:06.504894",
+        "target_price": null,
+        "entry_price": 1.190334,
+        "status": "open",
+        "created_at": "2026-02-11T03:19:06.728113",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 12,
+        "symbol": "FTSEMIB.MI",
+        "direction": "bullish",
+        "conviction": 45,
+        "thesis": "FTSEMIB.MI bullish. Europe decoupling from US + increased defense spending thesis. Italian market benefits from EU defense build-up.",
+        "horizon": "3M",
+        "deadline": "2026-05-12T03:19:06.504894",
+        "target_price": null,
+        "entry_price": 46802.988281,
+        "status": "open",
+        "created_at": "2026-02-11T03:19:06.754694",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 19,
+        "symbol": "EURUSD=X",
+        "direction": "bullish",
+        "conviction": 60,
+        "thesis": "EUR/USD mildly bullish. Europe decoupling thesis + US political instability supports structural EUR strength.",
+        "horizon": "3M",
+        "deadline": "2026-05-12T04:14:23.715713",
+        "target_price": null,
+        "entry_price": 1.191043,
+        "status": "open",
+        "created_at": "2026-02-11T04:14:23.936628",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 20,
+        "symbol": "FTSEMIB.MI",
+        "direction": "bullish",
+        "conviction": 45,
+        "thesis": "FTSEMIB.MI bullish. Europe decoupling from US + increased defense spending thesis. Italian market benefits from EU defense build-up.",
+        "horizon": "3M",
+        "deadline": "2026-05-12T04:14:23.715713",
+        "target_price": null,
+        "entry_price": 46803.0,
+        "status": "open",
+        "created_at": "2026-02-11T04:14:23.970759",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 27,
+        "symbol": "EURUSD=X",
+        "direction": "bullish",
+        "conviction": 60,
+        "thesis": "EUR/USD mildly bullish. Europe decoupling thesis + US political instability supports structural EUR strength.",
+        "horizon": "3M",
+        "deadline": "2026-05-12T14:50:22.766252",
+        "target_price": null,
+        "entry_price": 1.188213,
+        "status": "open",
+        "created_at": "2026-02-11T14:50:23.075418",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 28,
+        "symbol": "FTSEMIB.MI",
+        "direction": "bullish",
+        "conviction": 45,
+        "thesis": "FTSEMIB.MI bullish. Europe decoupling from US + increased defense spending thesis. Italian market benefits from EU defense build-up.",
+        "horizon": "3M",
+        "deadline": "2026-05-12T14:50:22.766252",
+        "target_price": null,
+        "entry_price": 46614.839844,
+        "status": "open",
+        "created_at": "2026-02-11T14:50:23.111530",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 4,
+        "symbol": "SPY",
+        "direction": "neutral",
+        "conviction": 35,
+        "thesis": "6-month macro outlook. Benner Cycle suggests late expansion phase \u2014 historically this is when the smart money starts reducing exposure. No extreme sentiment \u2014 watch for shift in coming months. Note: Mercury retrograde Feb 25-Mar 20 may dampen activity.",
+        "horizon": "6M",
+        "deadline": "2026-08-10T02:53:44.495115",
+        "target_price": null,
+        "entry_price": 692.119995,
+        "status": "open",
+        "created_at": "2026-02-11T02:53:44.592577",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 8,
+        "symbol": "SPY",
+        "direction": "neutral",
+        "conviction": 35,
+        "thesis": "6-month macro outlook. Benner Cycle suggests late expansion phase \u2014 historically this is when the smart money starts reducing exposure. No extreme sentiment \u2014 watch for shift in coming months. Note: Mercury retrograde Feb 25-Mar 20 may dampen activity.",
+        "horizon": "6M",
+        "deadline": "2026-08-10T03:19:06.504894",
+        "target_price": null,
+        "entry_price": 692.119995,
+        "status": "open",
+        "created_at": "2026-02-11T03:19:06.636710",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 16,
+        "symbol": "SPY",
+        "direction": "neutral",
+        "conviction": 35,
+        "thesis": "6-month macro outlook. Benner Cycle suggests late expansion phase \u2014 historically this is when the smart money starts reducing exposure. No extreme sentiment \u2014 watch for shift in coming months. Note: Mercury retrograde Feb 25-Mar 20 may dampen activity.",
+        "horizon": "6M",
+        "deadline": "2026-08-10T04:14:23.715713",
+        "target_price": null,
+        "entry_price": 692.119995,
+        "status": "open",
+        "created_at": "2026-02-11T04:14:23.842600",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 24,
+        "symbol": "SPY",
+        "direction": "neutral",
+        "conviction": 35,
+        "thesis": "6-month macro outlook. Benner Cycle suggests late expansion phase \u2014 historically this is when the smart money starts reducing exposure. No extreme sentiment \u2014 watch for shift in coming months. Note: Mercury retrograde Feb 25-Mar 20 may dampen activity.",
+        "horizon": "6M",
+        "deadline": "2026-08-10T14:50:22.766252",
+        "target_price": null,
+        "entry_price": 692.119995,
+        "status": "open",
+        "created_at": "2026-02-11T14:50:22.934004",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      }
+    ],
+    "resolved": [],
+    "stats": {
+      "total": 28,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  },
+  "signals": {
+    "top_signals": [],
+    "sentiment_history": [
+      {
+        "source": "google_trends",
+        "score": -1.0,
+        "raw_score": 1.0,
+        "timestamp": "2026-02-11T15:27:16.890761"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.3457,
+        "raw_score": 36.0,
+        "timestamp": "2026-02-11T15:27:13.859001"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.5,
+        "raw_score": 0.0,
+        "timestamp": "2026-02-11T15:27:10.423063"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.2507,
+        "raw_score": 19.0,
+        "timestamp": "2026-02-11T15:27:06.616883"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.3234,
+        "raw_score": 15.0,
+        "timestamp": "2026-02-11T15:27:02.964309"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.0229,
+        "raw_score": 33.0,
+        "timestamp": "2026-02-11T15:27:01.278093"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.0489,
+        "raw_score": 13.0,
+        "timestamp": "2026-02-11T15:26:55.278960"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.085,
+        "raw_score": 46.0,
+        "timestamp": "2026-02-11T15:26:44.349150"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.1198,
+        "raw_score": 48.0,
+        "timestamp": "2026-02-11T15:26:37.028245"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.0404,
+        "raw_score": 14.0,
+        "timestamp": "2026-02-11T15:26:33.927525"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.1695,
+        "raw_score": 27.0,
+        "timestamp": "2026-02-11T15:26:30.858765"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.0237,
+        "raw_score": 47.0,
+        "timestamp": "2026-02-11T15:26:27.803660"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.0386,
+        "raw_score": null,
+        "timestamp": "2026-02-11T15:26:25.565685"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.49,
+        "raw_score": 49.0,
+        "timestamp": "2026-02-11T15:26:24.035792"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.73,
+        "raw_score": 73.0,
+        "timestamp": "2026-02-11T15:26:19.478799"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.15,
+        "raw_score": 15.0,
+        "timestamp": "2026-02-11T15:26:13.714967"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.69,
+        "raw_score": 69.0,
+        "timestamp": "2026-02-11T15:26:07.194370"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.0,
+        "raw_score": 0.0,
+        "timestamp": "2026-02-11T15:25:58.936308"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.29,
+        "raw_score": 29.0,
+        "timestamp": "2026-02-11T15:25:56.608024"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.24,
+        "raw_score": 24.0,
+        "timestamp": "2026-02-11T15:25:52.342873"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.26,
+        "raw_score": 26.0,
+        "timestamp": "2026-02-11T15:25:49.137593"
+      },
+      {
+        "source": "lunar_cycles",
+        "score": 0.1459,
+        "raw_score": null,
+        "timestamp": "2026-02-11T14:53:47.170076"
+      },
+      {
+        "source": "lunar_cycles",
+        "score": 0.0,
+        "raw_score": null,
+        "timestamp": "2026-02-11T14:53:47.170076"
+      },
+      {
+        "source": "lunar_cycles",
+        "score": 0.3,
+        "raw_score": null,
+        "timestamp": "2026-02-11T14:53:47.170076"
+      },
+      {
+        "source": "lunar_cycles",
+        "score": 0.0,
+        "raw_score": null,
+        "timestamp": "2026-02-11T14:53:47.170076"
+      },
+      {
+        "source": "lunar_cycles",
+        "score": 0.2522,
+        "raw_score": 24.01,
+        "timestamp": "2026-02-11T14:53:47.170076"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0182,
+        "raw_score": 55.0,
+        "timestamp": "2026-02-11T14:53:46.641004"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0484,
+        "raw_score": 62.0,
+        "timestamp": "2026-02-11T14:53:44.660144"
+      },
+      {
+        "source": "hackernews",
+        "score": 0.0,
+        "raw_score": 25.0,
+        "timestamp": "2026-02-11T14:53:42.669982"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0508,
+        "raw_score": 59.0,
+        "timestamp": "2026-02-11T14:53:40.827189"
+      },
+      {
+        "source": "hackernews",
+        "score": 0.3257,
+        "raw_score": null,
+        "timestamp": "2026-02-11T14:53:39.713086"
+      },
+      {
+        "source": "hackernews",
+        "score": 0.0,
+        "raw_score": 30.0,
+        "timestamp": "2026-02-11T14:53:38.927129"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0441,
+        "raw_score": 68.0,
+        "timestamp": "2026-02-11T14:53:38.763835"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0213,
+        "raw_score": 47.0,
+        "timestamp": "2026-02-11T14:53:36.483031"
+      },
+      {
+        "source": "hackernews",
+        "score": 0.0,
+        "raw_score": 75.0,
+        "timestamp": "2026-02-11T14:53:34.471737"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0385,
+        "raw_score": 26.0,
+        "timestamp": "2026-02-11T14:53:29.153723"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0182,
+        "raw_score": 55.0,
+        "timestamp": "2026-02-11T14:53:27.382949"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0484,
+        "raw_score": 62.0,
+        "timestamp": "2026-02-11T14:53:25.472529"
+      },
+      {
+        "source": "hackernews",
+        "score": 0.0,
+        "raw_score": 25.0,
+        "timestamp": "2026-02-11T14:53:23.485938"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0508,
+        "raw_score": 59.0,
+        "timestamp": "2026-02-11T14:53:21.562531"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0441,
+        "raw_score": 68.0,
+        "timestamp": "2026-02-11T14:53:19.473580"
+      },
+      {
+        "source": "hackernews",
+        "score": -0.0213,
+        "raw_score": 47.0,
+        "timestamp": "2026-02-11T14:53:17.126975"
+      },
+      {
+        "source": "hackernews",
+        "score": 0.0,
+        "raw_score": 75.0,
+        "timestamp": "2026-02-11T14:53:15.072649"
+      },
+      {
+        "source": "binance_futures",
+        "score": 0.0,
+        "raw_score": 1817272.499,
+        "timestamp": "2026-02-11T14:53:10.198867"
+      },
+      {
+        "source": "binance_futures",
+        "score": 0.0,
+        "raw_score": 82425.291,
+        "timestamp": "2026-02-11T14:53:08.091854"
+      },
+      {
+        "source": "coingecko_global",
+        "score": 0.0,
+        "raw_score": 18936.0,
+        "timestamp": "2026-02-11T14:53:07.416343"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.2534,
+        "raw_score": -2.534276873307351,
+        "timestamp": "2026-02-11T14:53:07.416343"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.4546,
+        "raw_score": 56.81937828446196,
+        "timestamp": "2026-02-11T14:53:07.416343"
+      },
+      {
+        "source": "coingecko_global",
+        "score": 0.0,
+        "raw_score": 18936.0,
+        "timestamp": "2026-02-11T14:52:53.977072"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.2534,
+        "raw_score": -2.534276873307351,
+        "timestamp": "2026-02-11T14:52:53.977072"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.4546,
+        "raw_score": 56.81937828446196,
+        "timestamp": "2026-02-11T14:52:53.977072"
+      },
+      {
+        "source": "wikipedia_pageviews",
+        "score": 0.0,
+        "raw_score": null,
+        "timestamp": "2026-02-11T14:52:26.378520"
+      },
+      {
+        "source": "vix",
+        "score": 0.5273,
+        "raw_score": 17.09,
+        "timestamp": "2026-02-11T14:50:13.269024"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.78,
+        "raw_score": 11.0,
+        "timestamp": "2026-02-11T14:50:13.224210"
+      },
+      {
+        "source": "cnn_fear_greed",
+        "score": -0.0709,
+        "raw_score": 46.4571428571429,
+        "timestamp": "2026-02-11T14:50:12.762927"
+      },
+      {
+        "source": "vix",
+        "score": 0.5167,
+        "raw_score": 17.25,
+        "timestamp": "2026-02-11T14:48:59.217408"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.78,
+        "raw_score": 11.0,
+        "timestamp": "2026-02-11T14:48:58.827895"
+      },
+      {
+        "source": "cnn_fear_greed",
+        "score": -0.0709,
+        "raw_score": 46.4571428571429,
+        "timestamp": "2026-02-11T14:48:58.242980"
+      },
+      {
+        "source": "vix",
+        "score": 0.4587,
+        "raw_score": 18.120001,
+        "timestamp": "2026-02-11T13:04:29.508249"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.78,
+        "raw_score": 11.0,
+        "timestamp": "2026-02-11T13:04:29.463202"
+      },
+      {
+        "source": "cnn_fear_greed",
+        "score": -0.0709,
+        "raw_score": 46.4571428571429,
+        "timestamp": "2026-02-11T13:04:29.033756"
+      },
+      {
+        "source": "binance_futures",
+        "score": 0.0,
+        "raw_score": 1829685.196,
+        "timestamp": "2026-02-11T13:01:41.964318"
+      },
+      {
+        "source": "binance_futures",
+        "score": 0.0,
+        "raw_score": 82669.542,
+        "timestamp": "2026-02-11T13:01:39.561616"
+      },
+      {
+        "source": "coingecko_global",
+        "score": 0.0,
+        "raw_score": 18936.0,
+        "timestamp": "2026-02-11T13:01:39.452552"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.2098,
+        "raw_score": -2.097920814167028,
+        "timestamp": "2026-02-11T13:01:39.452552"
+      },
+      {
+        "source": "coingecko_global",
+        "score": -0.4525,
+        "raw_score": 56.78748034733755,
+        "timestamp": "2026-02-11T13:01:39.452552"
+      },
+      {
+        "source": "wikipedia_pageviews",
+        "score": 0.0,
+        "raw_score": null,
+        "timestamp": "2026-02-11T13:01:09.859338"
+      },
+      {
+        "source": "google_trends",
+        "score": -1.0,
+        "raw_score": null,
+        "timestamp": "2026-02-11T13:00:54.294897"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.05,
+        "raw_score": 5.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.06,
+        "raw_score": 6.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.62,
+        "raw_score": 62.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.0,
+        "raw_score": 0.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.05,
+        "raw_score": 5.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.19,
+        "raw_score": 19.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.05,
+        "raw_score": 5.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.05,
+        "raw_score": 5.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.19,
+        "raw_score": 19.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.05,
+        "raw_score": 5.0,
+        "timestamp": "2026-02-11T13:00:00"
+      },
+      {
+        "source": "vix",
+        "score": 0.456,
+        "raw_score": 18.16,
+        "timestamp": "2026-02-11T12:59:58.595050"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.78,
+        "raw_score": 11.0,
+        "timestamp": "2026-02-11T12:59:58.528858"
+      },
+      {
+        "source": "cnn_fear_greed",
+        "score": -0.0709,
+        "raw_score": 46.4571428571429,
+        "timestamp": "2026-02-11T12:59:58.070155"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.03,
+        "raw_score": 3.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.04,
+        "raw_score": 4.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.51,
+        "raw_score": 51.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.01,
+        "raw_score": 1.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.04,
+        "raw_score": 4.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.17,
+        "raw_score": 17.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.03,
+        "raw_score": 3.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.04,
+        "raw_score": 4.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.17,
+        "raw_score": 17.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.03,
+        "raw_score": 3.0,
+        "timestamp": "2026-02-11T12:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.04,
+        "raw_score": 4.0,
+        "timestamp": "2026-02-11T11:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.04,
+        "raw_score": 4.0,
+        "timestamp": "2026-02-11T11:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.48,
+        "raw_score": 48.0,
+        "timestamp": "2026-02-11T11:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": 0.0,
+        "raw_score": 0.0,
+        "timestamp": "2026-02-11T11:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.04,
+        "raw_score": 4.0,
+        "timestamp": "2026-02-11T11:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.15,
+        "raw_score": 15.0,
+        "timestamp": "2026-02-11T11:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.04,
+        "raw_score": 4.0,
+        "timestamp": "2026-02-11T11:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.04,
+        "raw_score": 4.0,
+        "timestamp": "2026-02-11T11:00:00"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.15,
+        "raw_score": 15.0,
+        "timestamp": "2026-02-11T11:00:00"
+      }
+    ],
+    "congress_recent": [
+      {
+        "id": 7337,
+        "member_name": "April McClain Delaney",
+        "chamber": "house",
+        "ticker": "PTC",
+        "transaction_type": "sell",
+        "transaction_date": "2026-01-30",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "PTC IncPTC:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"D\"}",
+        "created_at": "2026-02-11T14:54:29.502405"
+      },
+      {
+        "id": 7345,
+        "member_name": "April McClain Delaney",
+        "chamber": "house",
+        "ticker": "WAB",
+        "transaction_type": "sell",
+        "transaction_date": "2026-01-30",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Westinghouse Air Brake Technologies CorpWAB:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"D\"}",
+        "created_at": "2026-02-11T14:54:30.068666"
+      },
+      {
+        "id": 7291,
+        "member_name": "Kelly Morrison",
+        "chamber": "house",
+        "ticker": "",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 15000,
+        "amount_upper": 50000,
+        "description": "AALO ATOMICSN/A",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"D\"}",
+        "created_at": "2026-02-11T14:54:27.221376"
+      },
+      {
+        "id": 7300,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "AMZN",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Amazon.com IncAMZN:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:27.777952"
+      },
+      {
+        "id": 7303,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "AMGN",
+        "transaction_type": "sell",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Amgen IncAMGN:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:27.778020"
+      },
+      {
+        "id": 7305,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "T",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "AT&T IncT:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:27.778062"
+      },
+      {
+        "id": 7306,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "AVGO",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Broadcom IncAVGO:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:27.778083"
+      },
+      {
+        "id": 7312,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "IBP",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Installed Building Products IncIBP:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.366631"
+      },
+      {
+        "id": 7313,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "JPM",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "JPMorgan Chase & CoJPM:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.366654"
+      },
+      {
+        "id": 7318,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "MEDP",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Medpace Holdings IncMEDP:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.366755"
+      },
+      {
+        "id": 7319,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "MSFT",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Microsoft CorpMSFT:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.366775"
+      },
+      {
+        "id": 7322,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "PG",
+        "transaction_type": "sell",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "The Procter & Gamble CoPG:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.927902"
+      },
+      {
+        "id": 7325,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "PLD",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Prologis IncPLD:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.928011"
+      },
+      {
+        "id": 7326,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "RPM",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "RPM International IncRPM:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.928031"
+      },
+      {
+        "id": 7328,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "CRM",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "salesforce.com IncCRM:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.928072"
+      },
+      {
+        "id": 7329,
+        "member_name": "David Taylor",
+        "chamber": "house",
+        "ticker": "VRTX",
+        "transaction_type": "sell",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Vertex Pharmaceuticals IncVRTX:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:28.928092"
+      },
+      {
+        "id": 7340,
+        "member_name": "April McClain Delaney",
+        "chamber": "house",
+        "ticker": "TRMB",
+        "transaction_type": "sell",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "Trimble IncTRMB:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"D\"}",
+        "created_at": "2026-02-11T14:54:30.068529"
+      },
+      {
+        "id": 7348,
+        "member_name": "Don Beyer",
+        "chamber": "house",
+        "ticker": "",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-29",
+        "disclosure_date": "",
+        "amount_lower": 15000,
+        "amount_upper": 50000,
+        "description": "UNIVERSITY OF WASHINGTONN/A",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"D\"}",
+        "created_at": "2026-02-11T14:54:30.068726"
+      },
+      {
+        "id": 7272,
+        "member_name": "Chuck Fleischmann",
+        "chamber": "house",
+        "ticker": "TLH",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-28",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "iShares 10-20 Year Treasury Bond ETFTLH:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:25.429995"
+      },
+      {
+        "id": 7273,
+        "member_name": "Chuck Fleischmann",
+        "chamber": "house",
+        "ticker": "PICK",
+        "transaction_type": "buy",
+        "transaction_date": "2026-01-28",
+        "disclosure_date": "",
+        "amount_lower": 1000,
+        "amount_upper": 15000,
+        "description": "ISHARES MSCI GBL METLS & MNGPICK:US",
+        "asset_type": "stock",
+        "source": "capitol-trades",
+        "metadata": "{\"party\": \"R\"}",
+        "created_at": "2026-02-11T14:54:25.430022"
+      }
+    ],
+    "ensemble_heatmap": {}
+  },
+  "worldview": {
+    "theses": []
+  },
+  "instruments": [
+    {
+      "symbol": "SPY",
+      "name": "SPDR S&P 500 ETF",
+      "asset_type": "etf",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "QQQ",
+      "name": "Invesco QQQ Trust",
+      "asset_type": "etf",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "asset_type": "stock",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "asset_type": "stock",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "asset_type": "stock",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com Inc.",
+      "asset_type": "stock",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "asset_type": "stock",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms Inc.",
+      "asset_type": "stock",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla Inc.",
+      "asset_type": "stock",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "BTC-USD",
+      "name": "Bitcoin",
+      "asset_type": "crypto",
+      "exchange": "crypto",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "ETH-USD",
+      "name": "Ethereum",
+      "asset_type": "crypto",
+      "exchange": "crypto",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "FTSEMIB.MI",
+      "name": "FTSE MIB Index",
+      "asset_type": "index",
+      "exchange": "MIL",
+      "currency": "EUR",
+      "active": 1
+    },
+    {
+      "symbol": "EURUSD=X",
+      "name": "EUR/USD",
+      "asset_type": "forex",
+      "exchange": "forex",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "GC=F",
+      "name": "Gold Futures",
+      "asset_type": "commodity",
+      "exchange": "COMEX",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "CL=F",
+      "name": "Crude Oil WTI Futures",
+      "asset_type": "commodity",
+      "exchange": "NYMEX",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "^VIX",
+      "name": "CBOE Volatility Index",
+      "asset_type": "index",
+      "exchange": "CBOE",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "BTP10Y",
+      "name": "Italian 10Y Government Bond",
+      "asset_type": "bond",
+      "exchange": "MTS",
+      "currency": "EUR",
+      "active": 1
+    },
+    {
+      "symbol": "JPM",
+      "name": "JPMorgan Chase & Co.",
+      "asset_type": "stock",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "active": 1
+    },
+    {
+      "symbol": "LDO.MI",
+      "name": "Leonardo S.p.A",
+      "asset_type": "stock",
+      "exchange": "Milan",
+      "currency": "EUR",
+      "active": 1
+    },
+    {
+      "symbol": "RHM.DE",
+      "name": "Rheinmetall AG",
+      "asset_type": "stock",
+      "exchange": "Frankfurt",
+      "currency": "EUR",
+      "active": 1
+    },
+    {
+      "symbol": "BA.L",
+      "name": "BAE Systems plc",
+      "asset_type": "stock",
+      "exchange": "London",
+      "currency": "GBP",
+      "active": 1
+    },
+    {
+      "symbol": "HO.PA",
+      "name": "Thales S.A.",
+      "asset_type": "stock",
+      "exchange": "Euronext Paris",
+      "currency": "EUR",
+      "active": 1
+    },
+    {
+      "symbol": "SAAB-B.ST",
+      "name": "Saab AB",
+      "asset_type": "stock",
+      "exchange": "Stockholm",
+      "currency": "SEK",
+      "active": 1
+    }
+  ],
+  "recent_trades": [
+    {
+      "symbol": "BTC-USD",
+      "side": "buy",
+      "strategy": "gekko",
+      "entry_price": 67218.5,
+      "exit_price": null,
+      "pnl": null,
+      "pnl_pct": null,
+      "status": "open",
+      "entry_time": "2026-02-11 13:50:41",
+      "exit_time": null,
+      "leverage": 2.0
+    },
+    {
+      "symbol": "ETH-USD",
+      "side": "buy",
+      "strategy": "gekko",
+      "entry_price": 1954.85,
+      "exit_price": null,
+      "pnl": null,
+      "pnl_pct": null,
+      "status": "open",
+      "entry_time": "2026-02-11 13:50:41",
+      "exit_time": null,
+      "leverage": 2.0
+    }
+  ],
+  "pipeline_status": {
+    "last_run": "2026-02-11 04:23:51",
+    "steps_completed": 24,
+    "steps_failed": 0,
+    "elapsed_seconds": 249.5,
+    "next_run": null
+  }
+}

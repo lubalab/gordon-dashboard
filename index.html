@@ -27,7 +27,7 @@
   <footer class="footer">Powered by Gordon 💰 | Data updates every 12h | Not financial advice</footer>
   <script src="assets/charts.js"></script>
   <script>
-fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
+fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
   console.log('Dashboard data:', data);
   try {
   document.getElementById('lastUpdated').textContent='Updated: '+fmtDate(data.generated_at);

@@ -142,6 +142,13 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
         </tr>`).join('')}</tbody>
       </table></div>
     </div>
+  </div>
+
+  ${renderMarketRegime(data.market_regime)}
+  
+  <div class="grid grid-2" style="margin-top:20px">
+    ${renderTwitterSentiment(data.twitter_sentiment)}
+    ${renderSignalHeatmap(data.signal_heatmap)}
   </div>`;
 
   renderGauge('moodGauge', composite, -1, 1, 'Sentiment');
@@ -150,6 +157,159 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
     document.getElementById('content').innerHTML='<div class="loading">Error rendering dashboard: '+e.message+'</div>';
   }
 }).catch(e=>{console.error('Fetch error:',e);document.getElementById('content').innerHTML='<div class="loading">Failed to load data</div>';});
+
+/* RENDER NEW PANELS */
+function renderMarketRegime(regime) {
+  if (!regime) return '<div class="card"><div class="card-title">🎯 Market Regime</div><div style="padding:20px;color:var(--text-dim)">No regime data available</div></div>';
+  
+  const regimeColors = {
+    'TRENDING_UP': 'var(--green)',
+    'TRENDING_DOWN': 'var(--red)',
+    'MEAN_REVERTING': 'var(--blue)',
+    'TRANSITION': '#ff9800',
+    'CRISIS': 'var(--red)'
+  };
+  const bgColor = regimeColors[regime.regime] || 'var(--card)';
+  const confidence = (regime.confidence * 100).toFixed(1);
+  
+  return `<div class="card" style="margin-top:20px;background:linear-gradient(135deg, ${bgColor}22, var(--card));border-color:${bgColor}55">
+    <div class="card-title">🎯 Market Regime</div>
+    <div style="text-align:center;padding:24px 16px">
+      <div style="font-size:2.5rem;font-weight:700;color:${bgColor};margin-bottom:8px">${regime.regime.replace(/_/g, ' ')}</div>
+      <div style="font-size:1.2rem;color:var(--text-dim);margin-bottom:16px">${confidence}% Confidence</div>
+      <div style="display:inline-block;padding:8px 16px;background:${bgColor}33;border-radius:8px;margin-bottom:16px">
+        <span style="color:var(--text-dim)">Sizing Multiplier:</span> 
+        <span style="font-size:1.4rem;font-weight:600;color:${bgColor};margin-left:8px">${regime.sizing_multiplier}x</span>
+      </div>
+      ${regime.description ? `<div style="color:var(--text);margin-top:16px;font-size:0.9rem;line-height:1.6">${regime.description}</div>` : ''}
+      ${regime.indicators && Object.keys(regime.indicators).length > 0 ? `
+        <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--card-border)">
+          <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--text-dim);margin-bottom:12px">Key Indicators</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;text-align:left">
+            ${Object.entries(regime.indicators).map(([key, val]) => `
+              <div style="background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:6px">
+                <div style="font-size:0.7rem;color:var(--text-dim);text-transform:uppercase">${key.replace(/_/g, ' ')}</div>
+                <div style="font-size:1rem;font-weight:600;color:var(--text);margin-top:2px">${typeof val === 'number' ? val.toFixed(3) : val}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      ` : ''}
+    </div>
+  </div>`;
+}
+
+function renderTwitterSentiment(sentiment) {
+  if (!sentiment || !Array.isArray(sentiment)) {
+    return '<div class="card"><div class="card-title">🐦 Twitter Sentiment</div><div style="padding:20px;color:var(--text-dim)">No sentiment data available</div></div>';
+  }
+  
+  // Extract instruments array from the data structure
+  const instrumentsEntry = sentiment.find(entry => entry.key === 'instruments');
+  if (!instrumentsEntry || !instrumentsEntry.value || !Array.isArray(instrumentsEntry.value)) {
+    return '<div class="card"><div class="card-title">🐦 Twitter Sentiment</div><div style="padding:20px;color:var(--text-dim)">No sentiment data available</div></div>';
+  }
+  
+  // Convert to array and sort by absolute score
+  const items = instrumentsEntry.value.map(data => ({
+    symbol: data.instrument || '—',
+    score: data.score || 0,
+    volume: data.volume || 0,
+    bull: data.bull_count || 0,
+    bear: data.bear_count || 0,
+    fear: (data.fear_level || 0) * 100,
+    greed: (data.greed_level || 0) * 100
+  })).sort((a, b) => Math.abs(b.score) - Math.abs(a.score));
+  
+  function scoreColor(score) {
+    if (score > 0.1) return 'var(--green)';
+    if (score < -0.1) return 'var(--red)';
+    return 'var(--text-dim)';
+  }
+  
+  return `<div class="card">
+    <div class="card-title">🐦 Twitter Sentiment</div>
+    <div class="table-wrap"><table>
+      <thead><tr>
+        <th>Symbol</th>
+        <th>Score</th>
+        <th>Volume</th>
+        <th>Bull</th>
+        <th>Bear</th>
+        <th>Fear</th>
+        <th>Greed</th>
+      </tr></thead>
+      <tbody>${items.map(item => `<tr>
+        <td><strong>${item.symbol}</strong></td>
+        <td style="color:${scoreColor(item.score)};font-weight:600">${item.score >= 0 ? '+' : ''}${item.score.toFixed(2)}</td>
+        <td>${item.volume}</td>
+        <td style="color:var(--green)">${item.bull}</td>
+        <td style="color:var(--red)">${item.bear}</td>
+        <td style="color:${item.fear > 15 ? 'var(--red)' : 'var(--text)'};${item.fear > 15 ? 'font-weight:600' : ''}">${item.fear}%</td>
+        <td style="color:${item.greed > 15 ? 'var(--green)' : 'var(--text)'};${item.greed > 15 ? 'font-weight:600' : ''}">${item.greed}%</td>
+      </tr>`).join('')}</tbody>
+    </table></div>
+  </div>`;
+}
+
+function renderSignalHeatmap(heatmap) {
+  if (!heatmap || !heatmap.data || heatmap.data.length === 0) {
+    return '<div class="card"><div class="card-title">📡 Signal Heatmap (24h)</div><div style="padding:20px;color:var(--text-dim)">No signal data available</div></div>';
+  }
+  
+  // Extract all unique signal types
+  const signalTypes = new Set();
+  heatmap.data.forEach(row => {
+    Object.keys(row.signals || {}).forEach(type => signalTypes.add(type));
+  });
+  const types = Array.from(signalTypes).sort();
+  
+  // Calculate totals per signal type
+  const totals = {};
+  types.forEach(type => {
+    totals[type] = heatmap.data.reduce((sum, row) => {
+      const sig = row.signals[type];
+      return sum + (sig && sig.count ? sig.count : 0);
+    }, 0);
+  });
+  
+  function convictionColor(conviction) {
+    if (!conviction) return 'rgba(255,255,255,0.03)';
+    const intensity = Math.min(conviction, 1.0);
+    const r = Math.round(212 * intensity);
+    const g = Math.round(175 * intensity);
+    const b = Math.round(55 * intensity);
+    return `rgba(${r}, ${g}, ${b}, ${0.2 + intensity * 0.6})`;
+  }
+  
+  return `<div class="card">
+    <div class="card-title">📡 Signal Heatmap (24h)</div>
+    <div class="table-wrap"><table style="font-size:0.8rem">
+      <thead><tr>
+        <th style="position:sticky;left:0;background:var(--card);z-index:1">Symbol</th>
+        ${types.map(type => `<th style="text-align:center">${type}</th>`).join('')}
+      </tr></thead>
+      <tbody>
+        ${heatmap.data.map(row => `<tr>
+          <td style="position:sticky;left:0;background:var(--card);font-weight:600;z-index:1"><strong>${row.symbol}</strong></td>
+          ${types.map(type => {
+            const sig = row.signals[type];
+            const conviction = sig ? sig.conviction : 0;
+            const count = sig ? sig.count : 0;
+            return `<td style="text-align:center;background:${convictionColor(conviction)};padding:10px 8px">
+              ${conviction > 0 ? `<div style="font-weight:600;color:var(--text)">${conviction.toFixed(2)}</div>` : '—'}
+              ${count > 0 ? `<div style="font-size:0.7rem;color:var(--text-dim);margin-top:2px">${count}</div>` : ''}
+            </td>`;
+          }).join('')}
+        </tr>`).join('')}
+        <tr style="border-top:2px solid var(--card-border);font-weight:600">
+          <td style="position:sticky;left:0;background:var(--card);z-index:1;color:var(--gold)">TOTAL</td>
+          ${types.map(type => `<td style="text-align:center;color:var(--gold)">${totals[type]}</td>`).join('')}
+        </tr>
+      </tbody>
+    </table></div>
+  </div>`;
+}
   </script>
 
 <script>

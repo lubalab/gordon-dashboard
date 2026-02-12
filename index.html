@@ -119,12 +119,12 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
     <div class="card">
       <div class="card-title">Top Signals</div>
       <div class="table-wrap"><table>
-        <thead><tr><th>Symbol</th><th>Source</th><th>Score</th><th>Date</th></tr></thead>
+        <thead><tr><th>Symbol</th><th>Type</th><th>Conviction</th><th>Date</th></tr></thead>
         <tbody>${((data.signals&&data.signals.top_signals)||[]).slice(0,5).map(sg=>`<tr>
-          <td><strong>${sg.symbol}</strong></td>
-          <td>${sg.source||'—'}</td>
-          <td>${sg.score!=null ? sg.score.toFixed(2) : '—'}</td>
-          <td class="timestamp">${fmtDate(sg.created_at)}</td>
+          <td><strong>${sg.symbol||'—'}</strong></td>
+          <td>${sg.type||sg.source||'—'}</td>
+          <td style="color:${(sg.conviction||0)>60?'var(--green)':'var(--gold)'}">${sg.conviction!=null ? sg.conviction.toFixed(0)+'%' : sg.score!=null ? sg.score.toFixed(2) : '—'}</td>
+          <td class="timestamp">${fmtDate(sg.timestamp||sg.created_at)}</td>
         </tr>`).join('')}</tbody>
       </table></div>
     </div>
@@ -170,7 +170,7 @@ function renderMarketRegime(regime) {
     'CRISIS': 'var(--red)'
   };
   const bgColor = regimeColors[regime.regime] || 'var(--card)';
-  const confidence = (regime.confidence * 100).toFixed(1);
+  const confidence = regime.confidence > 1 ? regime.confidence.toFixed(1) : (regime.confidence * 100).toFixed(1);
   
   return `<div class="card" style="margin-top:20px;background:linear-gradient(135deg, ${bgColor}22, var(--card));border-color:${bgColor}55">
     <div class="card-title">🎯 Market Regime</div>
@@ -189,7 +189,8 @@ function renderMarketRegime(regime) {
             ${Object.entries(regime.indicators).map(([key, val]) => `
               <div style="background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:6px">
                 <div style="font-size:0.7rem;color:var(--text-dim);text-transform:uppercase">${key.replace(/_/g, ' ')}</div>
-                <div style="font-size:1rem;font-weight:600;color:var(--text);margin-top:2px">${typeof val === 'number' ? val.toFixed(3) : val}</div>
+                <div style="font-size:1rem;font-weight:600;color:var(--text);margin-top:2px">${typeof val === 'object' && val !== null ? (val.score != null ? val.score.toFixed(2) : JSON.stringify(val)) : typeof val === 'number' ? val.toFixed(3) : val}</div>
+                ${typeof val === 'object' && val && val.detail ? `<div style="font-size:0.65rem;color:var(--text-dim);margin-top:2px">${val.detail}</div>` : ''}
               </div>
             `).join('')}
           </div>

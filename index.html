@@ -48,7 +48,7 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
     <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:12px">
       <div class="card metric-card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px">
         <div class="card-title">Market Mood</div>
-        <canvas id="moodGauge" width="120" height="60" style="max-width:120px"></canvas>
+        <canvas id="moodGauge" width="80" height="80" style="max-width:80px"></canvas>
         <div style="color:${sentimentColor(composite)};font-size:1.2rem;font-weight:700;margin-top:-6px">${composite.toFixed(2)}</div>
         <div style="font-size:0.7rem;color:var(--text-dim)">${composite<-0.3?'Fear':composite>0.3?'Greed':'Neutral'}</div>
       </div>

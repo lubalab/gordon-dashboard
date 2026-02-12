@@ -38,7 +38,7 @@ function renderGauge(elementId, value, min, max, label) {
       }]
     },
     options: {
-      responsive: true, maintainAspectRatio: true, cutout: '75%',
+      responsive: true, maintainAspectRatio: true, aspectRatio: 2, cutout: '75%',
       plugins: { legend: { display: false }, tooltip: { enabled: false } },
     }
   });

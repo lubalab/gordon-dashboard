@@ -259,8 +259,10 @@ function renderSignalHeatmap(heatmap) {
     return '<div class="card"><div class="card-title">📡 Signal Heatmap (24h)</div><div style="padding:20px;color:var(--text-dim)">No signal data available</div></div>';
   }
   
-  // Use provided signal_types or extract from grid
-  const types = heatmap.signal_types || Array.from(new Set(grid.flatMap(row => Object.keys(row.signals || {})))).sort();
+  // Use top 3 signal types by count to keep table compact
+  const allTypes = heatmap.signal_types || Array.from(new Set(grid.flatMap(row => Object.keys(row.signals || {})))).sort();
+  const counts = heatmap.signal_counts || {};
+  const types = allTypes.filter(t => counts[t]).sort((a,b) => (counts[b]||0) - (counts[a]||0)).slice(0, 3);
   
   // Use provided signal_counts or calculate
   const totals = heatmap.signal_counts || {};

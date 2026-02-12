@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T07:05:16.461327+00:00",
+  "generated_at": "2026-02-12T11:30:10.860608+00:00",
   "next_update": "2026-02-12T21:00:00+00:00",
   "market_mood": {
     "composite": -0.3632,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1971.2239,
-      "pnl_dollar": 9.61,
-      "pnl_percent": 3.2
+      "current_price": 1995.334,
+      "pnl_dollar": 17.07,
+      "pnl_percent": 5.69
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67033.3281,
-      "pnl_dollar": -4.54,
-      "pnl_percent": -0.91
+      "current_price": 68050.25,
+      "pnl_dollar": 10.56,
+      "pnl_percent": 2.11
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 805.07,
-    "total_pnl": 5.07,
-    "total_pnl_pct": 0.63
+    "total_current_value": 827.63,
+    "total_pnl": 27.63,
+    "total_pnl_pct": 3.45
   },
   "strategies": {
     "gekko": {
@@ -158,6 +158,21 @@
         "d": "2026-02-12",
         "total_value": 0.0,
         "total_pnl": 0.0
+      },
+      {
+        "d": "2026-02-12",
+        "total_value": 803.79,
+        "total_pnl": 3.79
+      },
+      {
+        "d": "2026-02-12",
+        "total_value": 823.59,
+        "total_pnl": 23.59
+      },
+      {
+        "d": "2026-02-12",
+        "total_value": 825.77,
+        "total_pnl": 25.77
       }
     ]
   },
@@ -1635,6 +1650,20 @@
         "timestamp": "2026-02-11T23:33:33.988289"
       },
       {
+        "symbol": "BTC-USD",
+        "type": "extreme_fear",
+        "conviction": 77.0,
+        "thesis": "Crypto Fear & Greed at extreme fear (-0.90). Historical backtest: 85% win rate at 60d, 100% at 90d for F&G\u226415.",
+        "timestamp": "2026-02-12T12:00:57.225765"
+      },
+      {
+        "symbol": "ETH-USD",
+        "type": "extreme_fear",
+        "conviction": 77.0,
+        "thesis": "Crypto Fear & Greed at extreme fear (-0.90). Historical backtest: 85% win rate at 60d, 100% at 90d for F&G\u226415.",
+        "timestamp": "2026-02-12T12:00:57.250908"
+      },
+      {
         "symbol": "GOOGL",
         "type": "hedge_fund_flow",
         "conviction": 75.0,
@@ -1703,20 +1732,6 @@
         "conviction": 75.0,
         "thesis": "Berkshire Hathaway opened NEW position in AAPL (34,000 shares)",
         "timestamp": "2026-02-11T23:33:33.368295"
-      },
-      {
-        "symbol": "AAPL",
-        "type": "hedge_fund_flow",
-        "conviction": 75.0,
-        "thesis": "Berkshire Hathaway opened NEW position in AAPL (34,724,000 shares)",
-        "timestamp": "2026-02-11T23:33:33.396204"
-      },
-      {
-        "symbol": "AAPL",
-        "type": "hedge_fund_flow",
-        "conviction": 75.0,
-        "thesis": "Berkshire Hathaway opened NEW position in AAPL (2,724,000 shares)",
-        "timestamp": "2026-02-11T23:33:33.428084"
       }
     ],
     "sentiment_history": [
@@ -2386,57 +2401,68 @@
       }
     ],
     "ensemble_heatmap": {
-      "TSLA": {
-        "stocktwits_greed": 48.0,
-        "hedge_fund_flow": 90.0,
-        "ensemble": 66.0,
-        "options_unusual": 70.0
-      },
-      "NVDA": {
-        "stocktwits_greed": 37.0,
-        "hedge_fund_flow": 75.0,
-        "ensemble": 60.0,
-        "options_unusual": 70.0
-      },
-      "MSFT": {
-        "stocktwits_greed": 48.0,
-        "hedge_fund_flow": 75.0,
-        "ensemble": 60.0,
-        "options_unusual": 70.0
-      },
-      "META": {
-        "stocktwits_greed": 45.0,
-        "hedge_fund_flow": 90.0,
+      "QQQ": {
+        "twitter_fear": 50.0,
+        "twitter_macro_fear": 48.0,
         "ensemble": 45.0,
-        "options_unusual": 70.0
-      },
-      "GOOGL": {
-        "stocktwits_greed": 48.0,
-        "hedge_fund_flow": 75.0,
-        "ensemble": 66.0,
-        "options_unusual": 70.0
+        "options_unusual": 70.0,
+        "extreme_greed": 52.0
       },
       "ETH-USD": {
+        "twitter_greed": 59.0,
+        "extreme_fear": 77.0,
         "stocktwits_greed": 45.0,
-        "ensemble": 45.0,
-        "extreme_fear": 73.0
+        "ensemble": 45.0
+      },
+      "AAPL": {
+        "options_unusual": 70.0,
+        "hedge_fund_flow": 75.0,
+        "ensemble": 66.0
+      },
+      "MSFT": {
+        "options_unusual": 70.0,
+        "stocktwits_greed": 48.0,
+        "hedge_fund_flow": 75.0,
+        "ensemble": 60.0
+      },
+      "GOOGL": {
+        "options_unusual": 70.0,
+        "stocktwits_greed": 48.0,
+        "hedge_fund_flow": 75.0,
+        "ensemble": 66.0
+      },
+      "NVDA": {
+        "options_unusual": 70.0,
+        "stocktwits_greed": 37.0,
+        "hedge_fund_flow": 75.0,
+        "ensemble": 60.0
+      },
+      "META": {
+        "options_unusual": 70.0,
+        "stocktwits_greed": 45.0,
+        "hedge_fund_flow": 90.0,
+        "ensemble": 45.0
+      },
+      "TSLA": {
+        "options_unusual": 70.0,
+        "stocktwits_greed": 48.0,
+        "hedge_fund_flow": 90.0,
+        "ensemble": 66.0
+      },
+      "SPY": {
+        "options_unusual": 70.0,
+        "twitter_fear": 50.0,
+        "twitter_macro_fear": 48.0,
+        "ensemble": 66.0,
+        "extreme_greed": 52.0
+      },
+      "BTC-USD": {
+        "extreme_fear": 77.0,
+        "ensemble": 45.0
       },
       "^VIX": {
         "twitter_fear": 52.0,
         "ensemble": 45.0
-      },
-      "SPY": {
-        "twitter_fear": 50.0,
-        "twitter_macro_fear": 48.0,
-        "ensemble": 66.0,
-        "options_unusual": 70.0,
-        "extreme_greed": 52.0
-      },
-      "QQQ": {
-        "twitter_macro_fear": 48.0,
-        "ensemble": 45.0,
-        "options_unusual": 70.0,
-        "extreme_greed": 52.0
       },
       "GC=F": {
         "twitter_greed": 51.0,
@@ -2445,11 +2471,6 @@
       "JPM": {
         "hedge_fund_flow": 90.0,
         "ensemble": 66.0
-      },
-      "AAPL": {
-        "hedge_fund_flow": 75.0,
-        "ensemble": 66.0,
-        "options_unusual": 70.0
       },
       "AMZN": {
         "hedge_fund_flow": 75.0,
@@ -2479,10 +2500,6 @@
       },
       "BTP10Y": {
         "ensemble": 45.0
-      },
-      "BTC-USD": {
-        "ensemble": 45.0,
-        "extreme_fear": 73.0
       },
       "BA.L": {
         "ensemble": 45.0
@@ -3086,7 +3103,7 @@
       },
       "description": "Choppy/range-bound \u2014 ideal for contrarian"
     },
-    "timestamp": "2026-02-12T08:00:30.208374"
+    "timestamp": "2026-02-12T12:01:23.809716"
   },
   "signal_heatmap": {
     "grid": [
@@ -3136,7 +3153,7 @@
         "instrument": "BTC-USD",
         "signals": {
           "ensemble": 45.0,
-          "extreme_fear": 73.0,
+          "extreme_fear": 77.0,
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
@@ -3178,13 +3195,13 @@
         "instrument": "ETH-USD",
         "signals": {
           "ensemble": 45.0,
-          "extreme_fear": 73.0,
+          "extreme_fear": 77.0,
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
           "stocktwits_greed": 45.0,
           "twitter_fear": 0,
-          "twitter_greed": 0,
+          "twitter_greed": 59.0,
           "twitter_macro_fear": 0
         }
       },
@@ -3337,7 +3354,7 @@
           "hedge_fund_flow": 0,
           "options_unusual": 70.0,
           "stocktwits_greed": 0,
-          "twitter_fear": 0,
+          "twitter_fear": 50.0,
           "twitter_greed": 0,
           "twitter_macro_fear": 48.0
         }
@@ -3450,16 +3467,16 @@
       "^VIX"
     ],
     "signal_counts": {
+      "twitter_fear": 3,
+      "twitter_greed": 2,
+      "options_unusual": 16,
+      "extreme_fear": 4,
       "stocktwits_greed": 6,
-      "twitter_fear": 2,
       "twitter_macro_fear": 2,
-      "twitter_greed": 1,
       "hedge_fund_flow": 30,
       "ensemble": 23,
-      "options_unusual": 9,
-      "extreme_greed": 2,
-      "extreme_fear": 2
+      "extreme_greed": 2
     },
-    "total_signals": 77
+    "total_signals": 88
   }
 }

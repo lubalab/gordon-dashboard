@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-02-12T03:21:56.607730+00:00",
+  "generated_at": "2026-02-12T03:48:24.844358+00:00",
   "next_update": "2026-02-12T07:00:00+00:00",
   "market_mood": {
-    "composite": -0.4603,
+    "composite": -0.3637,
     "cnn_fear_greed": {
       "value": 48.9714285714286,
       "label": "Neutral"
@@ -16,7 +16,7 @@
       "label": "Normal"
     },
     "google_trends": {
-      "composite": null,
+      "composite": -0.1706,
       "fear_total": null,
       "greed_total": null
     }
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1961.4573,
-      "pnl_dollar": 6.59,
-      "pnl_percent": 2.2
+      "current_price": 1964.5004,
+      "pnl_dollar": 7.53,
+      "pnl_percent": 2.51
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67385.8281,
-      "pnl_dollar": 0.7,
-      "pnl_percent": 0.14
+      "current_price": 67426.125,
+      "pnl_dollar": 1.29,
+      "pnl_percent": 0.26
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 807.29,
-    "total_pnl": 7.29,
-    "total_pnl_pct": 0.91
+    "total_current_value": 808.83,
+    "total_pnl": 8.82,
+    "total_pnl_pct": 1.1
   },
   "strategies": {
     "gekko": {
@@ -1595,13 +1595,6 @@
         "timestamp": "2026-02-11T23:33:33.281196"
       },
       {
-        "symbol": null,
-        "type": "hedge_fund_flow",
-        "conviction": 90.0,
-        "thesis": "Hedge fund cluster: Bridgewater Associates, Renaissance Technologies, Citadel, Citadel, Citadel, Citadel, Citadel, Citadel, Two Sigma buying CSCO",
-        "timestamp": "2026-02-11T23:33:33.701183"
-      },
-      {
         "symbol": "META",
         "type": "hedge_fund_flow",
         "conviction": 90.0,
@@ -1621,13 +1614,6 @@
         "conviction": 90.0,
         "thesis": "Hedge fund cluster: Bridgewater Associates, Renaissance Technologies, Citadel, Citadel, Citadel, Citadel, Citadel, Citadel, Two Sigma, Two Sigma, Two Sigma, Appaloosa Management, Soros Fund Management, Tiger Global buying NVDA",
         "timestamp": "2026-02-11T23:33:33.852883"
-      },
-      {
-        "symbol": null,
-        "type": "hedge_fund_flow",
-        "conviction": 90.0,
-        "thesis": "Hedge fund cluster: Renaissance Technologies, Citadel, Citadel, Citadel, Citadel, Citadel, Citadel, Pershing Square, Appaloosa Management buying GOOG",
-        "timestamp": "2026-02-11T23:33:33.915504"
       },
       {
         "symbol": "JPM",
@@ -1712,6 +1698,20 @@
         "conviction": 75.0,
         "thesis": "Berkshire Hathaway opened NEW position in AAPL (34,000 shares)",
         "timestamp": "2026-02-11T23:33:33.368295"
+      },
+      {
+        "symbol": "AAPL",
+        "type": "hedge_fund_flow",
+        "conviction": 75.0,
+        "thesis": "Berkshire Hathaway opened NEW position in AAPL (34,724,000 shares)",
+        "timestamp": "2026-02-11T23:33:33.396204"
+      },
+      {
+        "symbol": "AAPL",
+        "type": "hedge_fund_flow",
+        "conviction": 75.0,
+        "thesis": "Berkshire Hathaway opened NEW position in AAPL (2,724,000 shares)",
+        "timestamp": "2026-02-11T23:33:33.428084"
       }
     ],
     "sentiment_history": [
@@ -2459,7 +2459,69 @@
     }
   },
   "worldview": {
-    "theses": []
+    "theses": [
+      {
+        "title": "AI Destroys Traditional Software Value",
+        "added": "2026-02-11",
+        "horizon": "1-3 years",
+        "conviction": "high",
+        "status": "active",
+        "thesis": "AI coding tools fundamentally destroy the moat of traditional software companies. Code is becoming commoditized. SaaS companies with no defensible data moat are walking dead.",
+        "implications": "BEARISH on pure SaaS (CRM, ADBE, TEAM). BULLISH on AI infrastructure (NVDA, cloud). BULLISH on companies with unique DATA moats.",
+        "invalidation": "AI coding tools plateau; enterprise adoption slower than expected; regulatory barriers.",
+        "tracked_tickers": [
+          "NVDA",
+          "CRM",
+          "ADBE"
+        ]
+      },
+      {
+        "title": "The Age of Personal AI Agents",
+        "added": "2026-02-11",
+        "horizon": "2-5 years",
+        "conviction": "high",
+        "status": "active",
+        "thesis": "Everyone will have personal AI assistants. Agent-to-agent commerce reshapes infrastructure needs, kills some businesses, creates new ones.",
+        "implications": "BULLISH on compute (NVDA, AMD, hyperscalers). BEARISH on human-labor-intensive service companies.",
+        "invalidation": "Public backlash; regulation limiting autonomous agents; trust/safety failures.",
+        "tracked_tickers": [
+          "NVDA",
+          "AMD"
+        ]
+      },
+      {
+        "title": "US Political Instability & Decline",
+        "added": "2026-02-11",
+        "horizon": "1-3 years",
+        "conviction": "medium-high",
+        "status": "active",
+        "thesis": "Trump cognitive decline creating extreme instability. US heading toward severe internal conflict. Constant conflict with allies eroding trust.",
+        "implications": "BEARISH on USD long-term. BULLISH on gold and safe havens. BULLISH on defense short-term. VIX elevated.",
+        "invalidation": "Smooth political transition; bipartisan stabilization.",
+        "tracked_tickers": [
+          "GC=F",
+          "^VIX",
+          "EURUSD=X"
+        ]
+      },
+      {
+        "title": "Europe Decouples from US, China Dominates",
+        "added": "2026-02-11",
+        "horizon": "2-5 years",
+        "conviction": "medium",
+        "status": "active",
+        "thesis": "Europe distances from US due to broken trust. China consolidated center of power. Europe builds independent defense, tech sovereignty.",
+        "implications": "BULLISH on EU defense (RHM.DE, BA.L, LDO.MI, HO.PA, SAAB-B.ST). BEARISH on US companies dependent on allied cooperation.",
+        "invalidation": "US policy reversal; China economic collapse; EU fragmentation.",
+        "tracked_tickers": [
+          "LDO.MI",
+          "RHM.DE",
+          "BA.L",
+          "HO.PA",
+          "SAAB-B.ST"
+        ]
+      }
+    ]
   },
   "instruments": [
     {
@@ -2887,7 +2949,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 90.0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -2902,7 +2963,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 90.0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -2917,7 +2977,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -2932,7 +2991,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -2947,7 +3005,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -2962,7 +3019,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -2977,7 +3033,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 45.0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -2992,7 +3047,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3007,7 +3061,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3022,7 +3075,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 51.0,
@@ -3037,7 +3089,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 90.0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 48.0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3052,7 +3103,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3067,7 +3117,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 90.0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3082,7 +3131,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3097,7 +3145,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 90.0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 45.0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3112,7 +3159,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 90.0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 48.0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3127,7 +3173,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 90.0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 37.0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3142,7 +3187,6 @@
           "extreme_greed": 52.0,
           "hedge_fund_flow": 0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3157,7 +3201,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3172,7 +3215,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
@@ -3187,7 +3229,6 @@
           "extreme_greed": 52.0,
           "hedge_fund_flow": 0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 50.0,
           "twitter_greed": 0,
@@ -3202,23 +3243,7 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 90.0,
           "options_unusual": 70.0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 48.0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
-        }
-      },
-      {
-        "instrument": "UNKNOWN",
-        "signals": {
-          "ensemble": 0,
-          "extreme_fear": 0,
-          "extreme_greed": 0,
-          "hedge_fund_flow": 90.0,
-          "options_unusual": 0,
-          "prediction_market_shift": 0.3,
-          "stocktwits_greed": 0,
           "twitter_fear": 0,
           "twitter_greed": 0,
           "twitter_macro_fear": 0
@@ -3232,7 +3257,6 @@
           "extreme_greed": 0,
           "hedge_fund_flow": 0,
           "options_unusual": 0,
-          "prediction_market_shift": 0,
           "stocktwits_greed": 0,
           "twitter_fear": 52.0,
           "twitter_greed": 0,
@@ -3246,7 +3270,6 @@
       "extreme_greed",
       "hedge_fund_flow",
       "options_unusual",
-      "prediction_market_shift",
       "stocktwits_greed",
       "twitter_fear",
       "twitter_greed",
@@ -3275,21 +3298,19 @@
       "SAAB-B.ST",
       "SPY",
       "TSLA",
-      "UNKNOWN",
       "^VIX"
     ],
     "signal_counts": {
       "stocktwits_greed": 6,
       "twitter_fear": 2,
-      "prediction_market_shift": 1,
       "twitter_macro_fear": 2,
       "twitter_greed": 1,
-      "hedge_fund_flow": 32,
+      "hedge_fund_flow": 30,
       "ensemble": 23,
       "options_unusual": 9,
       "extreme_greed": 2,
       "extreme_fear": 2
     },
-    "total_signals": 80
+    "total_signals": 77
   }
 }

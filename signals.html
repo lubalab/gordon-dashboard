@@ -61,9 +61,9 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
         <thead><tr><th>Member</th><th>Symbol</th><th>Type</th><th>Amount</th><th>Date</th></tr></thead>
         <tbody>${congress.map(t=>`<tr>
           <td><strong>${t.member_name||t.member||'—'}</strong></td>
-          <td>${t.symbol||'—'}</td>
+          <td>${t.ticker||t.symbol||'—'}</td>
           <td>${t.transaction_type||'—'}</td>
-          <td>${t.amount||'—'}</td>
+          <td>${t.amount_lower&&t.amount_upper ? '$'+t.amount_lower.toLocaleString()+' - $'+t.amount_upper.toLocaleString() : t.amount||'—'}</td>
           <td class="timestamp">${t.transaction_date||'—'}</td>
         </tr>`).join('')}</tbody>
       </table></div>` : '<p style="color:var(--text-dim)">No recent congress trades</p>'}

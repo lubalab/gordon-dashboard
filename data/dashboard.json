@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T03:16:03.294984+00:00",
+  "generated_at": "2026-02-12T03:21:56.607730+00:00",
   "next_update": "2026-02-12T07:00:00+00:00",
   "market_mood": {
     "composite": -0.4603,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1961.9899,
-      "pnl_dollar": 6.76,
-      "pnl_percent": 2.25
+      "current_price": 1961.4573,
+      "pnl_dollar": 6.59,
+      "pnl_percent": 2.2
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67442.6172,
-      "pnl_dollar": 1.54,
-      "pnl_percent": 0.31
+      "current_price": 67385.8281,
+      "pnl_dollar": 0.7,
+      "pnl_percent": 0.14
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 808.3,
-    "total_pnl": 8.3,
-    "total_pnl_pct": 1.04
+    "total_current_value": 807.29,
+    "total_pnl": 7.29,
+    "total_pnl_pct": 0.91
   },
   "strategies": {
     "gekko": {
@@ -1716,604 +1716,88 @@
     ],
     "sentiment_history": [
       {
-        "source": "binance_futures",
-        "score": 0.0,
-        "raw_score": 1765257.697,
-        "timestamp": "2026-02-12T04:13:05.828302"
-      },
-      {
-        "source": "binance_futures",
-        "score": 0.0,
-        "raw_score": 80996.559,
-        "timestamp": "2026-02-12T04:13:02.972286"
-      },
-      {
-        "source": "coingecko_global",
-        "score": 0.0,
-        "raw_score": 18939.0,
-        "timestamp": "2026-02-12T04:13:02.215146"
-      },
-      {
-        "source": "coingecko_global",
-        "score": -0.1085,
-        "raw_score": -1.0850907159448762,
-        "timestamp": "2026-02-12T04:13:02.215146"
-      },
-      {
-        "source": "coingecko_global",
-        "score": -0.4504,
-        "raw_score": 56.755441455311406,
-        "timestamp": "2026-02-12T04:13:02.215146"
-      },
-      {
-        "source": "vix",
-        "score": 0.49,
-        "raw_score": 17.649999618530273,
-        "timestamp": "2026-02-12T04:10:33.659228"
+        "source": "cnn_fear_greed",
+        "score": -0.0206,
+        "raw_score": 48.97142857142861,
+        "timestamp": "2026-02-12"
       },
       {
         "source": "crypto_fear_greed",
         "score": -0.9,
         "raw_score": 5.0,
-        "timestamp": "2026-02-12T04:10:33.610721"
-      },
-      {
-        "source": "cnn_fear_greed",
-        "score": -0.0206,
-        "raw_score": 48.9714285714286,
-        "timestamp": "2026-02-12T04:10:33.153026"
-      },
-      {
-        "source": "binance_futures",
-        "score": 0.0,
-        "raw_score": 1765311.564,
-        "timestamp": "2026-02-12T04:04:00.652733"
-      },
-      {
-        "source": "binance_futures",
-        "score": 0.0,
-        "raw_score": 80980.528,
-        "timestamp": "2026-02-12T04:03:58.493780"
-      },
-      {
-        "source": "coingecko_global",
-        "score": 0.0,
-        "raw_score": 18939.0,
-        "timestamp": "2026-02-12T04:03:58.342947"
-      },
-      {
-        "source": "coingecko_global",
-        "score": -0.1175,
-        "raw_score": -1.1751078697254993,
-        "timestamp": "2026-02-12T04:03:58.342947"
-      },
-      {
-        "source": "coingecko_global",
-        "score": -0.4492,
-        "raw_score": 56.7385445783501,
-        "timestamp": "2026-02-12T04:03:58.342947"
+        "timestamp": "2026-02-12"
       },
       {
         "source": "vix",
         "score": 0.49,
         "raw_score": 17.649999618530273,
-        "timestamp": "2026-02-12T03:59:40.907804"
-      },
-      {
-        "source": "crypto_fear_greed",
-        "score": -0.9,
-        "raw_score": 5.0,
-        "timestamp": "2026-02-12T03:59:40.824381"
+        "timestamp": "2026-02-12"
       },
       {
         "source": "cnn_fear_greed",
-        "score": -0.0206,
-        "raw_score": 48.9714285714286,
-        "timestamp": "2026-02-12T03:59:40.375893"
+        "score": -0.05560769230769231,
+        "raw_score": 47.21978021978027,
+        "timestamp": "2026-02-11"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.78,
+        "raw_score": 11.0,
+        "timestamp": "2026-02-11"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.17060805970149254,
+        "raw_score": 24.515151515151516,
+        "timestamp": "2026-02-11"
       },
       {
         "source": "vix",
-        "score": 0.49,
-        "raw_score": 17.649999618530273,
-        "timestamp": "2026-02-12T03:55:37.875982"
+        "score": 0.4920692307692308,
+        "raw_score": 17.619231384615382,
+        "timestamp": "2026-02-11"
       },
       {
-        "source": "crypto_fear_greed",
-        "score": -0.9,
-        "raw_score": 5.0,
-        "timestamp": "2026-02-12T03:55:37.831226"
+        "source": "google_trends",
+        "score": -0.12842342342342344,
+        "raw_score": 21.88963963963964,
+        "timestamp": "2026-02-10"
       },
       {
-        "source": "cnn_fear_greed",
-        "score": -0.0206,
-        "raw_score": 48.9714285714286,
-        "timestamp": "2026-02-12T03:55:37.392622"
+        "source": "google_trends",
+        "score": -0.121496062992126,
+        "raw_score": 20.910011248593925,
+        "timestamp": "2026-02-09"
       },
       {
-        "source": "binance_futures",
-        "score": -1.0,
-        "raw_score": 2.4294,
-        "timestamp": "2026-02-12T01:00:00"
+        "source": "google_trends",
+        "score": -0.09092066601371204,
+        "raw_score": 17.448579823702254,
+        "timestamp": "2026-02-08"
       },
       {
-        "source": "binance_futures",
-        "score": -0.8827,
-        "raw_score": 1.8827,
-        "timestamp": "2026-02-12T01:00:00"
+        "source": "google_trends",
+        "score": -0.09063849765258217,
+        "raw_score": 16.385915492957746,
+        "timestamp": "2026-02-07"
       },
       {
-        "source": "binance_futures",
-        "score": -1.0,
-        "raw_score": 2.4294,
-        "timestamp": "2026-02-12T01:00:00"
+        "source": "google_trends",
+        "score": -0.1150173611111111,
+        "raw_score": 22.26909722222222,
+        "timestamp": "2026-02-06"
       },
       {
-        "source": "binance_futures",
-        "score": -0.8827,
-        "raw_score": 1.8827,
-        "timestamp": "2026-02-12T01:00:00"
+        "source": "google_trends",
+        "score": -0.13668402777777777,
+        "raw_score": 24.760416666666668,
+        "timestamp": "2026-02-05"
       },
       {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 03:10:26"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 03:10:25"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.09999999999999998,
-        "raw_score": -0.09999999999999998,
-        "timestamp": "2026-02-12 03:10:25"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.10000000000000003,
-        "raw_score": 0.10000000000000003,
-        "timestamp": "2026-02-12 03:10:24"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.3,
-        "raw_score": -0.3,
-        "timestamp": "2026-02-12 03:10:24"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.3,
-        "raw_score": 0.3,
-        "timestamp": "2026-02-12 03:10:23"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 03:10:23"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 03:10:22"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.30000000000000004,
-        "raw_score": 0.30000000000000004,
-        "timestamp": "2026-02-12 03:10:21"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 03:10:21"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 03:10:20"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.2,
-        "raw_score": 0.2,
-        "timestamp": "2026-02-12 03:10:20"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.1,
-        "raw_score": -0.1,
-        "timestamp": "2026-02-12 03:10:19"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.19999999999999998,
-        "raw_score": 0.19999999999999998,
-        "timestamp": "2026-02-12 03:10:19"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 03:10:18"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 03:10:17"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 03:10:17"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.10000000000000003,
-        "raw_score": 0.10000000000000003,
-        "timestamp": "2026-02-12 03:10:16"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 03:10:16"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.3,
-        "raw_score": 0.3,
-        "timestamp": "2026-02-12 03:10:15"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 03:10:15"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 03:10:14"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 02:59:38"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:59:37"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.09999999999999998,
-        "raw_score": -0.09999999999999998,
-        "timestamp": "2026-02-12 02:59:37"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.10000000000000003,
-        "raw_score": 0.10000000000000003,
-        "timestamp": "2026-02-12 02:59:36"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.3,
-        "raw_score": -0.3,
-        "timestamp": "2026-02-12 02:59:35"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.3,
-        "raw_score": 0.3,
-        "timestamp": "2026-02-12 02:59:35"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:59:34"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:59:34"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.30000000000000004,
-        "raw_score": 0.30000000000000004,
-        "timestamp": "2026-02-12 02:59:33"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:59:33"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:59:32"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.2,
-        "raw_score": 0.2,
-        "timestamp": "2026-02-12 02:59:31"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.1,
-        "raw_score": -0.1,
-        "timestamp": "2026-02-12 02:59:31"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.19999999999999998,
-        "raw_score": 0.19999999999999998,
-        "timestamp": "2026-02-12 02:59:30"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 02:59:30"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:59:29"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 02:59:29"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.10000000000000003,
-        "raw_score": 0.10000000000000003,
-        "timestamp": "2026-02-12 02:59:28"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 02:59:28"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.3,
-        "raw_score": 0.3,
-        "timestamp": "2026-02-12 02:59:27"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.19999999999999998,
-        "raw_score": -0.19999999999999998,
-        "timestamp": "2026-02-12 02:59:26"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:59:26"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:30"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:55:30"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:55:29"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:29"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:28"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:28"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:27"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:55:26"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:55:26"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.1,
-        "raw_score": -0.1,
-        "timestamp": "2026-02-12 02:55:25"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:55:25"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:55:24"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.1,
-        "raw_score": -0.1,
-        "timestamp": "2026-02-12 02:55:24"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:23"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:23"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:22"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:22"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:21"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:21"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:20"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:55:19"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:55:19"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:45:33"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:45:32"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:45:31"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:45:31"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:45:30"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:45:30"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:45:29"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:45:29"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.1,
-        "raw_score": 0.1,
-        "timestamp": "2026-02-12 02:45:28"
-      },
-      {
-        "source": "technical_analysis",
-        "score": -0.1,
-        "raw_score": -0.1,
-        "timestamp": "2026-02-12 02:45:28"
-      },
-      {
-        "source": "technical_analysis",
-        "score": 0.0,
-        "raw_score": 0.0,
-        "timestamp": "2026-02-12 02:45:27"
+        "source": "google_trends",
+        "score": -0.13247474747474747,
+        "raw_score": 21.184343434343436,
+        "timestamp": "2026-02-04"
       }
     ],
     "sentiment_history_chart": [
@@ -3218,10 +2702,10 @@
     }
   ],
   "pipeline_status": {
-    "last_run": "2026-02-11 20:38:40",
-    "steps_completed": 23,
+    "last_run": "2026-02-12 04:10:05",
+    "steps_completed": 36,
     "steps_failed": 0,
-    "elapsed_seconds": 194.8,
+    "elapsed_seconds": 360.6,
     "next_run": null
   },
   "twitter_sentiment": {

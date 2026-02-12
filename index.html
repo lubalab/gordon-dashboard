@@ -48,8 +48,8 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
     <div class="card" style="display:flex;flex-direction:column;justify-content:center">
       <div class="card-title">Market Mood</div>
       <div class="gauge-container" style="flex:1;display:flex;flex-direction:column;justify-content:center">
-        <canvas id="moodGauge" height="120"></canvas>
-        <div class="gauge-value" style="color:${sentimentColor(composite)};font-size:1.8rem">${composite.toFixed(2)}</div>
+        <canvas id="moodGauge" height="90"></canvas>
+        <div class="gauge-value" style="color:${sentimentColor(composite)};font-size:1.5rem">${composite.toFixed(2)}</div>
         <div class="gauge-label">${composite<-0.3?'Fear':composite>0.3?'Greed':'Neutral'} — Composite Sentiment</div>
       </div>
     </div>

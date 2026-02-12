@@ -185,18 +185,18 @@ tr:hover td { background: rgba(255,255,255,0.02); }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 8px 12px;
 }
-.gauge-container canvas { max-width: 280px; }
+.gauge-container canvas { max-width: 200px; }
 .gauge-value {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-top: -20px;
+  margin-top: -14px;
 }
 .gauge-label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--text-dim);
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 /* SIGNAL ARROW */
@@ -305,8 +305,8 @@ th.sorted-desc::after { content: ' ↓'; color: var(--gold); }
   .nav { padding: 12px 16px; }
   .nav-links a { padding: 6px 10px; font-size: 0.8rem; }
   .card-value { font-size: 1.5rem; }
-  .gauge-value { font-size: 2rem; }
-  .gauge-container canvas { max-width: 200px; }
+  .gauge-value { font-size: 1.4rem; }
+  .gauge-container canvas { max-width: 160px; }
   /* Force inline grids to stack on mobile */
   [style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
   /* Tables: allow wrapping + scroll */

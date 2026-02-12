@@ -44,14 +44,12 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
   const ps = data.pipeline_status || {};
 
   c.innerHTML=`
-  <div class="grid grid-overview" style="gap:20px;margin-bottom:20px;align-items:stretch">
-    <div class="card" style="display:flex;flex-direction:column;justify-content:center">
-      <div class="card-title">Market Mood</div>
-      <div class="gauge-container" style="flex:1;display:flex;flex-direction:column;justify-content:center">
-        <canvas id="moodGauge" height="90"></canvas>
-        <div class="gauge-value" style="color:${sentimentColor(composite)};font-size:1.5rem">${composite.toFixed(2)}</div>
-        <div class="gauge-label">${composite<-0.3?'Fear':composite>0.3?'Greed':'Neutral'} — Composite Sentiment</div>
-      </div>
+  <div class="grid grid-overview" style="gap:20px;margin-bottom:20px;align-items:start">
+    <div class="card" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px">
+      <div class="card-title" style="align-self:flex-start">Market Mood</div>
+      <canvas id="moodGauge" width="140" height="70" style="max-width:140px"></canvas>
+      <div class="gauge-value" style="color:${sentimentColor(composite)};font-size:1.3rem;margin-top:-8px">${composite.toFixed(2)}</div>
+      <div class="gauge-label" style="font-size:0.75rem">${composite<-0.3?'Fear':composite>0.3?'Greed':'Neutral'} — Composite</div>
     </div>
     <div>
       <div class="grid grid-4" style="margin-bottom:20px">

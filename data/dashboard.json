@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T03:50:00.363846+00:00",
+  "generated_at": "2026-02-12T03:57:00.050629+00:00",
   "next_update": "2026-02-12T07:00:00+00:00",
   "market_mood": {
     "composite": -0.3637,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1965.5345,
-      "pnl_dollar": 7.85,
-      "pnl_percent": 2.62
+      "current_price": 1965.4507,
+      "pnl_dollar": 7.83,
+      "pnl_percent": 2.61
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67454.9375,
-      "pnl_dollar": 1.72,
-      "pnl_percent": 0.34
+      "current_price": 67448.6875,
+      "pnl_dollar": 1.63,
+      "pnl_percent": 0.33
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 809.58,
-    "total_pnl": 9.57,
-    "total_pnl_pct": 1.2
+    "total_current_value": 809.46,
+    "total_pnl": 9.46,
+    "total_pnl_pct": 1.18
   },
   "strategies": {
     "gekko": {
@@ -2456,6 +2456,28 @@
       "BA.L": {
         "ensemble": 45.0
       }
+    },
+    "google_trends": {
+      "keywords": [
+        "Amazon stock",
+        "Apple stock",
+        "Google stock",
+        "Leonardo defense",
+        "Meta stock",
+        "Microsoft stock",
+        "Nvidia stock",
+        "Rheinmetall stock",
+        "Tesla stock",
+        "bear market",
+        "bull market",
+        "buy bitcoin",
+        "buy ethereum",
+        "buy stocks",
+        "inflation",
+        "market bubble",
+        "recession",
+        "stock market crash"
+      ]
     }
   },
   "worldview": {

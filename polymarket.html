@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta http-equiv="refresh" content="300">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gordon — Polymarket</title>
+  <link rel="icon" href="assets/gordon-logo.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+  <style>
+    .heatmap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+    .heatmap-cell{padding:14px 12px;text-align:center;border-radius:8px;font-weight:600;font-size:.85rem;transition:transform .2s}
+    .heatmap-cell:hover{transform:scale(1.05)}
+    .heatmap-cell .cell-count{font-size:.7rem;color:var(--text-dim);margin-top:4px;font-weight:400}
+    .opp-edge{display:inline-block;padding:2px 8px;border-radius:12px;font-size:.75rem;font-weight:700}
+    .q-truncate{max-width:300px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+    .signal-badge{display:inline-block;padding:4px 12px;border-radius:16px;font-size:.75rem;font-weight:600;margin:4px}
+    .empty-state{text-align:center;padding:40px;color:var(--text-dim);font-size:.95rem}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-brand"><img src="assets/gordon-logo.svg" alt="G">gordon.money</a>
+    <div class="nav-links">
+      <a href="index.html">Overview</a>
+      <a href="strategies.html">Strategies</a>
+      <a href="predictions.html">Predictions</a>
+      <a href="signals.html">Signals</a>
+      <a href="worldview.html">Worldview</a>
+      <a href="polymarket.html" class="active">Polymarket</a>
+    </div>
+    <span class="timestamp" id="lastUpdated"></span>
+  </nav>
+  <div class="container" id="content">
+    <div class="loading">Loading Polymarket data</div>
+  </div>
+  <footer class="footer">Powered by Gordon 💰 | Data updates every 12h | Not financial advice</footer>
+  <script src="assets/charts.js"></script>
+  <script>
+fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
+  document.getElementById('lastUpdated').textContent='Updated: '+fmtDate(data.generated_at);
+  const c=document.getElementById('content');
+  const pm=data.polymarket||{};
+  const pf=pm.portfolio||{};
+  const positions=pm.positions||[];
+  const opps=pm.opportunities||[];
+  const history=pm.trade_history||[];
+  const cats=pm.categories||{};
+  const signals=pm.signal_sources||[];
+
+  const plColor=v=>v>0?'var(--green)':v<0?'var(--red)':'var(--text-dim)';
+  const fmtPct=v=>v!=null?(v>=0?'+':'')+v.toFixed(1)+'%':'—';
+  const fmtUsd=v=>v!=null?'$'+Number(v).toFixed(2):'—';
+
+  c.innerHTML=`
+    <h2 style="color:var(--gold);margin-bottom:20px">🔮 Polymarket Trading</h2>
+
+    <!-- Portfolio Summary -->
+    <div class="grid grid-4" style="margin-bottom:24px">
+      <div class="card metric-card">
+        <div class="card-title">USDC Balance</div>
+        <div class="card-value">${fmtUsd(pf.usdc_balance)}</div>
+        <div class="card-label">Available</div>
+      </div>
+      <div class="card metric-card">
+        <div class="card-title">Total Invested</div>
+        <div class="card-value">${fmtUsd(pf.total_invested)}</div>
+        <div class="card-label">${pf.open_positions||0} open positions</div>
+      </div>
+      <div class="card metric-card">
+        <div class="card-title">Unrealized P&L</div>
+        <div class="card-value" style="color:${plColor(pf.unrealized_pnl)}">${fmtUsd(pf.unrealized_pnl)}</div>
+        <div class="card-label">Mark-to-market</div>
+      </div>
+      <div class="card metric-card">
+        <div class="card-title">Win Rate</div>
+        <div class="card-value">${pf.win_rate!=null?fmtPct(pf.win_rate):'—'}</div>
+        <div class="card-label">${pf.total_trades||0} total trades</div>
+      </div>
+    </div>
+
+    <!-- Open Positions -->
+    <div class="card" style="margin-bottom:24px">
+      <div class="card-title">Open Positions</div>
+      ${positions.length?`
+      <div class="table-wrap"><table>
+        <thead><tr><th>Market</th><th>Side</th><th>Entry</th><th>Current</th><th>Amount</th><th>P&L ($)</th><th>P&L (%)</th><th>Edge</th></tr></thead>
+        <tbody>${positions.map(p=>`<tr>
+          <td><span class="q-truncate" title="${(p.question||'').replace(/"/g,'&quot;')}">${p.question||'—'}</span></td>
+          <td><span class="badge ${p.side==='YES'?'badge-long':'badge-short'}">${p.side||'—'}</span></td>
+          <td>${fmtUsd(p.entry_price)}</td>
+          <td>${fmtUsd(p.current_price)}</td>
+          <td>${fmtUsd(p.amount)}</td>
+          <td style="color:${plColor(p.pnl)}">${fmtUsd(p.pnl)}</td>
+          <td style="color:${plColor(p.pnl_pct)}">${fmtPct(p.pnl_pct)}</td>
+          <td>${p.edge_remaining!=null?fmtPct(p.edge_remaining):'—'}</td>
+        </tr>`).join('')}</tbody>
+      </table></div>`:'<div class="empty-state">No open positions yet. Opportunities below 👇</div>'}
+    </div>
+
+    <!-- Top Opportunities -->
+    <div class="card" style="margin-bottom:24px">
+      <div class="card-title">🎯 Top Opportunities</div>
+      ${opps.length?`
+      <div class="table-wrap"><table>
+        <thead><tr><th>Market</th><th>Our Estimate</th><th>Market Price</th><th>Edge</th><th>Confidence</th><th>Side</th></tr></thead>
+        <tbody>${opps.map(o=>{
+          const edgeAbs=Math.abs(o.edge||0);
+          const edgeBg=edgeAbs>15?'rgba(0,200,83,0.25)':edgeAbs>8?'rgba(0,200,83,0.15)':'rgba(0,200,83,0.08)';
+          return `<tr>
+          <td><span class="q-truncate" title="${(o.question||'').replace(/"/g,'&quot;')}">${o.question||'—'}</span></td>
+          <td>${fmtPct(o.our_estimate)}</td>
+          <td>${fmtPct(o.market_price)}</td>
+          <td><span class="opp-edge" style="background:${edgeBg};color:var(--green)">${fmtPct(o.edge)}</span></td>
+          <td>${o.confidence||'—'}</td>
+          <td><span class="badge ${o.side==='YES'?'badge-long':'badge-short'}">${o.side||'—'}</span></td>
+        </tr>`}).join('')}</tbody>
+      </table></div>`:'<div class="empty-state">No opportunities detected. Markets look efficient right now.</div>'}
+    </div>
+
+    <!-- Signal Sources -->
+    <div class="card" style="margin-bottom:24px">
+      <div class="card-title">📡 Signal Sources</div>
+      ${signals.length?`<div style="display:flex;flex-wrap:wrap;gap:4px">
+        ${signals.map(s=>{
+          const colors={news:'var(--blue)',macro:'var(--gold)',sentiment:'var(--green)',model:'#ab47bc',consensus:'var(--text-dim)'};
+          const bg={news:'rgba(68,138,255,0.15)',macro:'rgba(212,175,55,0.15)',sentiment:'rgba(0,200,83,0.15)',model:'rgba(171,71,188,0.15)',consensus:'rgba(255,255,255,0.08)'};
+          return `<span class="signal-badge" style="background:${bg[s.type]||bg.consensus};color:${colors[s.type]||colors.consensus}">${s.type}: ${s.label}</span>`;
+        }).join('')}
+      </div>`:'<div class="empty-state">No active signal sources driving Polymarket trades.</div>'}
+    </div>
+
+    <!-- Trade History -->
+    <div class="card" style="margin-bottom:24px">
+      <div class="card-title">📈 Trade History</div>
+      ${history.length?`
+      <div class="chart-container" style="margin-bottom:20px"><canvas id="pnlChart"></canvas></div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Date</th><th>Market</th><th>Side</th><th>Entry</th><th>Exit</th><th>P&L</th><th>Outcome</th></tr></thead>
+        <tbody>${history.map(h=>`<tr>
+          <td>${h.closed_at?fmtDate(h.closed_at):'—'}</td>
+          <td><span class="q-truncate" title="${(h.question||'').replace(/"/g,'&quot;')}">${h.question||'—'}</span></td>
+          <td><span class="badge ${h.side==='YES'?'badge-long':'badge-short'}">${h.side||'—'}</span></td>
+          <td>${fmtUsd(h.entry_price)}</td>
+          <td>${fmtUsd(h.exit_price)}</td>
+          <td style="color:${plColor(h.pnl)}">${fmtUsd(h.pnl)}</td>
+          <td>${h.outcome==='win'?'✅ Win':h.outcome==='loss'?'❌ Loss':'—'}</td>
+        </tr>`).join('')}</tbody>
+      </table></div>`:'<div class="empty-state">No closed trades yet. History will appear here after your first trade resolves.</div>'}
+    </div>
+
+    <!-- Market Categories Heatmap -->
+    <div class="card">
+      <div class="card-title">🗂️ Market Categories</div>
+      ${Object.keys(cats).length?`
+      <div class="heatmap-grid">
+        ${Object.entries(cats).map(([cat,v])=>{
+          const edge=v.avg_edge||0;
+          const bg=edge>10?'rgba(0,200,83,0.3)':edge>5?'rgba(0,200,83,0.18)':edge>0?'rgba(0,200,83,0.08)':'rgba(255,23,68,0.15)';
+          const color=edge>5?'var(--green)':edge>0?'var(--text)':'var(--red)';
+          return `<div class="heatmap-cell" style="background:${bg};color:${color}">
+            ${cat.charAt(0).toUpperCase()+cat.slice(1)}
+            <div style="font-size:1.1rem;margin:4px 0">${edge>0?'+':''}${edge.toFixed(1)}%</div>
+            <div class="cell-count">${v.count||0} markets</div>
+          </div>`;
+        }).join('')}
+      </div>`:'<div class="empty-state">No market categories tracked yet.</div>'}
+    </div>
+  `;
+
+  // Render P&L chart if history exists
+  if(history.length){
+    let cumPnl=0;
+    const chartData=history.filter(h=>h.closed_at).sort((a,b)=>new Date(a.closed_at)-new Date(b.closed_at)).map(h=>{
+      cumPnl+=(h.pnl||0);
+      return {x:h.closed_at,y:cumPnl};
+    });
+    if(chartData.length){
+      renderLineChart('pnlChart',{
+        labels:chartData.map(d=>fmtDate(d.x)),
+        datasets:[{label:'Cumulative P&L',data:chartData.map(d=>d.y),borderColor:'#d4af37',backgroundColor:'rgba(212,175,55,0.1)',fill:true,tension:0.3}]
+      });
+    }
+  }
+}).catch(e=>{
+  document.getElementById('content').innerHTML='<div class="empty-state">Failed to load data. Will retry on next refresh.</div>';
+  console.error(e);
+});
+  </script>
+</body>
+</html>

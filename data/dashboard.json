@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T14:12:22.152253+00:00",
+  "generated_at": "2026-02-12T14:17:15.151300+00:00",
   "next_update": "2026-02-12T21:00:00+00:00",
   "market_mood": {
     "composite": -0.3632,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1982.4979,
-      "pnl_dollar": 13.1,
-      "pnl_percent": 4.37
+      "current_price": 1985.0316,
+      "pnl_dollar": 13.88,
+      "pnl_percent": 4.63
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67882.1406,
-      "pnl_dollar": 8.07,
-      "pnl_percent": 1.61
+      "current_price": 68016.3438,
+      "pnl_dollar": 10.06,
+      "pnl_percent": 2.01
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 821.17,
-    "total_pnl": 21.17,
-    "total_pnl_pct": 2.65
+    "total_current_value": 823.94,
+    "total_pnl": 23.94,
+    "total_pnl_pct": 2.99
   },
   "strategies": {
     "gekko": {
@@ -2786,8 +2786,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 13.11,
-      "pnl_pct": 4.37,
+      "pnl": 13.89,
+      "pnl_pct": 4.63,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -2799,8 +2799,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 8.05,
-      "pnl_pct": 1.61,
+      "pnl": 10.05,
+      "pnl_pct": 2.01,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -2814,7 +2814,7 @@
       "exit_price": 67218.5,
       "pnl": 0.0,
       "pnl_pct": 0.0,
-      "status": "closed",
+      "status": "cancelled",
       "entry_time": "2026-02-11 13:50:41",
       "exit_time": "2026-02-11 19:30:00",
       "leverage": 2.0
@@ -2827,7 +2827,7 @@
       "exit_price": 1954.85,
       "pnl": 0.0,
       "pnl_pct": 0.0,
-      "status": "closed",
+      "status": "cancelled",
       "entry_time": "2026-02-11 13:50:41",
       "exit_time": "2026-02-11 19:30:00",
       "leverage": 2.0

@@ -37,7 +37,7 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
       <div class="card-title">${stratBadge(s.name||key)} Strategy <span style="font-size:0.75rem;color:var(--text-dim)">(${s.environment||'unknown'})</span></div>
       <div class="grid grid-3" style="margin-top:12px">
         <div><div class="card-label">Total Trades</div><div style="font-size:1.4rem;font-weight:700">${s.total_trades||0}</div></div>
-        <div><div class="card-label">Win Rate</div><div style="font-size:1.4rem;font-weight:700;color:${(s.win_rate||0)>=55?'var(--green)':'var(--text-dim)'}">${s.win_rate||0}%</div></div>
+        <div><div class="card-label">Win Rate</div><div style="font-size:1.4rem;font-weight:700;color:${(s.win_rate||0)>=55?'var(--green)':'var(--text-dim)'}">${(s.winning_trades||0)+(s.losing_trades||0)>0 ? (s.win_rate||0)+'%' : '—'}</div></div>
         <div><div class="card-label">Total P&L</div><div style="font-size:1.4rem;font-weight:700;color:${color}">${fmt$(s.total_pnl||0)}</div></div>
         <div><div class="card-label">Sharpe Ratio</div><div style="font-size:1.2rem;font-weight:600">${s.sharpe_ratio!=null ? s.sharpe_ratio.toFixed(2) : '—'}</div></div>
         <div><div class="card-label">Max Drawdown</div><div style="font-size:1.2rem;font-weight:600;color:var(--red)">${s.max_drawdown!=null ? s.max_drawdown+'%' : '—'}</div></div>

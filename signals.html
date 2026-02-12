@@ -83,7 +83,7 @@ fetch('data/dashboard.json').then(r=>r.json()).then(data=>{
   if(sentHistory.length) {
     renderLineChart('sentChart',
       sentHistory.map(s=>{const d=s.timestamp||s.created_at||s.date||''; return d.slice(5,10);}),
-      [{label:'Sentiment Score',data:sentHistory.map(s=>s.score||s.raw_score||0),color:COLORS.gold,fill:true}]
+      [{label:'Sentiment Score',data:sentHistory.map(s=>s.score!=null?s.score:0),color:COLORS.gold,fill:true}]
     );
   }
 

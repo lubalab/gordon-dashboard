@@ -201,18 +201,18 @@ function renderMarketRegime(regime) {
 }
 
 function renderTwitterSentiment(sentiment) {
-  if (!sentiment || !Array.isArray(sentiment)) {
+  if (!sentiment) {
     return '<div class="card"><div class="card-title">🐦 Twitter Sentiment</div><div style="padding:20px;color:var(--text-dim)">No sentiment data available</div></div>';
   }
   
-  // Extract instruments array from the data structure
-  const instrumentsEntry = sentiment.find(entry => entry.key === 'instruments');
-  if (!instrumentsEntry || !instrumentsEntry.value || !Array.isArray(instrumentsEntry.value)) {
+  // Handle both array and object formats
+  const rawItems = Array.isArray(sentiment) ? sentiment : (sentiment.instruments || []);
+  if (!rawItems.length) {
     return '<div class="card"><div class="card-title">🐦 Twitter Sentiment</div><div style="padding:20px;color:var(--text-dim)">No sentiment data available</div></div>';
   }
   
   // Convert to array and sort by absolute score
-  const items = instrumentsEntry.value.map(data => ({
+  const items = rawItems.map(data => ({
     symbol: data.instrument || '—',
     score: data.score || 0,
     volume: data.volume || 0,
@@ -254,25 +254,21 @@ function renderTwitterSentiment(sentiment) {
 }
 
 function renderSignalHeatmap(heatmap) {
-  if (!heatmap || !heatmap.data || heatmap.data.length === 0) {
+  const grid = heatmap ? (heatmap.grid || heatmap.data || []) : [];
+  if (!grid.length) {
     return '<div class="card"><div class="card-title">📡 Signal Heatmap (24h)</div><div style="padding:20px;color:var(--text-dim)">No signal data available</div></div>';
   }
   
-  // Extract all unique signal types
-  const signalTypes = new Set();
-  heatmap.data.forEach(row => {
-    Object.keys(row.signals || {}).forEach(type => signalTypes.add(type));
-  });
-  const types = Array.from(signalTypes).sort();
+  // Use provided signal_types or extract from grid
+  const types = heatmap.signal_types || Array.from(new Set(grid.flatMap(row => Object.keys(row.signals || {})))).sort();
   
-  // Calculate totals per signal type
-  const totals = {};
-  types.forEach(type => {
-    totals[type] = heatmap.data.reduce((sum, row) => {
-      const sig = row.signals[type];
-      return sum + (sig && sig.count ? sig.count : 0);
-    }, 0);
-  });
+  // Use provided signal_counts or calculate
+  const totals = heatmap.signal_counts || {};
+  if (!Object.keys(totals).length) {
+    types.forEach(type => {
+      totals[type] = grid.reduce((sum, row) => sum + (row.signals[type] ? 1 : 0), 0);
+    });
+  }
   
   function convictionColor(conviction) {
     if (!conviction) return 'rgba(255,255,255,0.03)';
@@ -291,15 +287,14 @@ function renderSignalHeatmap(heatmap) {
         ${types.map(type => `<th style="text-align:center">${type}</th>`).join('')}
       </tr></thead>
       <tbody>
-        ${heatmap.data.map(row => `<tr>
-          <td style="position:sticky;left:0;background:var(--card);font-weight:600;z-index:1"><strong>${row.symbol}</strong></td>
+        ${grid.map(row => `<tr>
+          <td style="position:sticky;left:0;background:var(--card);font-weight:600;z-index:1"><strong>${row.instrument||row.symbol}</strong></td>
           ${types.map(type => {
-            const sig = row.signals[type];
-            const conviction = sig ? sig.conviction : 0;
-            const count = sig ? sig.count : 0;
-            return `<td style="text-align:center;background:${convictionColor(conviction)};padding:10px 8px">
-              ${conviction > 0 ? `<div style="font-weight:600;color:var(--text)">${conviction.toFixed(2)}</div>` : '—'}
-              ${count > 0 ? `<div style="font-size:0.7rem;color:var(--text-dim);margin-top:2px">${count}</div>` : ''}
+            const val = (row.signals||{})[type];
+            const conviction = typeof val === 'object' ? (val ? val.conviction||0 : 0) : (val||0);
+            const normConv = conviction > 1 ? conviction/100 : conviction;
+            return `<td style="text-align:center;background:${convictionColor(normConv)};padding:10px 8px">
+              ${conviction > 0 ? `<div style="font-weight:600;color:var(--text)">${conviction > 1 ? conviction.toFixed(0) : conviction.toFixed(2)}</div>` : '—'}
             </td>`;
           }).join('')}
         </tr>`).join('')}

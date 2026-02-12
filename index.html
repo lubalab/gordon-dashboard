@@ -218,8 +218,8 @@ function renderTwitterSentiment(sentiment) {
     volume: data.volume || 0,
     bull: data.bull_count || 0,
     bear: data.bear_count || 0,
-    fear: (data.fear_level || 0) * 100,
-    greed: (data.greed_level || 0) * 100
+    fear: Math.round((data.fear_level || 0) * 100),
+    greed: Math.round((data.greed_level || 0) * 100)
   })).sort((a, b) => Math.abs(b.score) - Math.abs(a.score));
   
   function scoreColor(score) {

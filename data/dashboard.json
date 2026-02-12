@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-12T14:17:15.151300+00:00",
+  "generated_at": "2026-02-12T14:17:48.455081+00:00",
   "next_update": "2026-02-12T21:00:00+00:00",
   "market_mood": {
     "composite": -0.3632,
@@ -65,7 +65,7 @@
     "gekko": {
       "name": "Gekko",
       "environment": "demo",
-      "total_trades": 4,
+      "total_trades": 2,
       "winning_trades": 0,
       "losing_trades": 0,
       "total_pnl": 0.0,

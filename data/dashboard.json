@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-13T07:03:55.178020+00:00",
+  "generated_at": "2026-02-13T11:55:53.907017+00:00",
   "next_update": "2026-02-13T21:00:00+00:00",
   "market_mood": {
     "composite": -0.3991,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1935.8434,
-      "pnl_dollar": -1.33,
-      "pnl_percent": -0.44
+      "current_price": 1956.554,
+      "pnl_dollar": 5.08,
+      "pnl_percent": 1.69
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 66326.3359,
-      "pnl_dollar": -15.04,
-      "pnl_percent": -3.01
+      "current_price": 66970.625,
+      "pnl_dollar": -5.47,
+      "pnl_percent": -1.09
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 783.63,
-    "total_pnl": -16.37,
-    "total_pnl_pct": -2.05
+    "total_current_value": 799.61,
+    "total_pnl": -0.39,
+    "total_pnl_pct": -0.05
   },
   "strategies": {
     "gekko": {
@@ -203,6 +203,21 @@
         "d": "2026-02-13",
         "total_value": 792.66,
         "total_pnl": -7.34
+      },
+      {
+        "d": "2026-02-13",
+        "total_value": 785.51,
+        "total_pnl": -14.49
+      },
+      {
+        "d": "2026-02-13",
+        "total_value": 799.96,
+        "total_pnl": -0.040000000000000036
+      },
+      {
+        "d": "2026-02-13",
+        "total_value": 797.63,
+        "total_pnl": -2.37
       }
     ]
   },
@@ -2469,33 +2484,72 @@
       }
     ],
     "ensemble_heatmap": {
-      "ETH-USD": {
-        "stocktwits_greed": 37.0,
-        "ensemble": 93.0,
-        "twitter_fear": 65.0,
-        "twitter_greed": 59.0,
-        "extreme_fear": 77.0
-      },
       "QQQ": {
-        "twitter_macro_fear": 38.0,
+        "twitter_macro_fear": 43.0,
         "ensemble": 73.0,
         "twitter_fear": 50.0
       },
       "SPY": {
-        "twitter_macro_fear": 38.0,
+        "twitter_macro_fear": 43.0,
+        "options_unusual": 70.0,
         "ensemble": 96.0,
         "stocktwits_greed": 40.0,
-        "options_unusual": 70.0,
         "twitter_fear": 50.0
       },
       "^VIX": {
-        "ensemble": 71.0,
-        "twitter_fear": 52.0
+        "twitter_fear": 49.0,
+        "ensemble": 71.0
+      },
+      "MSFT": {
+        "twitter_greed": 45.0,
+        "options_unusual": 70.0,
+        "ensemble": 83.0,
+        "stocktwits_greed": 48.0,
+        "hedge_fund_flow": 75.0
+      },
+      "GC=F": {
+        "twitter_fear": 54.0,
+        "ensemble": 75.0,
+        "twitter_greed": 51.0
+      },
+      "ETH-USD": {
+        "twitter_fear": 58.0,
+        "extreme_fear": 74.0,
+        "stocktwits_greed": 37.0,
+        "ensemble": 93.0,
+        "twitter_greed": 59.0
+      },
+      "BTC-USD": {
+        "twitter_fear": 63.0,
+        "extreme_fear": 74.0,
+        "ensemble": 92.0
+      },
+      "AAPL": {
+        "options_unusual": 70.0,
+        "ensemble": 96.0,
+        "hedge_fund_flow": 60.0
+      },
+      "GOOGL": {
+        "options_unusual": 70.0,
+        "ensemble": 96.0,
+        "stocktwits_greed": 48.0
+      },
+      "NVDA": {
+        "options_unusual": 70.0,
+        "ensemble": 83.0,
+        "stocktwits_greed": 37.0,
+        "hedge_fund_flow": 75.0
+      },
+      "META": {
+        "options_unusual": 70.0,
+        "ensemble": 75.0,
+        "stocktwits_greed": 45.0,
+        "hedge_fund_flow": 60.0
       },
       "TSLA": {
+        "options_unusual": 70.0,
         "ensemble": 86.0,
         "stocktwits_fear": 64.0,
-        "options_unusual": 70.0,
         "stocktwits_greed": 48.0,
         "hedge_fund_flow": 90.0
       },
@@ -2504,24 +2558,6 @@
       },
       "RHM.DE": {
         "ensemble": 93.0
-      },
-      "NVDA": {
-        "ensemble": 83.0,
-        "options_unusual": 70.0,
-        "stocktwits_greed": 37.0,
-        "hedge_fund_flow": 75.0
-      },
-      "MSFT": {
-        "ensemble": 83.0,
-        "stocktwits_greed": 48.0,
-        "options_unusual": 70.0,
-        "hedge_fund_flow": 75.0
-      },
-      "META": {
-        "ensemble": 75.0,
-        "stocktwits_greed": 45.0,
-        "hedge_fund_flow": 60.0,
-        "options_unusual": 70.0
       },
       "LDO.MI": {
         "ensemble": 75.0
@@ -2533,16 +2569,6 @@
       },
       "HO.PA": {
         "ensemble": 75.0
-      },
-      "GOOGL": {
-        "ensemble": 96.0,
-        "stocktwits_greed": 48.0,
-        "options_unusual": 70.0,
-        "hedge_fund_flow": 75.0
-      },
-      "GC=F": {
-        "ensemble": 75.0,
-        "twitter_greed": 51.0
       },
       "FTSEMIB.MI": {
         "ensemble": 75.0
@@ -2556,22 +2582,12 @@
       "BTP10Y": {
         "ensemble": 75.0
       },
-      "BTC-USD": {
-        "ensemble": 92.0,
-        "twitter_fear": 63.0,
-        "extreme_fear": 77.0
-      },
       "BA.L": {
         "ensemble": 75.0
       },
       "AMZN": {
         "ensemble": 83.0,
         "hedge_fund_flow": 75.0
-      },
-      "AAPL": {
-        "ensemble": 96.0,
-        "hedge_fund_flow": 60.0,
-        "options_unusual": 70.0
       }
     },
     "google_trends": {
@@ -2855,8 +2871,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": -1.32,
-      "pnl_pct": -0.44,
+      "pnl": 5.07,
+      "pnl_pct": 1.69,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -2868,8 +2884,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": -15.05,
-      "pnl_pct": -3.01,
+      "pnl": -5.45,
+      "pnl_pct": -1.09,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -3252,31 +3268,31 @@
   },
   "market_regime": {
     "regime": "MEAN_REVERTING",
-    "confidence": 82.0,
+    "confidence": 84.0,
     "sizing_multiplier": 1.0,
-    "contrarian_multiplier": 1.41,
+    "contrarian_multiplier": 1.42,
     "color": "blue",
     "indicators": {
       "trend_strength": {
-        "score": 0.33038766764076893,
-        "detail": "SMA20=690.8 SMA50=687.7 spread=0.45% slope=4.5%/yr"
+        "score": 0.2512513197609076,
+        "detail": "SMA20=690.4 SMA50=687.6 spread=0.40% slope=1.0%/yr"
       },
       "vix_regime": {
         "score": 0.3,
-        "detail": "VIX=20.8 NORMAL (dir=-4.4%)",
+        "detail": "VIX=20.8 NORMAL (dir=+2.2%)",
         "label": "NORMAL"
       },
       "vix_term_structure": {
-        "score": -0.5687547208740835,
-        "detail": "VIX 5d vs 10d: -5.7% \u2192 CONTANGO (normal)"
+        "score": 0.15871267653365295,
+        "detail": "VIX 5d vs 10d: +1.6% \u2192 FLAT"
       },
       "breadth": {
         "score": 0.3333333333333333,
         "detail": "7/21 (33%) above 50d SMA"
       },
       "momentum": {
-        "score": 0.2727272727272727,
-        "detail": "6/22 (27%) positive 20d returns"
+        "score": 0.18181818181818182,
+        "detail": "4/22 (18%) positive 20d returns"
       },
       "volatility": {
         "score": 0.5,
@@ -3286,13 +3302,13 @@
     "metadata": {
       "raw_scores": {
         "CRISIS": 2.0,
-        "TRENDING_UP": 39.3514471553057,
-        "TRENDING_DOWN": 37.21212121212122,
-        "MEAN_REVERTING": 81.7550366374436
+        "TRENDING_UP": 34.76349316132874,
+        "TRENDING_DOWN": 39.03030303030303,
+        "MEAN_REVERTING": 84.12912707383944
       },
       "description": "Choppy/range-bound \u2014 ideal for contrarian"
     },
-    "timestamp": "2026-02-13T08:00:33.942342"
+    "timestamp": "2026-02-13T12:01:35.602858"
   },
   "signal_heatmap": {
     "grid": [
@@ -3431,7 +3447,7 @@
           "options_unusual": 0,
           "stocktwits_fear": 0,
           "stocktwits_greed": 0,
-          "twitter_fear": 0,
+          "twitter_fear": 54.0,
           "twitter_greed": 51.0,
           "twitter_macro_fear": 0
         }
@@ -3516,7 +3532,7 @@
           "stocktwits_fear": 0,
           "stocktwits_greed": 48.0,
           "twitter_fear": 0,
-          "twitter_greed": 0,
+          "twitter_greed": 45.0,
           "twitter_macro_fear": 0
         }
       },
@@ -3656,28 +3672,39 @@
       "^VIX"
     ],
     "signal_counts": {
+      "twitter_macro_fear": 6,
+      "twitter_fear": 9,
+      "twitter_greed": 3,
+      "options_unusual": 15,
+      "extreme_fear": 4,
       "stocktwits_greed": 11,
-      "twitter_macro_fear": 4,
       "ensemble": 23,
       "stocktwits_fear": 1,
-      "twitter_fear": 5,
-      "options_unusual": 8,
-      "hedge_fund_flow": 2,
-      "twitter_greed": 2,
-      "extreme_fear": 2
+      "hedge_fund_flow": 2
     },
-    "total_signals": 58
+    "total_signals": 74
   },
   "polymarket": {
     "portfolio": {
       "usdc_balance": 200.0,
-      "total_invested": 0,
+      "total_invested": 22.81,
       "unrealized_pnl": 0,
       "win_rate": null,
-      "total_trades": 0,
-      "open_positions": 0
+      "total_trades": 1,
+      "open_positions": 1
     },
-    "positions": [],
+    "positions": [
+      {
+        "question": "Will the price of Bitcoin be above $68,000 on February 13?",
+        "side": "NO",
+        "entry_price": 0.9,
+        "current_price": null,
+        "amount": 22.81,
+        "pnl": null,
+        "pnl_pct": null,
+        "edge_remaining": null
+      }
+    ],
     "opportunities": [
       {
         "question": "US strikes Iran by February 11, 2026?",
@@ -3704,23 +3731,7 @@
         "side": "NO"
       },
       {
-        "question": "Will L\u01b0\u01a1ng C\u01b0\u1eddng be the next President of Vietnam?",
-        "our_estimate": 100.0,
-        "market_price": 0.1,
-        "edge": 50.0,
-        "confidence": "Medium",
-        "side": "NO"
-      },
-      {
         "question": "Will the US strike Iran next?",
-        "our_estimate": 100.0,
-        "market_price": 0.1,
-        "edge": 50.0,
-        "confidence": "Medium",
-        "side": "NO"
-      },
-      {
-        "question": "Will the US next strike Iran on February 11, 2026 (ET)?",
         "our_estimate": 100.0,
         "market_price": 0.1,
         "edge": 50.0,
@@ -3736,7 +3747,23 @@
         "side": "YES"
       },
       {
+        "question": "Will France win the Men's Ice Hockey gold medal at the 2026 Winter Olympics?",
+        "our_estimate": 100.0,
+        "market_price": 0.1,
+        "edge": 50.0,
+        "confidence": "Medium",
+        "side": "NO"
+      },
+      {
         "question": "Will Japan win the most gold medals in the 2026 Winter Olympics?",
+        "our_estimate": 100.0,
+        "market_price": 0.1,
+        "edge": 50.0,
+        "confidence": "Medium",
+        "side": "NO"
+      },
+      {
+        "question": "Will the price of Bitcoin be above $74,000 on February 12?",
         "our_estimate": 100.0,
         "market_price": 0.1,
         "edge": 50.0,
@@ -3747,24 +3774,24 @@
     "trade_history": [],
     "categories": {
       "politics": {
-        "count": 28,
-        "avg_edge": 43.6
+        "count": 36,
+        "avg_edge": 41.5
       },
       "economics": {
-        "count": 6,
-        "avg_edge": 45.8
+        "count": 8,
+        "avg_edge": 43.8
       },
       "other": {
-        "count": 233,
-        "avg_edge": 44.1
+        "count": 255,
+        "avg_edge": 43.6
       },
       "crypto": {
-        "count": 96,
-        "avg_edge": 43.3
+        "count": 115,
+        "avg_edge": 44.5
       },
       "sports": {
-        "count": 25,
-        "avg_edge": 48.3
+        "count": 28,
+        "avg_edge": 47.7
       }
     },
     "signal_sources": [

@@ -144,7 +144,7 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
           <td>${fmtUsd(h.entry_price)}</td>
           <td>${fmtUsd(h.exit_price)}</td>
           <td style="color:${plColor(h.pnl)}">${fmtUsd(h.pnl)}</td>
-          <td>${h.outcome==='win'?'✅ Win':h.outcome==='loss'?'❌ Loss':'—'}</td>
+          <td>${h.outcome==='win'||h.outcome==='won'?'✅ Win':h.outcome==='loss'||h.outcome==='lost'?'❌ Loss':'—'}</td>
         </tr>`).join('')}</tbody>
       </table></div>`:'<div class="empty-state">No closed trades yet. History will appear here after your first trade resolves.</div>'}
     </div>
@@ -176,10 +176,10 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
       return {x:h.closed_at,y:cumPnl};
     });
     if(chartData.length){
-      renderLineChart('pnlChart',{
-        labels:chartData.map(d=>fmtDate(d.x)),
-        datasets:[{label:'Cumulative P&L',data:chartData.map(d=>d.y),borderColor:'#d4af37',backgroundColor:'rgba(212,175,55,0.1)',fill:true,tension:0.3}]
-      });
+      renderLineChart('pnlChart',
+        chartData.map(d=>fmtDate(d.x)),
+        [{label:'Cumulative P&L',data:chartData.map(d=>d.y),color:'#d4af37',fill:true}]
+      );
     }
   }
 }).catch(e=>{

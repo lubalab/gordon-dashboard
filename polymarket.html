@@ -68,9 +68,9 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
         <div class="card-label">${pf.open_positions||0} open positions</div>
       </div>
       <div class="card metric-card">
-        <div class="card-title">Unrealized P&L</div>
-        <div class="card-value" style="color:${plColor(pf.unrealized_pnl)}">${fmtUsd(pf.unrealized_pnl)}</div>
-        <div class="card-label">Mark-to-market</div>
+        <div class="card-title">Total P&L</div>
+        <div class="card-value" style="color:${plColor((pf.realized_pnl||0)+(pf.unrealized_pnl||0))}">${fmtUsd((pf.realized_pnl||0)+(pf.unrealized_pnl||0))}</div>
+        <div class="card-label">Realized + unrealized</div>
       </div>
       <div class="card metric-card">
         <div class="card-title">Win Rate</div>

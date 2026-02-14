@@ -74,7 +74,7 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
       </div>
       <div class="card metric-card">
         <div class="card-title">Win Rate</div>
-        <div class="card-value">${pf.win_rate!=null?fmtPct(pf.win_rate):'—'}</div>
+        <div class="card-value" style="color:${pf.win_rate!=null?(pf.win_rate>=50?'var(--green)':'var(--red)'):'var(--text-dim)'}">${pf.win_rate!=null?fmtPct(pf.win_rate):'—'}</div>
         <div class="card-label">${pf.total_trades||0} total trades</div>
       </div>
     </div>

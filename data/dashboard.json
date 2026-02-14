@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-14T23:04:34.326050+00:00",
+  "generated_at": "2026-02-14T23:07:33.770110+00:00",
   "next_update": "2026-02-15T07:00:00+00:00",
   "market_mood": {
     "composite": -0.4471,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2089.6829,
-      "pnl_dollar": 46.25,
-      "pnl_percent": 15.42
+      "current_price": 2089.187,
+      "pnl_dollar": 46.09,
+      "pnl_percent": 15.36
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 69928.4609,
-      "pnl_dollar": 38.45,
-      "pnl_percent": 7.69
+      "current_price": 69919.8359,
+      "pnl_dollar": 38.33,
+      "pnl_percent": 7.67
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 884.7,
-    "total_pnl": 84.7,
-    "total_pnl_pct": 10.59
+    "total_current_value": 884.42,
+    "total_pnl": 84.42,
+    "total_pnl_pct": 10.55
   },
   "strategies": {
     "gekko": {
@@ -3427,8 +3427,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 46.26,
-      "pnl_pct": 15.42,
+      "pnl": 46.08,
+      "pnl_pct": 15.36,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -3440,8 +3440,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 38.45,
-      "pnl_pct": 7.69,
+      "pnl": 38.35,
+      "pnl_pct": 7.67,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -4192,12 +4192,15 @@
   },
   "polymarket": {
     "portfolio": {
-      "usdc_balance": 196.99,
+      "usdc_balance": 174.18,
       "total_invested": 0,
       "unrealized_pnl": 0,
-      "win_rate": null,
-      "total_trades": 0,
-      "open_positions": 0
+      "realized_pnl": -22.81,
+      "win_rate": 0.0,
+      "total_trades": 1,
+      "open_positions": 0,
+      "wins": 0,
+      "losses": 1
     },
     "positions": [],
     "opportunities": [
@@ -4266,7 +4269,17 @@
         "side": "YES"
       }
     ],
-    "trade_history": [],
+    "trade_history": [
+      {
+        "question": "Will the price of Bitcoin be above $68,000 on February 13?",
+        "side": "NO",
+        "entry_price": 0.9,
+        "exit_price": null,
+        "pnl": -22.81,
+        "outcome": "lost",
+        "closed_at": "2026-02-13 23:59:59"
+      }
+    ],
     "categories": {
       "politics": {
         "count": 37,

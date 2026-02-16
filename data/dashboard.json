@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-02-14T23:07:33.770110+00:00",
-  "next_update": "2026-02-15T07:00:00+00:00",
+  "generated_at": "2026-02-16T07:05:39.566713+00:00",
+  "next_update": "2026-02-16T21:00:00+00:00",
   "market_mood": {
-    "composite": -0.4471,
+    "composite": -0.415,
     "cnn_fear_greed": {
       "value": 36.2658385093168,
       "label": "Fear"
     },
     "crypto_fear_greed": {
-      "value": 9.0,
+      "value": 12.0,
       "label": "Extreme Fear"
     },
     "vix": {
-      "value": 20.6,
+      "value": 20.600000381469727,
       "label": "Elevated"
     },
     "google_trends": {
-      "composite": -0.2465,
+      "composite": -0.2103,
       "fear_total": null,
       "greed_total": null
     }
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2089.187,
-      "pnl_dollar": 46.09,
-      "pnl_percent": 15.36
+      "current_price": 1964.2053,
+      "pnl_dollar": 7.44,
+      "pnl_percent": 2.48
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 69919.8359,
-      "pnl_dollar": 38.33,
-      "pnl_percent": 7.67
+      "current_price": 68357.75,
+      "pnl_dollar": 15.13,
+      "pnl_percent": 3.03
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 884.42,
-    "total_pnl": 84.42,
-    "total_pnl_pct": 10.55
+    "total_current_value": 822.57,
+    "total_pnl": 22.57,
+    "total_pnl_pct": 2.82
   },
   "strategies": {
     "gekko": {
@@ -273,6 +273,46 @@
         "d": "2026-02-15",
         "total_value": 885.9,
         "total_pnl": 85.9
+      },
+      {
+        "d": "2026-02-15",
+        "total_value": 870.01,
+        "total_pnl": 70.00999999999999
+      },
+      {
+        "d": "2026-02-15",
+        "total_value": 889.47,
+        "total_pnl": 89.47
+      },
+      {
+        "d": "2026-02-15",
+        "total_value": 883.47,
+        "total_pnl": 83.47
+      },
+      {
+        "d": "2026-02-15",
+        "total_value": 882.9,
+        "total_pnl": 82.9
+      },
+      {
+        "d": "2026-02-15",
+        "total_value": 847.25,
+        "total_pnl": 47.25
+      },
+      {
+        "d": "2026-02-15",
+        "total_value": 819.74,
+        "total_pnl": 19.740000000000002
+      },
+      {
+        "d": "2026-02-16",
+        "total_value": 832.44,
+        "total_pnl": 32.44
+      },
+      {
+        "d": "2026-02-16",
+        "total_value": 818.26,
+        "total_pnl": 18.259999999999998
       }
     ]
   },
@@ -2166,6 +2206,27 @@
         "timestamp": "2026-02-13T22:04:47.991940"
       },
       {
+        "symbol": "AAPL",
+        "type": "ensemble",
+        "conviction": 96.0,
+        "thesis": "Ensemble: 3 groups aligned bullish (HIGH CONF). Groups: sentiment, smart_money, crowd",
+        "timestamp": "2026-02-15T12:01:44.867528"
+      },
+      {
+        "symbol": "AMZN",
+        "type": "ensemble",
+        "conviction": 96.0,
+        "thesis": "Ensemble: 3 groups aligned bullish (HIGH CONF). Groups: sentiment, technical, smart_money",
+        "timestamp": "2026-02-15T12:01:45.000988"
+      },
+      {
+        "symbol": "SPY",
+        "type": "ensemble",
+        "conviction": 96.0,
+        "thesis": "Ensemble: 3 groups aligned bullish (HIGH CONF). Groups: sentiment, smart_money, crowd",
+        "timestamp": "2026-02-15T12:01:47.413924"
+      },
+      {
         "symbol": "ETH-USD",
         "type": "ensemble",
         "conviction": 93.0,
@@ -2227,30 +2288,33 @@
         "conviction": 90.0,
         "thesis": "Hedge fund cluster: Bridgewater Associates, Renaissance Technologies, Citadel, Citadel, Citadel, Citadel, Citadel, Citadel, Two Sigma, Two Sigma, Two Sigma, Appaloosa Management, Soros Fund Management, Tiger Global buying NVDA",
         "timestamp": "2026-02-11T23:33:33.852883"
-      },
-      {
-        "symbol": "JPM",
-        "type": "hedge_fund_flow",
-        "conviction": 90.0,
-        "thesis": "Hedge fund cluster: Renaissance Technologies, Citadel, Citadel, Citadel, Citadel, Citadel, Citadel, Two Sigma buying JPM",
-        "timestamp": "2026-02-11T23:33:33.954631"
-      },
-      {
-        "symbol": "TSLA",
-        "type": "hedge_fund_flow",
-        "conviction": 90.0,
-        "thesis": "Hedge fund cluster: Renaissance Technologies, Citadel, Citadel, Citadel, Citadel, Citadel, Citadel, Two Sigma, Two Sigma, Two Sigma buying TSLA",
-        "timestamp": "2026-02-11T23:33:33.988289"
-      },
-      {
-        "symbol": "JPM",
-        "type": "ensemble",
-        "conviction": 86.0,
-        "thesis": "Ensemble: 2 groups aligned bullish (standard). Groups: sentiment, smart_money",
-        "timestamp": "2026-02-12T20:39:32.294566"
       }
     ],
     "sentiment_history": [
+      {
+        "source": "cnn_fear_greed",
+        "score": -0.2747,
+        "raw_score": 36.2658385093168,
+        "timestamp": "2026-02-16"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.76,
+        "raw_score": 12.0,
+        "timestamp": "2026-02-16"
+      },
+      {
+        "source": "google_trends",
+        "score": -0.21033333333333332,
+        "raw_score": 34.7,
+        "timestamp": "2026-02-16"
+      },
+      {
+        "source": "vix",
+        "score": 0.2933,
+        "raw_score": 20.600000381469727,
+        "timestamp": "2026-02-16"
+      },
       {
         "source": "cnn_fear_greed",
         "score": -0.2747,
@@ -2468,7 +2532,7 @@
       {
         "d": "2026-02-09",
         "source": "wikipedia_pageviews",
-        "avg_score": 0.10489411764705882
+        "avg_score": 0.0990281045751634
       },
       {
         "d": "2026-02-10",
@@ -2483,12 +2547,12 @@
       {
         "d": "2026-02-10",
         "source": "wikipedia_pageviews",
-        "avg_score": 0.060048529411764695
+        "avg_score": 0.052191764705882354
       },
       {
         "d": "2026-02-11",
         "source": "binance_futures",
-        "avg_score": -0.5995520000000001
+        "avg_score": -0.5764288461538462
       },
       {
         "d": "2026-02-11",
@@ -2583,12 +2647,12 @@
       {
         "d": "2026-02-11",
         "source": "wikipedia_pageviews",
-        "avg_score": -0.009065
+        "avg_score": -0.01690877192982456
       },
       {
         "d": "2026-02-12",
         "source": "binance_futures",
-        "avg_score": -0.5491208333333334
+        "avg_score": -0.5792923076923077
       },
       {
         "d": "2026-02-12",
@@ -2633,12 +2697,12 @@
       {
         "d": "2026-02-12",
         "source": "wikipedia_pageviews",
-        "avg_score": 0.09288888888888888
+        "avg_score": 0.09635428571428571
       },
       {
         "d": "2026-02-13",
         "source": "binance_futures",
-        "avg_score": -0.6666666666666666
+        "avg_score": -0.75
       },
       {
         "d": "2026-02-13",
@@ -2668,12 +2732,12 @@
       {
         "d": "2026-02-13",
         "source": "wikipedia_pageviews",
-        "avg_score": -0.12798235294117646
+        "avg_score": -0.12803823529411765
       },
       {
         "d": "2026-02-14",
         "source": "binance_futures",
-        "avg_score": -0.348775
+        "avg_score": -0.46503333333333335
       },
       {
         "d": "2026-02-14",
@@ -2718,7 +2782,67 @@
       {
         "d": "2026-02-14",
         "source": "wikipedia_pageviews",
-        "avg_score": -0.2532
+        "avg_score": -0.15311666666666668
+      },
+      {
+        "d": "2026-02-15",
+        "source": "binance_futures",
+        "avg_score": -0.8423
+      },
+      {
+        "d": "2026-02-15",
+        "source": "wikipedia_pageviews",
+        "avg_score": -0.1358235294117647
+      },
+      {
+        "d": "2026-02-16",
+        "source": "binance_futures",
+        "avg_score": -0.463075
+      },
+      {
+        "d": "2026-02-16",
+        "source": "cnn_fear_greed",
+        "avg_score": -0.2747
+      },
+      {
+        "d": "2026-02-16",
+        "source": "coingecko_global",
+        "avg_score": -0.2698
+      },
+      {
+        "d": "2026-02-16",
+        "source": "crypto_fear_greed",
+        "avg_score": -0.76
+      },
+      {
+        "d": "2026-02-16",
+        "source": "google_trends",
+        "avg_score": -0.21033333333333332
+      },
+      {
+        "d": "2026-02-16",
+        "source": "hackernews",
+        "avg_score": 0.05932
+      },
+      {
+        "d": "2026-02-16",
+        "source": "lunar_cycles",
+        "avg_score": 0.30564
+      },
+      {
+        "d": "2026-02-16",
+        "source": "technical_analysis",
+        "avg_score": -0.0409090909090909
+      },
+      {
+        "d": "2026-02-16",
+        "source": "vix",
+        "avg_score": 0.2933
+      },
+      {
+        "d": "2026-02-16",
+        "source": "wikipedia_pageviews",
+        "avg_score": 0.0
       }
     ],
     "congress_recent": [
@@ -3044,78 +3168,18 @@
       }
     ],
     "ensemble_heatmap": {
-      "QQQ": {
-        "twitter_macro_fear": 41.0,
-        "options_unusual": 70.0,
-        "ensemble": 73.0,
-        "twitter_fear": 50.0
-      },
-      "SPY": {
-        "twitter_macro_fear": 41.0,
-        "options_unusual": 70.0,
-        "ensemble": 96.0,
-        "stocktwits_greed": 40.0
-      },
-      "JPM": {
-        "twitter_fear": 65.0,
-        "options_unusual": 70.0,
-        "ensemble": 73.0
-      },
-      "CL=F": {
-        "twitter_fear": 55.0,
-        "ensemble": 55.0
-      },
-      "AAPL": {
-        "options_unusual": 70.0,
-        "ensemble": 96.0,
-        "hedge_fund_flow": 60.0
-      },
-      "MSFT": {
-        "options_unusual": 70.0,
-        "ensemble": 55.0,
-        "twitter_greed": 45.0,
-        "stocktwits_greed": 48.0
-      },
-      "GOOGL": {
-        "options_unusual": 70.0,
-        "ensemble": 73.0,
-        "stocktwits_greed": 48.0
-      },
-      "AMZN": {
-        "options_unusual": 70.0,
-        "ensemble": 96.0
-      },
-      "NVDA": {
-        "options_unusual": 70.0,
-        "ensemble": 100.0
-      },
-      "META": {
-        "options_unusual": 70.0,
-        "ensemble": 55.0,
-        "stocktwits_greed": 45.0,
-        "hedge_fund_flow": 60.0
+      "^VIX": {
+        "ensemble": 75.0,
+        "twitter_fear": 49.0
       },
       "TSLA": {
-        "options_unusual": 70.0,
         "ensemble": 73.0,
-        "stocktwits_fear": 64.0
+        "options_unusual": 70.0
       },
-      "ETH-USD": {
-        "extreme_fear": 74.0,
-        "ensemble": 55.0,
-        "twitter_fear": 58.0,
-        "stocktwits_greed": 37.0,
-        "twitter_greed": 59.0
-      },
-      "BTC-USD": {
-        "extreme_fear": 74.0,
-        "ensemble": 55.0,
-        "stocktwits_greed": 37.0,
-        "twitter_fear": 63.0
-      },
-      "^VIX": {
-        "ensemble": 100.0,
-        "twitter_fear": 49.0
+      "SPY": {
+        "ensemble": 96.0,
+        "options_unusual": 70.0,
+        "twitter_macro_fear": 41.0
       },
       "SAAB-B.ST": {
         "ensemble": 55.0
@@ -3123,11 +3187,38 @@
       "RHM.DE": {
         "ensemble": 55.0
       },
+      "QQQ": {
+        "ensemble": 55.0,
+        "options_unusual": 70.0,
+        "twitter_macro_fear": 41.0
+      },
+      "NVDA": {
+        "ensemble": 68.0,
+        "options_unusual": 70.0
+      },
+      "MSFT": {
+        "ensemble": 68.0,
+        "options_unusual": 70.0,
+        "twitter_greed": 45.0
+      },
+      "META": {
+        "ensemble": 55.0,
+        "options_unusual": 70.0
+      },
       "LDO.MI": {
         "ensemble": 55.0
       },
+      "JPM": {
+        "ensemble": 73.0,
+        "options_unusual": 70.0,
+        "twitter_fear": 65.0
+      },
       "HO.PA": {
         "ensemble": 55.0
+      },
+      "GOOGL": {
+        "ensemble": 73.0,
+        "options_unusual": 70.0
       },
       "GC=F": {
         "ensemble": 55.0,
@@ -3139,11 +3230,35 @@
       "EURUSD=X": {
         "ensemble": 55.0
       },
+      "ETH-USD": {
+        "ensemble": 55.0,
+        "extreme_fear": 74.0,
+        "twitter_fear": 58.0,
+        "stocktwits_greed": 37.0
+      },
+      "CL=F": {
+        "ensemble": 55.0,
+        "twitter_fear": 55.0
+      },
       "BTP10Y": {
         "ensemble": 55.0
       },
+      "BTC-USD": {
+        "ensemble": 55.0,
+        "extreme_fear": 74.0,
+        "stocktwits_greed": 37.0,
+        "twitter_fear": 63.0
+      },
       "BA.L": {
         "ensemble": 55.0
+      },
+      "AMZN": {
+        "ensemble": 96.0,
+        "options_unusual": 70.0
+      },
+      "AAPL": {
+        "ensemble": 96.0,
+        "options_unusual": 70.0
       }
     },
     "google_trends": {
@@ -3427,8 +3542,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 46.08,
-      "pnl_pct": 15.36,
+      "pnl": 7.44,
+      "pnl_pct": 2.48,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -3440,8 +3555,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 38.35,
-      "pnl_pct": 7.67,
+      "pnl": 15.15,
+      "pnl_pct": 3.03,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -3847,8 +3962,8 @@
         "detail": "7/21 (33%) above 50d SMA"
       },
       "momentum": {
-        "score": 0.09090909090909091,
-        "detail": "2/22 (9%) positive 20d returns"
+        "score": 0.045454545454545456,
+        "detail": "1/22 (5%) positive 20d returns"
       },
       "volatility": {
         "score": 0.5,
@@ -3858,13 +3973,13 @@
     "metadata": {
       "raw_scores": {
         "CRISIS": 2.0,
-        "TRENDING_UP": 27.138925535317128,
-        "TRENDING_DOWN": 40.848484848484844,
+        "TRENDING_UP": 26.229834626226218,
+        "TRENDING_DOWN": 41.757575757575765,
         "MEAN_REVERTING": 89.1060291948364
       },
       "description": "Choppy/range-bound \u2014 ideal for contrarian"
     },
-    "timestamp": "2026-02-14T12:01:31.364631"
+    "timestamp": "2026-02-16T08:00:48.251862"
   },
   "signal_heatmap": {
     "grid": [
@@ -3873,11 +3988,7 @@
         "signals": {
           "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 70.0
         }
       },
       {
@@ -3885,11 +3996,7 @@
         "signals": {
           "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 70.0
         }
       },
       {
@@ -3897,11 +4004,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -3909,11 +4012,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 74.0,
-          "options_unusual": 0,
-          "stocktwits_greed": 37.0,
-          "twitter_fear": 63.0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -3921,11 +4020,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -3933,11 +4028,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 55.0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -3945,11 +4036,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 74.0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 58.0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -3957,11 +4044,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -3969,11 +4052,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -3981,11 +4060,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 54.0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -3993,11 +4068,7 @@
         "signals": {
           "ensemble": 73.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 70.0
         }
       },
       {
@@ -4005,11 +4076,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -4017,11 +4084,7 @@
         "signals": {
           "ensemble": 73.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 65.0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 70.0
         }
       },
       {
@@ -4029,11 +4092,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -4041,47 +4100,31 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 70.0
         }
       },
       {
         "instrument": "MSFT",
         "signals": {
-          "ensemble": 55.0,
+          "ensemble": 68.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 45.0,
-          "twitter_macro_fear": 0
+          "options_unusual": 70.0
         }
       },
       {
         "instrument": "NVDA",
         "signals": {
-          "ensemble": 100.0,
+          "ensemble": 68.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 70.0
         }
       },
       {
         "instrument": "QQQ",
         "signals": {
-          "ensemble": 0,
+          "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 43.0
+          "options_unusual": 70.0
         }
       },
       {
@@ -4089,11 +4132,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -4101,11 +4140,7 @@
         "signals": {
           "ensemble": 55.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       },
       {
@@ -4113,11 +4148,7 @@
         "signals": {
           "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 43.0
+          "options_unusual": 70.0
         }
       },
       {
@@ -4125,34 +4156,22 @@
         "signals": {
           "ensemble": 73.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 70.0
         }
       },
       {
         "instrument": "^VIX",
         "signals": {
-          "ensemble": 100.0,
+          "ensemble": 75.0,
           "extreme_fear": 0,
-          "options_unusual": 0,
-          "stocktwits_greed": 0,
-          "twitter_fear": 49.0,
-          "twitter_greed": 0,
-          "twitter_macro_fear": 0
+          "options_unusual": 0
         }
       }
     ],
     "signal_types": [
       "ensemble",
       "extreme_fear",
-      "options_unusual",
-      "stocktwits_greed",
-      "twitter_fear",
-      "twitter_greed",
-      "twitter_macro_fear"
+      "options_unusual"
     ],
     "instruments": [
       "AAPL",
@@ -4180,15 +4199,11 @@
       "^VIX"
     ],
     "signal_counts": {
-      "twitter_macro_fear": 4,
-      "twitter_fear": 6,
-      "options_unusual": 20,
-      "extreme_fear": 4,
-      "ensemble": 22,
-      "stocktwits_greed": 1,
-      "twitter_greed": 1
+      "ensemble": 23,
+      "options_unusual": 10,
+      "extreme_fear": 2
     },
-    "total_signals": 58
+    "total_signals": 35
   },
   "polymarket": {
     "portfolio": {
@@ -4204,6 +4219,14 @@
     },
     "positions": [],
     "opportunities": [
+      {
+        "question": "Will the next Dutch government be PVV + VVD + D66?",
+        "our_estimate": 100.0,
+        "market_price": 0.1,
+        "edge": 50.0,
+        "confidence": "Medium",
+        "side": "NO"
+      },
       {
         "question": "US strikes Iran by February 11, 2026?",
         "our_estimate": 100.0,
@@ -4229,14 +4252,6 @@
         "side": "NO"
       },
       {
-        "question": "Will France win the Men's Ice Hockey gold medal at the 2026 Winter Olympics?",
-        "our_estimate": 100.0,
-        "market_price": 0.1,
-        "edge": 50.0,
-        "confidence": "Medium",
-        "side": "NO"
-      },
-      {
         "question": "Will the US strike Iran next?",
         "our_estimate": 100.0,
         "market_price": 0.1,
@@ -4245,7 +4260,7 @@
         "side": "NO"
       },
       {
-        "question": "Will Italy win the Men's Ice Hockey gold medal at the 2026 Winter Olympics?",
+        "question": "Will France win the Men's Ice Hockey gold medal at the 2026 Winter Olympics?",
         "our_estimate": 100.0,
         "market_price": 0.1,
         "edge": 50.0,
@@ -4261,12 +4276,12 @@
         "side": "YES"
       },
       {
-        "question": "Will Elon Musk post 140-164 tweets from February 9 to February 11, 2026?",
+        "question": "Will Ahmed Aboutaleb become the next Prime Minister of the Netherlands?",
         "our_estimate": 100.0,
-        "market_price": 100.0,
+        "market_price": 0.1,
         "edge": 50.0,
         "confidence": "Medium",
-        "side": "YES"
+        "side": "NO"
       }
     ],
     "trade_history": [
@@ -4283,23 +4298,23 @@
     "categories": {
       "politics": {
         "count": 37,
-        "avg_edge": 43.9
+        "avg_edge": 43.8
       },
       "economics": {
-        "count": 9,
-        "avg_edge": 44.7
+        "count": 10,
+        "avg_edge": 44.6
       },
       "other": {
-        "count": 304,
-        "avg_edge": 44.7
+        "count": 343,
+        "avg_edge": 44.4
       },
       "crypto": {
-        "count": 155,
-        "avg_edge": 44.1
+        "count": 183,
+        "avg_edge": 44.4
       },
       "sports": {
-        "count": 32,
-        "avg_edge": 46.1
+        "count": 38,
+        "avg_edge": 45.4
       }
     },
     "signal_sources": [
@@ -4329,11 +4344,11 @@
       },
       {
         "type": "consensus",
-        "label": "Twitter Macro Fear"
+        "label": "Extreme Fear"
       },
       {
         "type": "consensus",
-        "label": "Extreme Fear"
+        "label": "Twitter Macro Fear"
       },
       {
         "type": "consensus",

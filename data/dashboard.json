@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-16T21:05:08.104383+00:00",
+  "generated_at": "2026-02-16T21:05:36.638909+00:00",
   "next_update": "2026-02-17T07:00:00+00:00",
   "market_mood": {
     "composite": -0.415,
@@ -4144,10 +4144,10 @@
     }
   ],
   "pipeline_status": {
-    "last_run": "2026-02-13 22:00:14",
-    "steps_completed": 36,
-    "steps_failed": 0,
-    "elapsed_seconds": 282.8,
+    "last_run": "2026-02-16 22:00:27",
+    "steps_completed": 35,
+    "steps_failed": 1,
+    "elapsed_seconds": 283.5,
     "next_run": null
   },
   "twitter_sentiment": {

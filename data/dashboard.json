@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-03-02T11:10:35.702768+00:00",
-  "next_update": "2026-03-02T21:00:00+00:00",
+  "generated_at": "2026-03-02T21:06:38.931937+00:00",
+  "next_update": "2026-03-03T07:00:00+00:00",
   "market_mood": {
-    "composite": -0.3757,
+    "composite": -0.3867,
     "cnn_fear_greed": {
-      "value": 42.8857142857143,
+      "value": 41.2289738430584,
       "label": "Neutral"
     },
     "crypto_fear_greed": {
@@ -12,8 +12,8 @@
       "label": "Extreme Fear"
     },
     "vix": {
-      "value": 19.860000610351562,
-      "label": "Normal"
+      "value": 21.459999,
+      "label": "Elevated"
     },
     "google_trends": {
       "composite": -0.1848,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 1939.5461,
-      "pnl_dollar": -0.18,
-      "pnl_percent": -0.06
+      "current_price": 2033.8807,
+      "pnl_dollar": 28.99,
+      "pnl_percent": 9.66
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 66080.4062,
-      "pnl_dollar": -18.69,
-      "pnl_percent": -3.74
+      "current_price": 69140.0312,
+      "pnl_dollar": 26.75,
+      "pnl_percent": 5.35
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 781.13,
-    "total_pnl": -18.87,
-    "total_pnl_pct": -2.36
+    "total_current_value": 855.74,
+    "total_pnl": 55.74,
+    "total_pnl_pct": 6.97
   },
   "strategies": {
     "gekko": {
@@ -878,6 +878,21 @@
         "d": "2026-03-02",
         "total_value": 788.2,
         "total_pnl": -11.8
+      },
+      {
+        "d": "2026-03-02",
+        "total_value": 807.55,
+        "total_pnl": 7.550000000000001
+      },
+      {
+        "d": "2026-03-02",
+        "total_value": 852.34,
+        "total_pnl": 52.34
+      },
+      {
+        "d": "2026-03-02",
+        "total_value": 0.0,
+        "total_pnl": 0.0
       }
     ]
   },
@@ -900,262 +915,6 @@
         "post_mortem": null
       },
       {
-        "id": 146,
-        "symbol": "SPY",
-        "direction": "bearish",
-        "conviction": 74,
-        "thesis": "SPY BEARISH. Technicals: RSI elevated (60); near Bollinger upper band. Signals: unusual put activity; unusual put activity. Recent news: NYSE insider Jay Woods is watching this key level in Nvidia .",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 638.02,
-        "entry_price": 681.650024,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:39.995731",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 148,
-        "symbol": "QQQ",
-        "direction": "bearish",
-        "conviction": 85,
-        "thesis": "QQQ BEARISH. Technicals: trend aligned up across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Jim Cramer says this Big Tech stock is set for another run a.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 553.3,
-        "entry_price": 601.409973,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.101997",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 150,
-        "symbol": "AAPL",
-        "direction": "bearish",
-        "conviction": 90,
-        "thesis": "AAPL BEARISH. Technicals: trend aligned down across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 244.89,
-        "entry_price": 266.179993,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.175094",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 152,
-        "symbol": "MSFT",
-        "direction": "bearish",
-        "conviction": 90,
-        "thesis": "MSFT BEARISH. Down -3.8% this week \u2014 oversold bounce setup. Technicals: RSI low (38). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 353.82,
-        "entry_price": 384.588989,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.278835",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 154,
-        "symbol": "GOOGL",
-        "direction": "bearish",
-        "conviction": 90,
-        "thesis": "GOOGL BEARISH. Technicals: RSI overbought (82). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 286.57,
-        "entry_price": 311.48999,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.383205",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 156,
-        "symbol": "AMZN",
-        "direction": "bearish",
-        "conviction": 90,
-        "thesis": "AMZN BEARISH. Technicals: RSI overbought (74); near Bollinger upper band. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Amazon invests $12B for data centers in Louisiana to cater t; Amazon shares slip amid $12 billion Louisiana data center be.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 188.89,
-        "entry_price": 205.315002,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.486341",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 158,
-        "symbol": "NVDA",
-        "direction": "bullish",
-        "conviction": 95,
-        "thesis": "NVDA BEARISH. Technicals: RSI elevated (64). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Trending on CoinGecko: PEPETO, Bitcoin, Solana, USD1, Pudgy ; Easterly projects 3% core FFO growth for 2026 while advancin. [Worldview override: ### AI Destroys Traditional Software Value]",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 177.76,
-        "entry_price": 191.550003,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.556752",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 160,
-        "symbol": "META",
-        "direction": "bearish",
-        "conviction": 85,
-        "thesis": "META BEARISH. Technicals: RSI overbought (78). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 586.27,
-        "entry_price": 637.25,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.664712",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 162,
-        "symbol": "TSLA",
-        "direction": "bearish",
-        "conviction": 56,
-        "thesis": "TSLA BEARISH. Signals: unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 381.44,
-        "entry_price": 399.829987,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.770512",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 164,
-        "symbol": "JPM",
-        "direction": "bearish",
-        "conviction": 90,
-        "thesis": "JPM BEARISH. Down -3.6% this week \u2014 oversold bounce setup. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual call activity; unusual call activity. Options flow: unusual put volume; unusual call volume. Recent news: Top mid cap U.S. regional banks with high price-to-book mult; Top large cap U.S. regional banks with high price-to-book mu.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 273.7,
-        "entry_price": 297.5,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.840932",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 166,
-        "symbol": "BTC-USD",
-        "direction": "bullish",
-        "conviction": 90,
-        "thesis": "BTC-USD BULLISH. Crypto sentiment in extreme fear (-0.87) \u2014 contrarian signal. Down -5.3% this week \u2014 oversold bounce setup. Technicals: RSI low (37). Signals: extreme_fear signal (conv=77); extreme_fear signal (conv=75); extreme_fear signal (conv=75); extreme_fear signal (conv=75); extreme_fear signal (conv=74); extreme_fear signal (conv=75); extreme_fear signal (conv=74); extreme_fear signal (conv=72). Recent news: Trending #2: Bitcoin (BTC); Trending on CoinGecko: PEPETO, Bitcoin, Solana, USD1, Pudgy .",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 69550.82,
-        "entry_price": 64398.90625,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:40.950355",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 168,
-        "symbol": "ETH-USD",
-        "direction": "bullish",
-        "conviction": 90,
-        "thesis": "ETH-USD BULLISH. Crypto sentiment in extreme fear (-0.87) \u2014 contrarian signal. Down -5.5% this week \u2014 oversold bounce setup. Technicals: RSI low (34). Signals: extreme_fear signal (conv=77); extreme_fear signal (conv=75); extreme_fear signal (conv=75); extreme_fear signal (conv=75); extreme_fear signal (conv=74); extreme_fear signal (conv=75); extreme_fear signal (conv=74); extreme_fear signal (conv=72). Recent news: Trending on CoinGecko: PEPETO, Bitcoin, Solana, USD1, Pudgy ; Crypto.com says it received conditional approval for nationa.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 2008.82,
-        "entry_price": 1860.018066,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.057702",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 170,
-        "symbol": "FTSEMIB.MI",
-        "direction": "bearish",
-        "conviction": 40,
-        "thesis": "FTSEMIB.MI BEARISH. Technicals: RSI overbought (85).",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 45064.81,
-        "entry_price": 46699.289062,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.132289",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 171,
-        "symbol": "EURUSD=X",
-        "direction": "bearish",
-        "conviction": 45,
-        "thesis": "EURUSD=X BEARISH. Technicals: RSI overbought (77); trend aligned down across timeframes.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 1.13,
-        "entry_price": 1.179245,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.197151",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 173,
-        "symbol": "GC=F",
-        "direction": "bearish",
-        "conviction": 50,
-        "thesis": "GC=F BEARISH. Up +5.3% this week \u2014 stretched, pullback likely. Technicals: RSI overbought (74).",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 5012.41,
-        "entry_price": 5248.600098,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.271727",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 175,
-        "symbol": "CL=F",
-        "direction": "bullish",
-        "conviction": 60,
-        "thesis": "CL=F BULLISH. Technicals: near Bollinger lower band; trend aligned up across timeframes. Recent news: Xcel Energy ordered to take action to protect against potent; Imperial Oil cut at RBC as valuation 'stretched' after years.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 69.75,
-        "entry_price": 66.43,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.378746",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
         "id": 177,
         "symbol": "BTP10Y",
         "direction": "bullish",
@@ -1167,86 +926,6 @@
         "entry_price": 3.347,
         "status": "open",
         "created_at": "2026-02-23T22:05:41.486833",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 179,
-        "symbol": "LDO.MI",
-        "direction": "bearish",
-        "conviction": 25,
-        "thesis": "LDO.MI BEARISH. Technicals: RSI elevated (61).",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 56.53,
-        "entry_price": 57.98,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.591814",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 180,
-        "symbol": "RHM.DE",
-        "direction": "bearish",
-        "conviction": 25,
-        "thesis": "RHM.DE BEARISH. Technicals: RSI elevated (66).",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 1658.96,
-        "entry_price": 1701.5,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.622380",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 181,
-        "symbol": "BA.L",
-        "direction": "bearish",
-        "conviction": 25,
-        "thesis": "BA.L BEARISH. Technicals: RSI elevated (68).",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 2083.57,
-        "entry_price": 2137.0,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.657988",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 182,
-        "symbol": "HO.PA",
-        "direction": "bearish",
-        "conviction": 35,
-        "thesis": "HO.PA BEARISH. Technicals: RSI overbought (77).",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 244.63,
-        "entry_price": 253.5,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.722385",
-        "strategy": "gekko",
-        "score": null,
-        "post_mortem": null
-      },
-      {
-        "id": 183,
-        "symbol": "SAAB-B.ST",
-        "direction": "bullish",
-        "conviction": 65,
-        "thesis": "SAAB-B.ST BULLISH. Technicals: trend aligned up across timeframes.",
-        "horizon": "1W",
-        "deadline": "2026-03-02T22:05:39.799773",
-        "target_price": 672.13,
-        "entry_price": 649.400024,
-        "status": "open",
-        "created_at": "2026-02-23T22:05:41.761293",
         "strategy": "gekko",
         "score": null,
         "post_mortem": null
@@ -1951,6 +1630,342 @@
         "entry_price": 653.400024,
         "status": "open",
         "created_at": "2026-02-27T22:05:30.231824",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 275,
+        "symbol": "SPY",
+        "direction": "bearish",
+        "conviction": 71,
+        "thesis": "SPY BEARISH. Technicals: RSI low (37). Signals: unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 644.58,
+        "entry_price": 686.450012,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:33.935876",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 277,
+        "symbol": "QQQ",
+        "direction": "bearish",
+        "conviction": 85,
+        "thesis": "QQQ BEARISH. Technicals: RSI low (34). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Siemens, Rock Tech to partner on lithium hydroxide plant in .",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 559.44,
+        "entry_price": 608.090027,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.006941",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 279,
+        "symbol": "AAPL",
+        "direction": "bearish",
+        "conviction": 65,
+        "thesis": "AAPL BEARISH. Down -3.5% this week \u2014 oversold bounce setup. Technicals: RSI oversold (21); near Bollinger lower band. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Apple's new budget version of its iPhone 17 is a positive fo.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 250.03,
+        "entry_price": 264.579987,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.079632",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 281,
+        "symbol": "MSFT",
+        "direction": "bearish",
+        "conviction": 90,
+        "thesis": "MSFT BEARISH. Technicals: RSI oversold (27). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 366.39,
+        "entry_price": 398.25,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.153712",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 283,
+        "symbol": "GOOGL",
+        "direction": "bearish",
+        "conviction": 90,
+        "thesis": "GOOGL BEARISH. Technicals: trend aligned up across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 281.77,
+        "entry_price": 306.274994,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.222935",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 285,
+        "symbol": "AMZN",
+        "direction": "bearish",
+        "conviction": 90,
+        "thesis": "AMZN BEARISH. Technicals: trend aligned up across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Amazon\u2019s AWS reports outage after UAE data center struck by .",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 191.64,
+        "entry_price": 208.300003,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.303881",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 287,
+        "symbol": "NVDA",
+        "direction": "bullish",
+        "conviction": 95,
+        "thesis": "NVDA BEARISH. Down -6.7% this week \u2014 oversold bounce setup. Technicals: RSI oversold (9). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Trending #3: Freysa AI (FAI); Trending on CoinGecko: Venice Token, Pudgy Penguins, Freysa . [Worldview override: ### AI Destroys Traditional Software Value]",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 169.79,
+        "entry_price": 182.373001,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.372588",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 289,
+        "symbol": "META",
+        "direction": "bearish",
+        "conviction": 85,
+        "thesis": "META BEARISH. Technicals: trend aligned up across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 601.18,
+        "entry_price": 653.460022,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.445335",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 291,
+        "symbol": "TSLA",
+        "direction": "bearish",
+        "conviction": 65,
+        "thesis": "TSLA BEARISH. Down -3.4% this week \u2014 oversold bounce setup. Technicals: RSI oversold (25). Signals: unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 381.14,
+        "entry_price": 403.320007,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.530246",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 293,
+        "symbol": "JPM",
+        "direction": "bearish",
+        "conviction": 90,
+        "thesis": "JPM BEARISH. Technicals: trend aligned down across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual call activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 273.51,
+        "entry_price": 297.294098,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.608233",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 295,
+        "symbol": "BTC-USD",
+        "direction": "bullish",
+        "conviction": 90,
+        "thesis": "BTC-USD BULLISH. Crypto sentiment in extreme fear (-0.77) \u2014 contrarian signal. Up +5.2% this week \u2014 stretched, pullback likely. Technicals: RSI elevated (61). Signals: extreme_fear signal (conv=74); extreme_fear signal (conv=73); extreme_fear signal (conv=73); extreme_fear signal (conv=72); extreme_fear signal (conv=73); extreme_fear signal (conv=73); extreme_fear signal (conv=75); extreme_fear signal (conv=77). Recent news: Trending #4: Bitcoin (BTC); Trending on CoinGecko: Venice Token, Pudgy Penguins, Freysa .",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 74890.42,
+        "entry_price": 69342.984375,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.680408",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 297,
+        "symbol": "ETH-USD",
+        "direction": "bullish",
+        "conviction": 90,
+        "thesis": "ETH-USD BULLISH. Crypto sentiment in extreme fear (-0.77) \u2014 contrarian signal. Up +5.7% this week \u2014 stretched, pullback likely. Technicals: RSI elevated (64); trend aligned down across timeframes. Signals: extreme_fear signal (conv=74); extreme_fear signal (conv=73); extreme_fear signal (conv=73); extreme_fear signal (conv=72); extreme_fear signal (conv=73); extreme_fear signal (conv=73); extreme_fear signal (conv=75); extreme_fear signal (conv=77). Recent news: Trending on CoinGecko: Venice Token, Pudgy Penguins, Freysa .",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 2204.77,
+        "entry_price": 2041.452393,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.753119",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 299,
+        "symbol": "FTSEMIB.MI",
+        "direction": "bullish",
+        "conviction": 70,
+        "thesis": "FTSEMIB.MI BULLISH. Technicals: trend aligned up across timeframes.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 48594.42,
+        "entry_price": 46280.398438,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.851225",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 301,
+        "symbol": "EURUSD=X",
+        "direction": "bullish",
+        "conviction": 80,
+        "thesis": "EURUSD=X BULLISH. Technicals: RSI oversold (18); near Bollinger lower band. Recent news: Euro, yen slide as Middle East conflict escalates.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 1.23,
+        "entry_price": 1.169317,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.928261",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 303,
+        "symbol": "GC=F",
+        "direction": "bearish",
+        "conviction": 60,
+        "thesis": "GC=F BEARISH. Technicals: RSI overbought (73). Recent news: COP, LOAR added to Goldman's U.S. conviction list; HII, MSGE; U.S. GoldMining jumps 20% on positive preliminary economic a.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 5058.49,
+        "entry_price": 5352.899902,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.042611",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 305,
+        "symbol": "CL=F",
+        "direction": "bearish",
+        "conviction": 76,
+        "thesis": "CL=F BEARISH. Up +10.7% this week \u2014 stretched, pullback likely. Technicals: RSI overbought (70); near Bollinger upper band. Recent news: Kosmos Energy targets 15% production growth and 20% OpEx red; Iran conflict hits a market that\u2019s more overvalued than duri.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 67.62,
+        "entry_price": 72.400002,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.114725",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 307,
+        "symbol": "BTP10Y",
+        "direction": "bullish",
+        "conviction": 70,
+        "thesis": "BTP10Y BULLISH. Down -17.6% this week \u2014 oversold bounce setup.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 3.48,
+        "entry_price": 3.31,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.189399",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 309,
+        "symbol": "LDO.MI",
+        "direction": "bearish",
+        "conviction": 55,
+        "thesis": "LDO.MI BEARISH. Technicals: trend aligned down across timeframes.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 55.02,
+        "entry_price": 58.220001,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.262607",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 311,
+        "symbol": "RHM.DE",
+        "direction": "bearish",
+        "conviction": 55,
+        "thesis": "RHM.DE BEARISH. Down -3.2% this week \u2014 oversold bounce setup. Technicals: trend aligned down across timeframes.",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 1537.99,
+        "entry_price": 1627.5,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.345065",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 313,
+        "symbol": "BA.L",
+        "direction": "bearish",
+        "conviction": 55,
+        "thesis": "BA.L BEARISH. Up +6.4% this week \u2014 stretched, pullback likely. Technicals: RSI elevated (66).",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 2117.74,
+        "entry_price": 2241.0,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.415228",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 315,
+        "symbol": "HO.PA",
+        "direction": "bearish",
+        "conviction": 55,
+        "thesis": "HO.PA BEARISH. Technicals: RSI elevated (64).",
+        "horizon": "1W",
+        "deadline": "2026-03-09T22:06:33.719174",
+        "target_price": 241.83,
+        "entry_price": 255.899994,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.497191",
         "strategy": "gekko",
         "score": null,
         "post_mortem": null
@@ -3636,6 +3651,342 @@
         "post_mortem": null
       },
       {
+        "id": 276,
+        "symbol": "SPY",
+        "direction": "bearish",
+        "conviction": 76,
+        "thesis": "[1M] SPY BEARISH. Technicals: RSI low (37). Signals: unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 581.77,
+        "entry_price": 686.450012,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:33.972401",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 278,
+        "symbol": "QQQ",
+        "direction": "bearish",
+        "conviction": 85,
+        "thesis": "[1M] QQQ BEARISH. Technicals: RSI low (34). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Siemens, Rock Tech to partner on lithium hydroxide plant in .",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 486.47,
+        "entry_price": 608.090027,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.040828",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 280,
+        "symbol": "AAPL",
+        "direction": "bearish",
+        "conviction": 70,
+        "thesis": "[1M] AAPL BEARISH. Down -3.5% this week \u2014 oversold bounce setup. Technicals: RSI oversold (21); near Bollinger lower band. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Apple's new budget version of its iPhone 17 is a positive fo.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 228.2,
+        "entry_price": 264.579987,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.115899",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 282,
+        "symbol": "MSFT",
+        "direction": "bearish",
+        "conviction": 90,
+        "thesis": "[1M] MSFT BEARISH. Technicals: RSI oversold (27). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 318.6,
+        "entry_price": 398.25,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.185341",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 284,
+        "symbol": "GOOGL",
+        "direction": "bearish",
+        "conviction": 90,
+        "thesis": "[1M] GOOGL BEARISH. Technicals: trend aligned up across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 245.02,
+        "entry_price": 306.274994,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.262789",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 286,
+        "symbol": "AMZN",
+        "direction": "bearish",
+        "conviction": 90,
+        "thesis": "[1M] AMZN BEARISH. Technicals: trend aligned up across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Amazon\u2019s AWS reports outage after UAE data center struck by .",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 166.64,
+        "entry_price": 208.300003,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.336171",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 288,
+        "symbol": "NVDA",
+        "direction": "bullish",
+        "conviction": 95,
+        "thesis": "[1M] NVDA BEARISH. Down -6.7% this week \u2014 oversold bounce setup. Technicals: RSI oversold (9). Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume. Recent news: Trending #3: Freysa AI (FAI); Trending on CoinGecko: Venice Token, Pudgy Penguins, Freysa . [Worldview override: ### AI Destroys Traditional Software Value]",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 150.91,
+        "entry_price": 182.373001,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.409719",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 290,
+        "symbol": "META",
+        "direction": "bearish",
+        "conviction": 85,
+        "thesis": "[1M] META BEARISH. Technicals: trend aligned up across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 522.77,
+        "entry_price": 653.460022,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.483246",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 292,
+        "symbol": "TSLA",
+        "direction": "bearish",
+        "conviction": 70,
+        "thesis": "[1M] TSLA BEARISH. Down -3.4% this week \u2014 oversold bounce setup. Technicals: RSI oversold (25). Signals: unusual put activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 347.86,
+        "entry_price": 403.320007,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.573599",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 294,
+        "symbol": "JPM",
+        "direction": "bearish",
+        "conviction": 90,
+        "thesis": "[1M] JPM BEARISH. Technicals: trend aligned down across timeframes. Signals: unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual put activity; unusual call activity; unusual put activity; unusual put activity. Options flow: unusual put volume; unusual call volume.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 237.84,
+        "entry_price": 297.294098,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.642358",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 296,
+        "symbol": "BTC-USD",
+        "direction": "bullish",
+        "conviction": 90,
+        "thesis": "[1M] BTC-USD BULLISH. Crypto sentiment in extreme fear (-0.77) \u2014 contrarian signal. Up +5.2% this week \u2014 stretched, pullback likely. Technicals: RSI elevated (61). Signals: extreme_fear signal (conv=74); extreme_fear signal (conv=73); extreme_fear signal (conv=73); extreme_fear signal (conv=72); extreme_fear signal (conv=73); extreme_fear signal (conv=73); extreme_fear signal (conv=75); extreme_fear signal (conv=77). Recent news: Trending #4: Bitcoin (BTC); Trending on CoinGecko: Venice Token, Pudgy Penguins, Freysa .",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 83211.58,
+        "entry_price": 69342.984375,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.719953",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 298,
+        "symbol": "ETH-USD",
+        "direction": "bullish",
+        "conviction": 90,
+        "thesis": "[1M] ETH-USD BULLISH. Crypto sentiment in extreme fear (-0.77) \u2014 contrarian signal. Up +5.7% this week \u2014 stretched, pullback likely. Technicals: RSI elevated (64); trend aligned down across timeframes. Signals: extreme_fear signal (conv=74); extreme_fear signal (conv=73); extreme_fear signal (conv=73); extreme_fear signal (conv=72); extreme_fear signal (conv=73); extreme_fear signal (conv=73); extreme_fear signal (conv=75); extreme_fear signal (conv=77). Recent news: Trending on CoinGecko: Venice Token, Pudgy Penguins, Freysa .",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 2449.74,
+        "entry_price": 2041.452393,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.805759",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 300,
+        "symbol": "FTSEMIB.MI",
+        "direction": "bullish",
+        "conviction": 75,
+        "thesis": "[1M] FTSEMIB.MI BULLISH. Technicals: trend aligned up across timeframes.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 52065.45,
+        "entry_price": 46280.398438,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.885672",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 302,
+        "symbol": "EURUSD=X",
+        "direction": "bullish",
+        "conviction": 85,
+        "thesis": "[1M] EURUSD=X BULLISH. Technicals: RSI oversold (18); near Bollinger lower band. Recent news: Euro, yen slide as Middle East conflict escalates.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 1.32,
+        "entry_price": 1.169317,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:34.967643",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 304,
+        "symbol": "GC=F",
+        "direction": "bearish",
+        "conviction": 65,
+        "thesis": "[1M] GC=F BEARISH. Technicals: RSI overbought (73). Recent news: COP, LOAR added to Goldman's U.S. conviction list; HII, MSGE; U.S. GoldMining jumps 20% on positive preliminary economic a.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 4616.88,
+        "entry_price": 5352.899902,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.081188",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 306,
+        "symbol": "CL=F",
+        "direction": "bearish",
+        "conviction": 81,
+        "thesis": "[1M] CL=F BEARISH. Up +10.7% this week \u2014 stretched, pullback likely. Technicals: RSI overbought (70); near Bollinger upper band. Recent news: Kosmos Energy targets 15% production growth and 20% OpEx red; Iran conflict hits a market that\u2019s more overvalued than duri.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 60.45,
+        "entry_price": 72.400002,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.154274",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 308,
+        "symbol": "BTP10Y",
+        "direction": "bullish",
+        "conviction": 75,
+        "thesis": "[1M] BTP10Y BULLISH. Down -17.6% this week \u2014 oversold bounce setup.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 3.72,
+        "entry_price": 3.31,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.226184",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 310,
+        "symbol": "LDO.MI",
+        "direction": "bearish",
+        "conviction": 60,
+        "thesis": "[1M] LDO.MI BEARISH. Technicals: trend aligned down across timeframes.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 50.21,
+        "entry_price": 58.220001,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.310876",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 312,
+        "symbol": "RHM.DE",
+        "direction": "bearish",
+        "conviction": 60,
+        "thesis": "[1M] RHM.DE BEARISH. Down -3.2% this week \u2014 oversold bounce setup. Technicals: trend aligned down across timeframes.",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 1403.72,
+        "entry_price": 1627.5,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.379353",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 314,
+        "symbol": "BA.L",
+        "direction": "bearish",
+        "conviction": 60,
+        "thesis": "[1M] BA.L BEARISH. Up +6.4% this week \u2014 stretched, pullback likely. Technicals: RSI elevated (66).",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 1932.86,
+        "entry_price": 2241.0,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.459203",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 316,
+        "symbol": "HO.PA",
+        "direction": "bearish",
+        "conviction": 60,
+        "thesis": "[1M] HO.PA BEARISH. Technicals: RSI elevated (64).",
+        "horizon": "1M",
+        "deadline": "2026-04-01T22:06:33.719174",
+        "target_price": 220.71,
+        "entry_price": 255.899994,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.545926",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
         "id": 11,
         "symbol": "EURUSD=X",
         "direction": "bullish",
@@ -3903,6 +4254,22 @@
         "entry_price": 685.840027,
         "status": "open",
         "created_at": "2026-02-27T22:05:30.311349",
+        "strategy": "gekko",
+        "score": null,
+        "post_mortem": null
+      },
+      {
+        "id": 317,
+        "symbol": "SPY",
+        "direction": "bearish",
+        "conviction": 35,
+        "thesis": "6M macro: Benner Cycle late expansion \u2014 smart money reducing exposure. No extreme sentiment \u2014 watching for catalyst.",
+        "horizon": "6M",
+        "deadline": "2026-08-29T22:06:33.719174",
+        "target_price": null,
+        "entry_price": 686.450012,
+        "status": "open",
+        "created_at": "2026-03-02T22:06:35.588592",
         "strategy": "gekko",
         "score": null,
         "post_mortem": null
@@ -4711,162 +5078,162 @@
       }
     ],
     "stats": {
-      "total": 274,
-      "correct": 83,
-      "open_count": 189,
-      "resolved_count": 85,
-      "accuracy": 97.6,
+      "total": 317,
+      "correct": 104,
+      "open_count": 211,
+      "resolved_count": 106,
+      "accuracy": 98.1,
       "conviction_tiers": [
         {
           "tier": "0-30",
-          "total": 3,
-          "correct": 3,
+          "total": 6,
+          "correct": 6,
           "accuracy": 100.0
         },
         {
           "tier": "30-50",
-          "total": 27,
-          "correct": 25,
-          "accuracy": 92.6
+          "total": 30,
+          "correct": 28,
+          "accuracy": 93.3
         },
         {
           "tier": "50-70",
-          "total": 29,
-          "correct": 29,
+          "total": 33,
+          "correct": 33,
           "accuracy": 100.0
         },
         {
           "tier": "70+",
-          "total": 26,
-          "correct": 26,
+          "total": 37,
+          "correct": 37,
           "accuracy": 100.0
         }
       ],
       "instrument_accuracy": [
         {
           "symbol": "AAPL",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "AMZN",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "BA.L",
-          "total": 2,
-          "correct": 1,
-          "accuracy": 50.0
+          "total": 3,
+          "correct": 2,
+          "accuracy": 66.7
         },
         {
           "symbol": "BTC-USD",
-          "total": 8,
-          "correct": 8,
+          "total": 9,
+          "correct": 9,
           "accuracy": 100.0
         },
         {
           "symbol": "CL=F",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "ETH-USD",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "EURUSD=X",
-          "total": 2,
-          "correct": 2,
+          "total": 3,
+          "correct": 3,
           "accuracy": 100.0
         },
         {
           "symbol": "FTSEMIB.MI",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "GC=F",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "GOOGL",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "HO.PA",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "JPM",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "LDO.MI",
-          "total": 4,
-          "correct": 3,
-          "accuracy": 75.0
+          "total": 5,
+          "correct": 4,
+          "accuracy": 80.0
         },
         {
           "symbol": "META",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "MSFT",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "NVDA",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         },
         {
           "symbol": "QQQ",
-          "total": 3,
-          "correct": 3,
+          "total": 4,
+          "correct": 4,
           "accuracy": 100.0
         },
         {
           "symbol": "RHM.DE",
-          "total": 3,
-          "correct": 3,
+          "total": 4,
+          "correct": 4,
           "accuracy": 100.0
         },
         {
           "symbol": "SAAB-B.ST",
-          "total": 3,
-          "correct": 3,
+          "total": 4,
+          "correct": 4,
           "accuracy": 100.0
         },
         {
           "symbol": "SPY",
-          "total": 8,
-          "correct": 8,
+          "total": 9,
+          "correct": 9,
           "accuracy": 100.0
         },
         {
           "symbol": "TSLA",
-          "total": 4,
-          "correct": 4,
+          "total": 5,
+          "correct": 5,
           "accuracy": 100.0
         }
       ]
@@ -4908,6 +5275,13 @@
         "conviction": 100.0,
         "thesis": "Ensemble: 2 groups aligned bullish (standard). Groups: sentiment, smart_money, twitter",
         "timestamp": "2026-02-23T12:01:41.130809"
+      },
+      {
+        "symbol": "TSLA",
+        "type": "ensemble",
+        "conviction": 100.0,
+        "thesis": "Ensemble: 2 groups aligned bullish (standard). Groups: sentiment, smart_money, twitter",
+        "timestamp": "2026-03-02T22:06:21.439372"
       },
       {
         "symbol": "AAPL",
@@ -5006,20 +5380,13 @@
         "conviction": 96.0,
         "thesis": "Ensemble: 3 groups aligned bullish (HIGH CONF). Groups: sentiment, crowd, twitter",
         "timestamp": "2026-02-19T12:02:42.059779"
-      },
-      {
-        "symbol": "AAPL",
-        "type": "ensemble",
-        "conviction": 96.0,
-        "thesis": "Ensemble: 2 groups aligned bullish (standard). Groups: sentiment, smart_money, twitter",
-        "timestamp": "2026-02-21T12:01:29.066814"
       }
     ],
     "sentiment_history": [
       {
         "source": "cnn_fear_greed",
-        "score": -0.1423,
-        "raw_score": 42.8857142857143,
+        "score": -0.15885,
+        "raw_score": 42.05734406438635,
         "timestamp": "2026-03-02"
       },
       {
@@ -5036,8 +5403,8 @@
       },
       {
         "source": "vix",
-        "score": 0.3427,
-        "raw_score": 19.860000610351562,
+        "score": 0.28935,
+        "raw_score": 20.65999980517578,
         "timestamp": "2026-03-02"
       },
       {
@@ -6161,7 +6528,7 @@
       {
         "d": "2026-02-25",
         "source": "binance_futures",
-        "avg_score": -0.75
+        "avg_score": -0.58212
       },
       {
         "d": "2026-02-25",
@@ -6196,7 +6563,7 @@
       {
         "d": "2026-02-26",
         "source": "binance_futures",
-        "avg_score": -0.3021333333333333
+        "avg_score": -0.3399
       },
       {
         "d": "2026-02-26",
@@ -6246,7 +6613,7 @@
       {
         "d": "2026-02-27",
         "source": "binance_futures",
-        "avg_score": -0.406275
+        "avg_score": -0.5417
       },
       {
         "d": "2026-02-27",
@@ -6295,6 +6662,11 @@
       },
       {
         "d": "2026-02-28",
+        "source": "binance_futures",
+        "avg_score": -1.0
+      },
+      {
+        "d": "2026-02-28",
         "source": "cnn_fear_greed",
         "avg_score": -0.1423
       },
@@ -6319,9 +6691,24 @@
         "avg_score": -0.19328235294117646
       },
       {
+        "d": "2026-03-01",
+        "source": "binance_futures",
+        "avg_score": -0.94425
+      },
+      {
+        "d": "2026-03-02",
+        "source": "binance_futures",
+        "avg_score": -0.435125
+      },
+      {
         "d": "2026-03-02",
         "source": "cnn_fear_greed",
-        "avg_score": -0.1423
+        "avg_score": -0.15885
+      },
+      {
+        "d": "2026-03-02",
+        "source": "coingecko_global",
+        "avg_score": 0.017666666666666664
       },
       {
         "d": "2026-03-02",
@@ -6346,12 +6733,12 @@
       {
         "d": "2026-03-02",
         "source": "technical_analysis",
-        "avg_score": -0.08636363636363636
+        "avg_score": -0.09090909090909091
       },
       {
         "d": "2026-03-02",
         "source": "vix",
-        "avg_score": 0.3427
+        "avg_score": 0.28935
       },
       {
         "d": "2026-03-02",
@@ -6682,6 +7069,92 @@
       }
     ],
     "ensemble_heatmap": {
+      "^VIX": {
+        "ensemble": 96.0,
+        "twitter_fear": 52.0
+      },
+      "TSLA": {
+        "ensemble": 100.0
+      },
+      "SPY": {
+        "ensemble": 96.0,
+        "twitter_greed": 47.0,
+        "cross_asset_divergence": 0.75,
+        "options_unusual": 70.0
+      },
+      "SAAB-B.ST": {
+        "ensemble": 50.0,
+        "twitter_greed": 50.0
+      },
+      "RHM.DE": {
+        "ensemble": 50.0,
+        "twitter_greed": 52.0
+      },
+      "QQQ": {
+        "ensemble": 43.0,
+        "twitter_greed": 47.0,
+        "options_unusual": 70.0
+      },
+      "LDO.MI": {
+        "ensemble": 64.0,
+        "twitter_greed": 50.0
+      },
+      "JPM": {
+        "ensemble": 90.0,
+        "options_unusual": 70.0,
+        "twitter_greed": 47.0
+      },
+      "HO.PA": {
+        "ensemble": 50.0,
+        "twitter_greed": 45.0
+      },
+      "GOOGL": {
+        "ensemble": 70.0,
+        "twitter_greed": 47.0,
+        "options_unusual": 70.0
+      },
+      "GC=F": {
+        "ensemble": 96.0,
+        "cross_asset_divergence": 0.77,
+        "twitter_greed": 47.0
+      },
+      "FTSEMIB.MI": {
+        "ensemble": 50.0,
+        "twitter_fear": 55.0
+      },
+      "EURUSD=X": {
+        "ensemble": 96.0
+      },
+      "ETH-USD": {
+        "ensemble": 50.0,
+        "extreme_fear": 74.0
+      },
+      "CL=F": {
+        "ensemble": 64.0,
+        "twitter_fear": 49.0
+      },
+      "BTP10Y": {
+        "ensemble": 50.0
+      },
+      "BTC-USD": {
+        "ensemble": 50.0,
+        "twitter_greed": 45.0,
+        "extreme_fear": 74.0
+      },
+      "BA.L": {
+        "ensemble": 50.0,
+        "twitter_greed": 47.0
+      },
+      "AMZN": {
+        "ensemble": 54.0,
+        "twitter_greed": 45.0,
+        "options_unusual": 70.0
+      },
+      "AAPL": {
+        "ensemble": 80.0,
+        "twitter_greed": 45.0,
+        "options_unusual": 70.0
+      },
       "NVDA": {
         "ensemble": 96.0,
         "twitter_greed": 52.0,
@@ -6692,95 +7165,9 @@
         "twitter_greed": 50.0,
         "options_unusual": 70.0
       },
-      "GC=F": {
-        "cross_asset_divergence": 0.72,
-        "twitter_greed": 47.0,
-        "ensemble": 96.0
-      },
-      "^VIX": {
-        "twitter_fear": 52.0,
-        "ensemble": 45.0
-      },
-      "SAAB-B.ST": {
-        "twitter_greed": 50.0,
-        "ensemble": 45.0
-      },
-      "RHM.DE": {
-        "twitter_greed": 52.0,
-        "ensemble": 45.0
-      },
-      "QQQ": {
-        "twitter_greed": 47.0,
-        "options_unusual": 70.0,
-        "ensemble": 45.0
-      },
       "META": {
         "twitter_greed": 45.0,
         "options_unusual": 70.0,
-        "ensemble": 45.0
-      },
-      "LDO.MI": {
-        "twitter_greed": 50.0,
-        "ensemble": 45.0
-      },
-      "HO.PA": {
-        "twitter_greed": 45.0,
-        "ensemble": 45.0
-      },
-      "FTSEMIB.MI": {
-        "twitter_fear": 55.0,
-        "ensemble": 45.0
-      },
-      "CL=F": {
-        "twitter_fear": 49.0,
-        "ensemble": 45.0
-      },
-      "BTC-USD": {
-        "twitter_greed": 45.0,
-        "extreme_fear": 74.0,
-        "ensemble": 45.0
-      },
-      "BA.L": {
-        "twitter_greed": 47.0,
-        "ensemble": 72.0
-      },
-      "AMZN": {
-        "twitter_greed": 45.0,
-        "options_unusual": 70.0,
-        "ensemble": 60.0
-      },
-      "AAPL": {
-        "options_unusual": 70.0,
-        "ensemble": 66.0
-      },
-      "GOOGL": {
-        "options_unusual": 70.0,
-        "ensemble": 66.0,
-        "twitter_greed": 47.0
-      },
-      "JPM": {
-        "options_unusual": 70.0,
-        "ensemble": 66.0,
-        "twitter_greed": 47.0
-      },
-      "ETH-USD": {
-        "extreme_fear": 74.0,
-        "ensemble": 45.0,
-        "twitter_greed": 47.0
-      },
-      "TSLA": {
-        "ensemble": 66.0
-      },
-      "SPY": {
-        "ensemble": 66.0,
-        "options_unusual": 70.0,
-        "twitter_greed": 45.0
-      },
-      "EURUSD=X": {
-        "ensemble": 45.0,
-        "twitter_fear": 55.0
-      },
-      "BTP10Y": {
         "ensemble": 45.0
       }
     },
@@ -7065,8 +7452,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": -0.18,
-      "pnl_pct": -0.06,
+      "pnl": 28.98,
+      "pnl_pct": 9.66,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -7078,8 +7465,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": -18.7,
-      "pnl_pct": -3.74,
+      "pnl": 26.75,
+      "pnl_pct": 5.35,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -7123,27 +7510,27 @@
     "instruments": [
       {
         "instrument": "AAPL",
-        "score": 0.2,
-        "sentiment": "bullish",
-        "color": "green",
-        "bull_count": 180,
-        "bear_count": 150,
-        "fear_level": 0.0,
-        "greed_level": 0.2,
-        "volume": 50,
-        "collected_at": "2026-03-02 07:01:05"
-      },
-      {
-        "instrument": "AMZN",
         "score": 0.4,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 280,
-        "bear_count": 190,
+        "bull_count": 80,
+        "bear_count": 40,
         "fear_level": 0.0,
         "greed_level": 0.4,
         "volume": 50,
-        "collected_at": "2026-03-02 07:01:05"
+        "collected_at": "2026-03-02 21:01:03"
+      },
+      {
+        "instrument": "AMZN",
+        "score": 0.6,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 70,
+        "bear_count": 30,
+        "fear_level": 0.0,
+        "greed_level": 0.6,
+        "volume": 50,
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "BA.L",
@@ -7243,15 +7630,15 @@
       },
       {
         "instrument": "GOOGL",
-        "score": 0.1,
-        "sentiment": "neutral",
-        "color": "gray",
-        "bull_count": 220,
-        "bear_count": 200,
+        "score": 0.5,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 90,
+        "bear_count": 50,
         "fear_level": 0.0,
-        "greed_level": 0.1,
+        "greed_level": 0.5,
         "volume": 50,
-        "collected_at": "2026-03-02 07:01:05"
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "HO.PA",
@@ -7267,15 +7654,15 @@
       },
       {
         "instrument": "JPM",
-        "score": 0.2,
+        "score": 0.3,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 120,
-        "bear_count": 100,
+        "bull_count": 40,
+        "bear_count": 25,
         "fear_level": 0.0,
-        "greed_level": 0.2,
+        "greed_level": 0.3,
         "volume": 10,
-        "collected_at": "2026-03-02 07:01:05"
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "LDO.MI",
@@ -7291,51 +7678,51 @@
       },
       {
         "instrument": "META",
-        "score": 0.4,
-        "sentiment": "bullish",
-        "color": "green",
-        "bull_count": 310,
-        "bear_count": 210,
-        "fear_level": 0.0,
-        "greed_level": 0.4,
-        "volume": 50,
-        "collected_at": "2026-03-02 07:01:05"
-      },
-      {
-        "instrument": "MSFT",
-        "score": 0.6,
-        "sentiment": "bullish",
-        "color": "green",
-        "bull_count": 410,
-        "bear_count": 160,
-        "fear_level": 0.0,
-        "greed_level": 0.6,
-        "volume": 100,
-        "collected_at": "2026-03-02 07:01:05"
-      },
-      {
-        "instrument": "NVDA",
         "score": 0.7,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 680,
-        "bear_count": 220,
+        "bull_count": 150,
+        "bear_count": 40,
         "fear_level": 0.0,
         "greed_level": 0.7,
         "volume": 100,
-        "collected_at": "2026-03-02 07:01:05"
+        "collected_at": "2026-03-02 21:01:03"
+      },
+      {
+        "instrument": "MSFT",
+        "score": 0.8,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 120,
+        "bear_count": 20,
+        "fear_level": 0.0,
+        "greed_level": 0.8,
+        "volume": 100,
+        "collected_at": "2026-03-02 21:01:03"
+      },
+      {
+        "instrument": "NVDA",
+        "score": 0.9,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 500,
+        "bear_count": 100,
+        "fear_level": 0.0,
+        "greed_level": 0.9,
+        "volume": 100,
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "QQQ",
-        "score": 0.5,
+        "score": 0.7,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 520,
-        "bear_count": 210,
+        "bull_count": 200,
+        "bear_count": 40,
         "fear_level": 0.0,
-        "greed_level": 0.5,
+        "greed_level": 0.7,
         "volume": 100,
-        "collected_at": "2026-03-02 07:01:05"
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "RHM.DE",
@@ -7363,27 +7750,27 @@
       },
       {
         "instrument": "SPY",
-        "score": 0.3,
+        "score": 0.5,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 450,
-        "bear_count": 320,
+        "bull_count": 150,
+        "bear_count": 50,
         "fear_level": 0.0,
-        "greed_level": 0.3,
+        "greed_level": 0.5,
         "volume": 100,
-        "collected_at": "2026-03-02 07:01:05"
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "TSLA",
-        "score": -0.1,
-        "sentiment": "neutral",
-        "color": "gray",
-        "bull_count": 380,
-        "bear_count": 410,
-        "fear_level": 0.1,
-        "greed_level": 0.0,
+        "score": 0.2,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 300,
+        "bear_count": 250,
+        "fear_level": 0.0,
+        "greed_level": 0.2,
         "volume": 100,
-        "collected_at": "2026-03-02 07:01:05"
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "^VIX",
@@ -7399,39 +7786,39 @@
       },
       {
         "instrument": "ai_bubble",
-        "score": -0.3,
-        "sentiment": "bearish",
-        "color": "red",
-        "bull_count": 410,
-        "bear_count": 620,
-        "fear_level": 0.3,
-        "greed_level": 0.0,
-        "volume": 100,
-        "collected_at": "2026-03-02 07:01:05"
-      },
-      {
-        "instrument": "fed_rate",
-        "score": 0.4,
-        "sentiment": "bullish",
-        "color": "green",
-        "bull_count": 610,
-        "bear_count": 340,
-        "fear_level": 0.0,
-        "greed_level": 0.4,
-        "volume": 100,
-        "collected_at": "2026-03-02 07:01:05"
-      },
-      {
-        "instrument": "inflation",
         "score": -0.2,
         "sentiment": "bearish",
         "color": "red",
-        "bull_count": 320,
-        "bear_count": 380,
+        "bull_count": 200,
+        "bear_count": 250,
         "fear_level": 0.2,
         "greed_level": 0.0,
-        "volume": 50,
-        "collected_at": "2026-03-02 07:01:05"
+        "volume": 100,
+        "collected_at": "2026-03-02 21:01:03"
+      },
+      {
+        "instrument": "fed_rate",
+        "score": 0.8,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 300,
+        "bear_count": 50,
+        "fear_level": 0.0,
+        "greed_level": 0.8,
+        "volume": 100,
+        "collected_at": "2026-03-02 21:01:03"
+      },
+      {
+        "instrument": "inflation",
+        "score": 0.4,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 200,
+        "bear_count": 120,
+        "fear_level": 0.0,
+        "greed_level": 0.4,
+        "volume": 100,
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "macro_fed",
@@ -7495,58 +7882,58 @@
       },
       {
         "instrument": "recession",
-        "score": -0.5,
-        "sentiment": "bearish",
-        "color": "red",
-        "bull_count": 250,
-        "bear_count": 580,
-        "fear_level": 0.5,
+        "score": -0.1,
+        "sentiment": "neutral",
+        "color": "gray",
+        "bull_count": 100,
+        "bear_count": 110,
+        "fear_level": 0.1,
         "greed_level": 0.0,
-        "volume": 100,
-        "collected_at": "2026-03-02 07:01:05"
+        "volume": 50,
+        "collected_at": "2026-03-02 21:01:03"
       },
       {
         "instrument": "tariffs",
-        "score": -0.4,
+        "score": -0.5,
         "sentiment": "bearish",
         "color": "red",
-        "bull_count": 180,
-        "bear_count": 420,
-        "fear_level": 0.4,
+        "bull_count": 80,
+        "bear_count": 150,
+        "fear_level": 0.5,
         "greed_level": 0.0,
         "volume": 50,
-        "collected_at": "2026-03-02 07:01:05"
+        "collected_at": "2026-03-02 21:01:03"
       }
     ],
     "total_instruments": 33
   },
   "market_regime": {
     "regime": "MEAN_REVERTING",
-    "confidence": 81.0,
+    "confidence": 89.0,
     "sizing_multiplier": 1.0,
-    "contrarian_multiplier": 1.41,
+    "contrarian_multiplier": 1.44,
     "color": "blue",
     "indicators": {
       "trend_strength": {
-        "score": -0.17911004493953442,
-        "detail": "SMA20=686.3 SMA50=688.6 spread=-0.34% slope=1.9%/yr"
+        "score": -0.1353474730300389,
+        "detail": "SMA20=686.5 SMA50=688.6 spread=-0.30% slope=3.2%/yr"
       },
       "vix_regime": {
         "score": 0.3,
-        "detail": "VIX=19.9 NORMAL (dir=-5.5%)",
+        "detail": "VIX=21.5 NORMAL (dir=+2.1%)",
         "label": "NORMAL"
       },
       "vix_term_structure": {
-        "score": -0.41797056575139047,
-        "detail": "VIX 5d vs 10d: -4.2% \u2192 CONTANGO (normal)"
+        "score": 0.2573720987421057,
+        "detail": "VIX 5d vs 10d: +2.6% \u2192 BACKWARDATION (fear)"
       },
       "breadth": {
-        "score": 0.22727272727272727,
-        "detail": "5/22 (23%) above 50d SMA"
+        "score": 0.36363636363636365,
+        "detail": "8/22 (36%) above 50d SMA"
       },
       "momentum": {
-        "score": 0.6363636363636364,
-        "detail": "14/22 (64%) positive 20d returns"
+        "score": 0.7272727272727273,
+        "detail": "16/22 (73%) positive 20d returns"
       },
       "volatility": {
         "score": 0.5,
@@ -7556,13 +7943,13 @@
     "metadata": {
       "raw_scores": {
         "CRISIS": 2.0,
-        "TRENDING_UP": 32.40909090909091,
-        "TRENDING_DOWN": 38.8597606637928,
-        "MEAN_REVERTING": 80.99033501545034
+        "TRENDING_UP": 37.63636363636364,
+        "TRENDING_DOWN": 32.10079791968772,
+        "MEAN_REVERTING": 89.12139399091701
       },
       "description": "Choppy/range-bound \u2014 ideal for contrarian"
     },
-    "timestamp": "2026-03-02T12:01:23.315235"
+    "timestamp": "2026-03-02T22:00:35.423070"
   },
   "signal_heatmap": {
     "grid": [
@@ -7570,11 +7957,11 @@
         "instrument": "AAPL",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 66.0,
+          "ensemble": 80.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 0
+          "twitter_greed": 45.0
         }
       },
       {
@@ -7603,7 +7990,7 @@
         "instrument": "BTC-USD",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 50.0,
           "extreme_fear": 74.0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7614,7 +8001,7 @@
         "instrument": "BTP10Y",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 50.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7625,7 +8012,7 @@
         "instrument": "CL=F",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 64.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 49.0,
@@ -7636,7 +8023,7 @@
         "instrument": "ETH-USD",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 50.0,
           "extreme_fear": 74.0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7647,7 +8034,7 @@
         "instrument": "EURUSD=X",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 96.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7658,7 +8045,7 @@
         "instrument": "FTSEMIB.MI",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 50.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 55.0,
@@ -7668,7 +8055,7 @@
       {
         "instrument": "GC=F",
         "signals": {
-          "cross_asset_divergence": 0.72,
+          "cross_asset_divergence": 0.77,
           "ensemble": 96.0,
           "extreme_fear": 0,
           "options_unusual": 0,
@@ -7680,18 +8067,18 @@
         "instrument": "GOOGL",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 66.0,
+          "ensemble": 70.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 0
+          "twitter_greed": 47.0
         }
       },
       {
         "instrument": "HO.PA",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 50.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7702,7 +8089,7 @@
         "instrument": "JPM",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 66.0,
+          "ensemble": 90.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
@@ -7713,7 +8100,7 @@
         "instrument": "LDO.MI",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 64.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7768,7 +8155,7 @@
         "instrument": "RHM.DE",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 50.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7779,7 +8166,7 @@
         "instrument": "SAAB-B.ST",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 50.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7789,19 +8176,19 @@
       {
         "instrument": "SPY",
         "signals": {
-          "cross_asset_divergence": 0,
-          "ensemble": 66.0,
+          "cross_asset_divergence": 0.75,
+          "ensemble": 96.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 0
+          "twitter_greed": 47.0
         }
       },
       {
         "instrument": "TSLA",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 66.0,
+          "ensemble": 100.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -7812,7 +8199,7 @@
         "instrument": "^VIX",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 96.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 52.0,
@@ -7854,20 +8241,20 @@
       "^VIX"
     ],
     "signal_counts": {
-      "ensemble": 23,
-      "cross_asset_divergence": 2,
+      "ensemble": 43,
+      "twitter_greed": 15,
+      "cross_asset_divergence": 4,
       "twitter_fear": 3,
-      "twitter_greed": 12,
       "options_unusual": 17,
       "extreme_fear": 4
     },
-    "total_signals": 61
+    "total_signals": 86
   },
   "polymarket": {
     "portfolio": {
       "usdc_balance": 130.46,
       "total_invested": 56.1,
-      "unrealized_pnl": 15.17,
+      "unrealized_pnl": 17.98,
       "realized_pnl": -10.43,
       "win_rate": 66.7,
       "total_trades": 8,
@@ -7880,48 +8267,48 @@
         "question": "Will Charles Leclerc be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.099,
-        "current_price": 0.1505,
-        "current_value": 29.23,
+        "current_price": 0.148,
+        "current_value": 28.74,
         "amount": 19.24,
         "shares": 194.2,
-        "pnl": 10.0,
-        "pnl_pct": 52.0,
+        "pnl": 9.52,
+        "pnl_pct": 49.5,
         "edge_remaining": null
       },
       {
         "question": "Will Ferrari be the 2026 F1 Constructors Champion?",
         "side": "YES",
         "entry_price": 0.108,
-        "current_price": 0.23,
-        "current_value": 9.55,
+        "current_price": 0.255,
+        "current_value": 10.59,
         "amount": 7.475,
         "shares": 41.54,
-        "pnl": 5.07,
-        "pnl_pct": 113.0,
+        "pnl": 6.11,
+        "pnl_pct": 136.1,
         "edge_remaining": null
       },
       {
         "question": "Will Kimi Antonelli be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.075,
-        "current_price": 0.0875,
-        "current_value": 10.94,
+        "current_price": 0.0855,
+        "current_value": 10.69,
         "amount": 9.39,
         "shares": 125.0,
-        "pnl": 1.56,
-        "pnl_pct": 16.7,
+        "pnl": 1.31,
+        "pnl_pct": 14.0,
         "edge_remaining": null
       },
       {
         "question": "Will Lando Norris be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.08,
-        "current_price": 0.075,
-        "current_value": 9.38,
+        "current_price": 0.095,
+        "current_value": 11.88,
         "amount": 10.0,
         "shares": 125.0,
-        "pnl": -0.63,
-        "pnl_pct": -6.3,
+        "pnl": 1.88,
+        "pnl_pct": 18.8,
         "edge_remaining": null
       },
       {
@@ -8034,19 +8421,19 @@
     ],
     "categories": {
       "politics": {
-        "count": 76,
-        "avg_edge": 40.7
+        "count": 77,
+        "avg_edge": 41.0
       },
       "economics": {
         "count": 23,
-        "avg_edge": 41.1
+        "avg_edge": 41.2
       },
       "other": {
-        "count": 984,
-        "avg_edge": 42.1
+        "count": 996,
+        "avg_edge": 42.3
       },
       "crypto": {
-        "count": 749,
+        "count": 766,
         "avg_edge": 44.0
       },
       "sports": {

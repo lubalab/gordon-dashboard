@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-03-25T07:02:15.165764+00:00",
-  "next_update": "2026-03-25T21:00:00+00:00",
+  "generated_at": "2026-03-26T07:02:18.261829+00:00",
+  "next_update": "2026-03-26T21:00:00+00:00",
   "market_mood": {
-    "composite": -0.5754,
+    "composite": -0.7074,
     "cnn_fear_greed": {
-      "value": 16.9098106712565,
+      "value": 19.2571428571429,
       "label": "Extreme Fear"
     },
     "crypto_fear_greed": {
-      "value": 14.0,
+      "value": 10.0,
       "label": "Extreme Fear"
     },
     "vix": {
-      "value": 26.950001,
+      "value": 25.33,
       "label": "Elevated"
     },
     "google_trends": {
-      "composite": -0.3445,
+      "composite": null,
       "fear_total": null,
       "greed_total": null
     }
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2163.3643,
-      "pnl_dollar": 69.03,
-      "pnl_percent": 23.01
+      "current_price": 2121.313,
+      "pnl_dollar": 56.03,
+      "pnl_percent": 18.68
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 70982.9219,
-      "pnl_dollar": 54.11,
-      "pnl_percent": 10.82
+      "current_price": 70077.3438,
+      "pnl_dollar": 40.67,
+      "pnl_percent": 8.13
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 923.15,
-    "total_pnl": 123.14,
-    "total_pnl_pct": 15.39
+    "total_current_value": 896.69,
+    "total_pnl": 96.7,
+    "total_pnl_pct": 12.09
   },
   "strategies": {
     "gekko": {
@@ -1748,6 +1748,46 @@
         "d": "2026-03-25",
         "total_value": 912.92,
         "total_pnl": 112.92
+      },
+      {
+        "d": "2026-03-25",
+        "total_value": 923.75,
+        "total_pnl": 123.75
+      },
+      {
+        "d": "2026-03-25",
+        "total_value": 937.94,
+        "total_pnl": 137.94
+      },
+      {
+        "d": "2026-03-25",
+        "total_value": 937.29,
+        "total_pnl": 137.29
+      },
+      {
+        "d": "2026-03-25",
+        "total_value": 929.84,
+        "total_pnl": 129.84
+      },
+      {
+        "d": "2026-03-25",
+        "total_value": 918.56,
+        "total_pnl": 118.56
+      },
+      {
+        "d": "2026-03-25",
+        "total_value": 0.0,
+        "total_pnl": 0.0
+      },
+      {
+        "d": "2026-03-26",
+        "total_value": 931.0699999999999,
+        "total_pnl": 131.07
+      },
+      {
+        "d": "2026-03-26",
+        "total_value": 916.81,
+        "total_pnl": 116.81
       }
     ]
   },
@@ -7840,8 +7880,26 @@
     "sentiment_history": [
       {
         "source": "cnn_fear_greed",
-        "score": -0.6618,
-        "raw_score": 16.9098106712565,
+        "score": -0.6149,
+        "raw_score": 19.2571428571429,
+        "timestamp": "2026-03-26"
+      },
+      {
+        "source": "crypto_fear_greed",
+        "score": -0.8,
+        "raw_score": 10.0,
+        "timestamp": "2026-03-26"
+      },
+      {
+        "source": "vix",
+        "score": -0.022,
+        "raw_score": 25.33,
+        "timestamp": "2026-03-26"
+      },
+      {
+        "source": "cnn_fear_greed",
+        "score": -0.63835,
+        "raw_score": 18.083476764199702,
         "timestamp": "2026-03-25"
       },
       {
@@ -7852,8 +7910,8 @@
       },
       {
         "source": "vix",
-        "score": -0.13,
-        "raw_score": 26.950001,
+        "score": -0.076,
+        "raw_score": 26.1400005,
         "timestamp": "2026-03-25"
       },
       {
@@ -8383,83 +8441,9 @@
         "score": 0.317,
         "raw_score": 20.245,
         "timestamp": "2026-02-24"
-      },
-      {
-        "source": "cnn_fear_greed",
-        "score": -0.1938,
-        "raw_score": 40.31020408163265,
-        "timestamp": "2026-02-23"
-      },
-      {
-        "source": "crypto_fear_greed",
-        "score": -0.9,
-        "raw_score": 5.0,
-        "timestamp": "2026-02-23"
-      },
-      {
-        "source": "google_trends",
-        "score": -0.22896666666666668,
-        "raw_score": 33.0,
-        "timestamp": "2026-02-23"
-      },
-      {
-        "source": "vix",
-        "score": 0.316,
-        "raw_score": 20.260000076293945,
-        "timestamp": "2026-02-23"
       }
     ],
     "sentiment_history_chart": [
-      {
-        "d": "2026-02-23",
-        "source": "binance_futures",
-        "avg_score": -0.804875
-      },
-      {
-        "d": "2026-02-23",
-        "source": "cnn_fear_greed",
-        "avg_score": -0.1938
-      },
-      {
-        "d": "2026-02-23",
-        "source": "coingecko_global",
-        "avg_score": -0.25616666666666665
-      },
-      {
-        "d": "2026-02-23",
-        "source": "crypto_fear_greed",
-        "avg_score": -0.9
-      },
-      {
-        "d": "2026-02-23",
-        "source": "google_trends",
-        "avg_score": -0.22896666666666668
-      },
-      {
-        "d": "2026-02-23",
-        "source": "hackernews",
-        "avg_score": 0.055900000000000005
-      },
-      {
-        "d": "2026-02-23",
-        "source": "lunar_cycles",
-        "avg_score": 0.10085999999999999
-      },
-      {
-        "d": "2026-02-23",
-        "source": "technical_analysis",
-        "avg_score": 0.03636363636363636
-      },
-      {
-        "d": "2026-02-23",
-        "source": "vix",
-        "avg_score": 0.316
-      },
-      {
-        "d": "2026-02-23",
-        "source": "wikipedia_pageviews",
-        "avg_score": -0.02786231884057971
-      },
       {
         "d": "2026-02-24",
         "source": "binance_futures",
@@ -8498,7 +8482,7 @@
       {
         "d": "2026-02-24",
         "source": "technical_analysis",
-        "avg_score": 0.006818181818181813
+        "avg_score": -0.08181818181818183
       },
       {
         "d": "2026-02-24",
@@ -9373,7 +9357,7 @@
       {
         "d": "2026-03-20",
         "source": "binance_futures",
-        "avg_score": -0.5574
+        "avg_score": -0.43902
       },
       {
         "d": "2026-03-20",
@@ -9448,7 +9432,7 @@
       {
         "d": "2026-03-23",
         "source": "binance_futures",
-        "avg_score": -0.5972333333333334
+        "avg_score": -0.6718875
       },
       {
         "d": "2026-03-23",
@@ -9483,7 +9467,7 @@
       {
         "d": "2026-03-24",
         "source": "binance_futures",
-        "avg_score": -0.27525
+        "avg_score": -0.367
       },
       {
         "d": "2026-03-24",
@@ -9527,8 +9511,18 @@
       },
       {
         "d": "2026-03-25",
+        "source": "binance_futures",
+        "avg_score": -0.414175
+      },
+      {
+        "d": "2026-03-25",
         "source": "cnn_fear_greed",
-        "avg_score": -0.6618
+        "avg_score": -0.63835
+      },
+      {
+        "d": "2026-03-25",
+        "source": "coingecko_global",
+        "avg_score": -0.10533333333333333
       },
       {
         "d": "2026-03-25",
@@ -9538,12 +9532,32 @@
       {
         "d": "2026-03-25",
         "source": "technical_analysis",
-        "avg_score": 0.040909090909090916
+        "avg_score": 0.0340909090909091
       },
       {
         "d": "2026-03-25",
         "source": "vix",
-        "avg_score": -0.13
+        "avg_score": -0.076
+      },
+      {
+        "d": "2026-03-26",
+        "source": "cnn_fear_greed",
+        "avg_score": -0.6149
+      },
+      {
+        "d": "2026-03-26",
+        "source": "crypto_fear_greed",
+        "avg_score": -0.8
+      },
+      {
+        "d": "2026-03-26",
+        "source": "technical_analysis",
+        "avg_score": 0.07727272727272728
+      },
+      {
+        "d": "2026-03-26",
+        "source": "vix",
+        "avg_score": -0.022
       }
     ],
     "congress_recent": [
@@ -9869,110 +9883,109 @@
       }
     ],
     "ensemble_heatmap": {
+      "SAAB-B.ST": {
+        "ensemble": 39.0,
+        "twitter_greed": 52.0
+      },
+      "QQQ": {
+        "ensemble": 32.0,
+        "options_unusual": 70.0,
+        "extreme_fear": 66.0,
+        "twitter_greed": 53.0
+      },
+      "TSLA": {
+        "twitter_fear": 49.0,
+        "options_unusual": 70.0,
+        "ensemble": 96.0
+      },
+      "RHM.DE": {
+        "twitter_greed": 55.0,
+        "ensemble": 45.0
+      },
+      "MSFT": {
+        "twitter_greed": 45.0,
+        "options_unusual": 70.0,
+        "ensemble": 96.0
+      },
+      "META": {
+        "twitter_greed": 45.0,
+        "options_unusual": 70.0,
+        "ensemble": 70.0
+      },
+      "LDO.MI": {
+        "twitter_greed": 52.0,
+        "ensemble": 33.0
+      },
+      "JPM": {
+        "twitter_greed": 47.0,
+        "options_unusual": 70.0,
+        "ensemble": 96.0
+      },
+      "HO.PA": {
+        "twitter_greed": 47.0,
+        "ensemble": 45.0
+      },
+      "EURUSD=X": {
+        "twitter_fear": 55.0,
+        "ensemble": 45.0
+      },
+      "ETH-USD": {
+        "twitter_greed": 45.0,
+        "extreme_fear": 71.0,
+        "ensemble": 45.0
+      },
+      "CL=F": {
+        "twitter_fear": 52.0,
+        "ensemble": 45.0
+      },
+      "BTC-USD": {
+        "twitter_greed": 50.0,
+        "extreme_fear": 71.0,
+        "ensemble": 45.0
+      },
+      "BA.L": {
+        "twitter_greed": 50.0,
+        "ensemble": 82.0
+      },
+      "SPY": {
+        "options_unusual": 70.0,
+        "extreme_fear": 66.0,
+        "ensemble": 35.0,
+        "twitter_greed": 51.0
+      },
+      "AAPL": {
+        "options_unusual": 70.0,
+        "ensemble": 71.0,
+        "twitter_greed": 45.0
+      },
+      "GOOGL": {
+        "options_unusual": 70.0,
+        "ensemble": 61.0,
+        "twitter_greed": 48.0
+      },
+      "AMZN": {
+        "options_unusual": 70.0,
+        "ensemble": 50.0,
+        "twitter_greed": 52.0
+      },
+      "NVDA": {
+        "options_unusual": 70.0,
+        "ensemble": 30.0,
+        "twitter_greed": 56.0
+      },
       "GC=F": {
         "cross_asset_divergence": 0.72,
-        "ensemble": 45.0,
-        "twitter_greed": 45.0
+        "ensemble": 45.0
       },
       "^VIX": {
         "ensemble": 72.0,
         "twitter_fear": 55.0
       },
-      "TSLA": {
-        "ensemble": 96.0,
-        "options_unusual": 70.0,
-        "twitter_fear": 55.0
-      },
-      "SPY": {
-        "ensemble": 35.0,
-        "twitter_greed": 51.0,
-        "options_unusual": 70.0,
-        "extreme_fear": 66.0
-      },
-      "RHM.DE": {
-        "ensemble": 45.0,
-        "twitter_greed": 53.0
-      },
-      "NVDA": {
-        "ensemble": 30.0,
-        "options_unusual": 70.0,
-        "twitter_greed": 56.0
-      },
-      "MSFT": {
-        "ensemble": 96.0,
-        "options_unusual": 70.0,
-        "twitter_greed": 55.0
-      },
-      "JPM": {
-        "ensemble": 96.0,
-        "twitter_greed": 46.0,
-        "options_unusual": 70.0
-      },
-      "HO.PA": {
-        "ensemble": 45.0,
-        "twitter_greed": 50.0
-      },
-      "GOOGL": {
-        "ensemble": 61.0,
-        "options_unusual": 70.0,
-        "twitter_greed": 48.0
-      },
       "FTSEMIB.MI": {
-        "ensemble": 45.0,
-        "cross_asset_divergence": 0.72
-      },
-      "EURUSD=X": {
         "ensemble": 45.0
-      },
-      "ETH-USD": {
-        "ensemble": 45.0,
-        "twitter_greed": 45.0,
-        "extreme_fear": 73.0
-      },
-      "CL=F": {
-        "ensemble": 45.0,
-        "twitter_fear": 55.0
       },
       "BTP10Y": {
         "ensemble": 45.0
-      },
-      "BTC-USD": {
-        "ensemble": 45.0,
-        "twitter_greed": 47.0,
-        "extreme_fear": 73.0
-      },
-      "BA.L": {
-        "ensemble": 82.0,
-        "twitter_greed": 51.0
-      },
-      "AMZN": {
-        "ensemble": 50.0,
-        "options_unusual": 70.0,
-        "twitter_greed": 52.0
-      },
-      "AAPL": {
-        "ensemble": 71.0,
-        "options_unusual": 70.0,
-        "twitter_greed": 45.0
-      },
-      "QQQ": {
-        "options_unusual": 70.0,
-        "twitter_greed": 53.0,
-        "extreme_fear": 66.0,
-        "ensemble": 73.0
-      },
-      "LDO.MI": {
-        "ensemble": 33.0,
-        "twitter_greed": 52.0
-      },
-      "SAAB-B.ST": {
-        "twitter_greed": 48.0,
-        "ensemble": 88.0
-      },
-      "META": {
-        "twitter_greed": 50.0,
-        "options_unusual": 70.0,
-        "ensemble": 70.0
       }
     },
     "google_trends": {
@@ -10256,8 +10269,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 69.03,
-      "pnl_pct": 23.01,
+      "pnl": 56.04,
+      "pnl_pct": 18.68,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -10269,8 +10282,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 54.1,
-      "pnl_pct": 10.82,
+      "pnl": 40.65,
+      "pnl_pct": 8.13,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -10314,315 +10327,315 @@
     "instruments": [
       {
         "instrument": "AAPL",
-        "score": 0.3,
+        "score": 0.4,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 250,
-        "bear_count": 150,
+        "bull_count": 60,
+        "bear_count": 40,
         "fear_level": 0.0,
-        "greed_level": 0.3,
+        "greed_level": 0.4,
         "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "AMZN",
-        "score": 0.3,
+        "score": 0.6,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 220,
-        "bear_count": 120,
+        "bull_count": 80,
+        "bear_count": 30,
         "fear_level": 0.0,
-        "greed_level": 0.3,
+        "greed_level": 0.6,
         "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "BA.L",
         "score": 0.6,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 60,
+        "bull_count": 20,
         "bear_count": 10,
         "fear_level": 0.0,
         "greed_level": 0.6,
         "volume": 10,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "BTC-USD",
-        "score": 0.6,
+        "score": 0.8,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 1200,
-        "bear_count": 400,
+        "bull_count": 200,
+        "bear_count": 40,
         "fear_level": 0.0,
-        "greed_level": 0.6,
+        "greed_level": 0.8,
         "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "BTP10Y",
-        "score": 0.2,
-        "sentiment": "bullish",
-        "color": "green",
-        "bull_count": 30,
-        "bear_count": 20,
-        "fear_level": 0.0,
-        "greed_level": 0.2,
-        "volume": 10,
-        "collected_at": "2026-03-25 07:01:02"
-      },
-      {
-        "instrument": "CL=F",
-        "score": -0.4,
-        "sentiment": "bearish",
-        "color": "red",
-        "bull_count": 200,
-        "bear_count": 500,
-        "fear_level": 0.4,
-        "greed_level": 0.0,
-        "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
-      },
-      {
-        "instrument": "ETH-USD",
-        "score": 0.4,
-        "sentiment": "bullish",
-        "color": "green",
-        "bull_count": 600,
-        "bear_count": 200,
-        "fear_level": 0.0,
-        "greed_level": 0.4,
-        "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
-      },
-      {
-        "instrument": "EURUSD=X",
-        "score": -0.2,
-        "sentiment": "bearish",
-        "color": "red",
-        "bull_count": 150,
-        "bear_count": 250,
-        "fear_level": 0.2,
-        "greed_level": 0.0,
-        "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
-      },
-      {
-        "instrument": "FTSEMIB.MI",
         "score": 0.1,
         "sentiment": "neutral",
         "color": "gray",
-        "bull_count": 50,
-        "bear_count": 40,
+        "bull_count": 10,
+        "bear_count": 8,
         "fear_level": 0.0,
         "greed_level": 0.1,
         "volume": 10,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
-        "instrument": "GC=F",
-        "score": 0.3,
+        "instrument": "CL=F",
+        "score": -0.3,
+        "sentiment": "bearish",
+        "color": "red",
+        "bull_count": 30,
+        "bear_count": 70,
+        "fear_level": 0.3,
+        "greed_level": 0.0,
+        "volume": 50,
+        "collected_at": "2026-03-26 07:01:02"
+      },
+      {
+        "instrument": "ETH-USD",
+        "score": 0.6,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 300,
-        "bear_count": 150,
+        "bull_count": 150,
+        "bear_count": 50,
         "fear_level": 0.0,
-        "greed_level": 0.3,
-        "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "greed_level": 0.6,
+        "volume": 100,
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
-        "instrument": "GOOGL",
+        "instrument": "EURUSD=X",
+        "score": -0.1,
+        "sentiment": "neutral",
+        "color": "gray",
+        "bull_count": 40,
+        "bear_count": 45,
+        "fear_level": 0.1,
+        "greed_level": 0.0,
+        "volume": 50,
+        "collected_at": "2026-03-26 07:01:02"
+      },
+      {
+        "instrument": "FTSEMIB.MI",
         "score": 0.2,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 200,
-        "bear_count": 150,
+        "bull_count": 15,
+        "bear_count": 10,
         "fear_level": 0.0,
         "greed_level": 0.2,
+        "volume": 10,
+        "collected_at": "2026-03-26 07:01:02"
+      },
+      {
+        "instrument": "GC=F",
+        "score": 0.4,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 60,
+        "bear_count": 35,
+        "fear_level": 0.0,
+        "greed_level": 0.4,
         "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
+      },
+      {
+        "instrument": "GOOGL",
+        "score": 0.5,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 70,
+        "bear_count": 35,
+        "fear_level": 0.0,
+        "greed_level": 0.5,
+        "volume": 50,
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "HO.PA",
         "score": 0.5,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 40,
-        "bear_count": 15,
+        "bull_count": 15,
+        "bear_count": 8,
         "fear_level": 0.0,
         "greed_level": 0.5,
         "volume": 10,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "JPM",
-        "score": 0.5,
+        "score": 0.3,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 100,
-        "bear_count": 20,
+        "bull_count": 50,
+        "bear_count": 30,
         "fear_level": 0.0,
-        "greed_level": 0.5,
-        "volume": 10,
-        "collected_at": "2026-03-25 07:01:02"
+        "greed_level": 0.3,
+        "volume": 50,
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "LDO.MI",
         "score": 0.7,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 80,
-        "bear_count": 10,
+        "bull_count": 25,
+        "bear_count": 5,
         "fear_level": 0.0,
         "greed_level": 0.7,
-        "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "volume": 10,
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "META",
-        "score": 0.4,
+        "score": 0.7,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 280,
-        "bear_count": 80,
+        "bull_count": 100,
+        "bear_count": 25,
         "fear_level": 0.0,
-        "greed_level": 0.4,
-        "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "greed_level": 0.7,
+        "volume": 100,
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "MSFT",
-        "score": 0.4,
+        "score": 0.8,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 300,
-        "bear_count": 100,
+        "bull_count": 110,
+        "bear_count": 15,
         "fear_level": 0.0,
-        "greed_level": 0.4,
-        "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "greed_level": 0.8,
+        "volume": 100,
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "NVDA",
-        "score": -0.1,
-        "sentiment": "neutral",
-        "color": "gray",
-        "bull_count": 500,
-        "bear_count": 550,
-        "fear_level": 0.1,
-        "greed_level": 0.0,
+        "score": 0.9,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 300,
+        "bear_count": 20,
+        "fear_level": 0.0,
+        "greed_level": 0.9,
         "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "QQQ",
-        "score": 0.1,
-        "sentiment": "neutral",
-        "color": "gray",
-        "bull_count": 400,
-        "bear_count": 350,
+        "score": 0.7,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 150,
+        "bear_count": 25,
         "fear_level": 0.0,
-        "greed_level": 0.1,
+        "greed_level": 0.7,
         "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "RHM.DE",
         "score": 0.8,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 120,
-        "bear_count": 15,
+        "bull_count": 40,
+        "bear_count": 8,
         "fear_level": 0.0,
         "greed_level": 0.8,
         "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "SAAB-B.ST",
         "score": 0.7,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 50,
-        "bear_count": 8,
+        "bull_count": 18,
+        "bear_count": 5,
         "fear_level": 0.0,
         "greed_level": 0.7,
         "volume": 10,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "SPY",
-        "score": 0.2,
+        "score": 0.6,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 450,
-        "bear_count": 300,
+        "bull_count": 120,
+        "bear_count": 30,
         "fear_level": 0.0,
-        "greed_level": 0.2,
+        "greed_level": 0.6,
         "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "TSLA",
-        "score": -0.3,
-        "sentiment": "bearish",
-        "color": "red",
-        "bull_count": 300,
-        "bear_count": 600,
-        "fear_level": 0.3,
-        "greed_level": 0.0,
-        "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
-      },
-      {
-        "instrument": "^VIX",
-        "score": -0.1,
-        "sentiment": "neutral",
-        "color": "gray",
-        "bull_count": 100,
-        "bear_count": 120,
-        "fear_level": 0.1,
-        "greed_level": 0.0,
-        "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
-      },
-      {
-        "instrument": "ai_bubble",
         "score": -0.2,
         "sentiment": "bearish",
         "color": "red",
-        "bull_count": 400,
-        "bear_count": 550,
+        "bull_count": 90,
+        "bear_count": 110,
         "fear_level": 0.2,
         "greed_level": 0.0,
         "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
+      },
+      {
+        "instrument": "^VIX",
+        "score": -0.5,
+        "sentiment": "bearish",
+        "color": "red",
+        "bull_count": 20,
+        "bear_count": 80,
+        "fear_level": 0.5,
+        "greed_level": 0.0,
+        "volume": 50,
+        "collected_at": "2026-03-26 07:01:02"
+      },
+      {
+        "instrument": "ai_bubble",
+        "score": -0.5,
+        "sentiment": "bearish",
+        "color": "red",
+        "bull_count": 60,
+        "bear_count": 140,
+        "fear_level": 0.5,
+        "greed_level": 0.0,
+        "volume": 100,
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "fed_rate",
-        "score": 0.5,
+        "score": 0.7,
         "sentiment": "bullish",
         "color": "green",
-        "bull_count": 600,
-        "bear_count": 200,
+        "bull_count": 150,
+        "bear_count": 30,
         "fear_level": 0.0,
-        "greed_level": 0.5,
+        "greed_level": 0.7,
         "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "inflation",
-        "score": 0.1,
-        "sentiment": "neutral",
-        "color": "gray",
-        "bull_count": 400,
-        "bear_count": 350,
+        "score": 0.3,
+        "sentiment": "bullish",
+        "color": "green",
+        "bull_count": 100,
+        "bear_count": 50,
         "fear_level": 0.0,
-        "greed_level": 0.1,
+        "greed_level": 0.3,
         "volume": 100,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "macro_fed",
@@ -10689,71 +10702,71 @@
         "score": -0.4,
         "sentiment": "bearish",
         "color": "red",
-        "bull_count": 150,
-        "bear_count": 350,
+        "bull_count": 40,
+        "bear_count": 70,
         "fear_level": 0.4,
         "greed_level": 0.0,
         "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       },
       {
         "instrument": "tariffs",
-        "score": -0.3,
+        "score": -0.6,
         "sentiment": "bearish",
         "color": "red",
-        "bull_count": 100,
-        "bear_count": 300,
-        "fear_level": 0.3,
+        "bull_count": 25,
+        "bear_count": 90,
+        "fear_level": 0.6,
         "greed_level": 0.0,
         "volume": 50,
-        "collected_at": "2026-03-25 07:01:02"
+        "collected_at": "2026-03-26 07:01:02"
       }
     ],
     "total_instruments": 33
   },
   "market_regime": {
     "regime": "TRENDING_DOWN",
-    "confidence": 88.0,
-    "sizing_multiplier": 0.56,
+    "confidence": 86.0,
+    "sizing_multiplier": 0.57,
     "contrarian_multiplier": 1.0,
     "color": "red",
     "indicators": {
       "trend_strength": {
         "score": -1,
-        "detail": "SMA20=663.1 SMA50=675.7 spread=-1.87% slope=-44.2%/yr"
+        "detail": "SMA20=660.9 SMA50=674.6 spread=-2.00% slope=-42.8%/yr"
       },
       "vix_regime": {
         "score": 0.7,
-        "detail": "VIX=27.0 ELEVATED (dir=+20.5%)",
+        "detail": "VIX=25.3 ELEVATED (dir=+1.0%)",
         "label": "ELEVATED"
       },
       "vix_term_structure": {
-        "score": 1,
-        "detail": "VIX 5d vs 10d: +11.6% \u2192 BACKWARDATION (fear)"
+        "score": 0.29186232533194584,
+        "detail": "VIX 5d vs 10d: +2.9% \u2192 BACKWARDATION (fear)"
       },
       "breadth": {
-        "score": 0.18181818181818182,
-        "detail": "4/22 (18%) above 50d SMA"
+        "score": 0.22727272727272727,
+        "detail": "5/22 (23%) above 50d SMA"
       },
       "momentum": {
         "score": 0.09090909090909091,
         "detail": "2/22 (9%) positive 20d returns"
       },
       "volatility": {
-        "score": 0.7441860465116279,
-        "detail": "ATR=9.17 (74% percentile over 86 days)"
+        "score": 0.6162790697674418,
+        "detail": "ATR=8.88 (62% percentile over 86 days)"
       }
     },
     "metadata": {
       "raw_scores": {
         "CRISIS": 18.0,
-        "TRENDING_UP": 12.363636363636365,
-        "TRENDING_DOWN": 87.63636363636363,
-        "MEAN_REVERTING": 24.323467230443978
+        "TRENDING_UP": 13.500000000000002,
+        "TRENDING_DOWN": 86.5,
+        "MEAN_REVERTING": 31.71247357293869
       },
       "description": "Downtrend \u2014 contrarian works but reduce sizing"
     },
-    "timestamp": "2026-03-25T08:00:30.221754"
+    "timestamp": "2026-03-26T08:00:30.176957"
   },
   "signal_heatmap": {
     "grid": [
@@ -10761,65 +10774,54 @@
         "instrument": "AAPL",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 71.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 45.0
+          "twitter_greed": 0
         }
       },
       {
         "instrument": "AMZN",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 50.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 52.0
+          "twitter_greed": 0
         }
       },
       {
         "instrument": "BA.L",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 82.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
-          "twitter_greed": 51.0
+          "twitter_greed": 50.0
         }
       },
       {
         "instrument": "BTC-USD",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
-          "extreme_fear": 73.0,
+          "ensemble": 0,
+          "extreme_fear": 71.0,
           "options_unusual": 0,
           "twitter_fear": 0,
-          "twitter_greed": 47.0
-        }
-      },
-      {
-        "instrument": "BTP10Y",
-        "signals": {
-          "cross_asset_divergence": 0,
-          "ensemble": 45.0,
-          "extreme_fear": 0,
-          "options_unusual": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0
+          "twitter_greed": 50.0
         }
       },
       {
         "instrument": "CL=F",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 0,
-          "twitter_fear": 55.0,
+          "twitter_fear": 52.0,
           "twitter_greed": 0
         }
       },
@@ -10827,8 +10829,8 @@
         "instrument": "ETH-USD",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
-          "extreme_fear": 73.0,
+          "ensemble": 0,
+          "extreme_fear": 71.0,
           "options_unusual": 0,
           "twitter_fear": 0,
           "twitter_greed": 45.0
@@ -10838,29 +10840,18 @@
         "instrument": "EURUSD=X",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 0
-        }
-      },
-      {
-        "instrument": "FTSEMIB.MI",
-        "signals": {
-          "cross_asset_divergence": 0,
-          "ensemble": 45.0,
-          "extreme_fear": 0,
-          "options_unusual": 0,
-          "twitter_fear": 0,
+          "twitter_fear": 55.0,
           "twitter_greed": 0
         }
       },
       {
         "instrument": "GC=F",
         "signals": {
-          "cross_asset_divergence": 0.8,
-          "ensemble": 45.0,
+          "cross_asset_divergence": 0.72,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -10871,40 +10862,40 @@
         "instrument": "GOOGL",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 61.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 48.0
+          "twitter_greed": 0
         }
       },
       {
         "instrument": "HO.PA",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 45.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
-          "twitter_greed": 50.0
+          "twitter_greed": 47.0
         }
       },
       {
         "instrument": "JPM",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 96.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 46.0
+          "twitter_greed": 47.0
         }
       },
       {
         "instrument": "LDO.MI",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 33.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -10919,80 +10910,25 @@
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 50.0
+          "twitter_greed": 45.0
         }
       },
       {
         "instrument": "MSFT",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 96.0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
-          "twitter_greed": 55.0
+          "twitter_greed": 45.0
         }
       },
       {
         "instrument": "NVDA",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 30.0,
-          "extreme_fear": 0,
-          "options_unusual": 70.0,
-          "twitter_fear": 0,
-          "twitter_greed": 56.0
-        }
-      },
-      {
-        "instrument": "QQQ",
-        "signals": {
-          "cross_asset_divergence": 0,
           "ensemble": 0,
-          "extreme_fear": 66.0,
-          "options_unusual": 70.0,
-          "twitter_fear": 0,
-          "twitter_greed": 53.0
-        }
-      },
-      {
-        "instrument": "RHM.DE",
-        "signals": {
-          "cross_asset_divergence": 0,
-          "ensemble": 45.0,
-          "extreme_fear": 0,
-          "options_unusual": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 53.0
-        }
-      },
-      {
-        "instrument": "SAAB-B.ST",
-        "signals": {
-          "cross_asset_divergence": 0,
-          "ensemble": 0,
-          "extreme_fear": 0,
-          "options_unusual": 0,
-          "twitter_fear": 0,
-          "twitter_greed": 48.0
-        }
-      },
-      {
-        "instrument": "SPY",
-        "signals": {
-          "cross_asset_divergence": 0,
-          "ensemble": 35.0,
-          "extreme_fear": 66.0,
-          "options_unusual": 70.0,
-          "twitter_fear": 0,
-          "twitter_greed": 51.0
-        }
-      },
-      {
-        "instrument": "TSLA",
-        "signals": {
-          "cross_asset_divergence": 0,
-          "ensemble": 96.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
@@ -11000,13 +10936,57 @@
         }
       },
       {
-        "instrument": "^VIX",
+        "instrument": "QQQ",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 72.0,
+          "ensemble": 32.0,
+          "extreme_fear": 66.0,
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
+        }
+      },
+      {
+        "instrument": "RHM.DE",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 0,
           "extreme_fear": 0,
           "options_unusual": 0,
-          "twitter_fear": 55.0,
+          "twitter_fear": 0,
+          "twitter_greed": 55.0
+        }
+      },
+      {
+        "instrument": "SAAB-B.ST",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 39.0,
+          "extreme_fear": 0,
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 52.0
+        }
+      },
+      {
+        "instrument": "SPY",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 0,
+          "extreme_fear": 66.0,
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
+        }
+      },
+      {
+        "instrument": "TSLA",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 0,
+          "extreme_fear": 0,
+          "options_unusual": 70.0,
+          "twitter_fear": 49.0,
           "twitter_greed": 0
         }
       }
@@ -11024,11 +11004,9 @@
       "AMZN",
       "BA.L",
       "BTC-USD",
-      "BTP10Y",
       "CL=F",
       "ETH-USD",
       "EURUSD=X",
-      "FTSEMIB.MI",
       "GC=F",
       "GOOGL",
       "HO.PA",
@@ -11041,24 +11019,23 @@
       "RHM.DE",
       "SAAB-B.ST",
       "SPY",
-      "TSLA",
-      "^VIX"
+      "TSLA"
     ],
     "signal_counts": {
-      "cross_asset_divergence": 4,
-      "ensemble": 20,
+      "ensemble": 2,
+      "twitter_fear": 3,
+      "twitter_greed": 10,
       "options_unusual": 10,
-      "twitter_fear": 2,
-      "twitter_greed": 16,
-      "extreme_fear": 4
+      "extreme_fear": 4,
+      "cross_asset_divergence": 1
     },
-    "total_signals": 56
+    "total_signals": 30
   },
   "polymarket": {
     "portfolio": {
       "usdc_balance": 130.46,
       "total_invested": 56.1,
-      "unrealized_pnl": -8.66,
+      "unrealized_pnl": -8.68,
       "realized_pnl": -10.43,
       "win_rate": 66.7,
       "total_trades": 8,
@@ -11071,12 +11048,12 @@
         "question": "Will Charles Leclerc be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.099,
-        "current_price": 0.0645,
-        "current_value": 12.53,
+        "current_price": 0.067,
+        "current_value": 13.01,
         "amount": 19.24,
         "shares": 194.2,
-        "pnl": -6.7,
-        "pnl_pct": -34.8,
+        "pnl": -6.21,
+        "pnl_pct": -32.3,
         "edge_remaining": null
       },
       {
@@ -11095,24 +11072,24 @@
         "question": "Will Kimi Antonelli be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.075,
-        "current_price": 0.1735,
-        "current_value": 21.69,
+        "current_price": 0.1655,
+        "current_value": 20.69,
         "amount": 9.39,
         "shares": 125.0,
-        "pnl": 12.31,
-        "pnl_pct": 131.3,
+        "pnl": 11.31,
+        "pnl_pct": 120.7,
         "edge_remaining": null
       },
       {
         "question": "Will Lando Norris be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.08,
-        "current_price": 0.0215,
-        "current_value": 2.69,
+        "current_price": 0.0255,
+        "current_value": 3.19,
         "amount": 10.0,
         "shares": 125.0,
-        "pnl": -7.31,
-        "pnl_pct": -73.1,
+        "pnl": -6.81,
+        "pnl_pct": -68.1,
         "edge_remaining": null
       },
       {
@@ -11225,24 +11202,24 @@
     ],
     "categories": {
       "politics": {
-        "count": 147,
+        "count": 148,
         "avg_edge": 41.5
       },
       "economics": {
-        "count": 71,
-        "avg_edge": 43.2
+        "count": 72,
+        "avg_edge": 43.3
       },
       "other": {
-        "count": 1871,
+        "count": 1893,
         "avg_edge": 42.2
       },
       "crypto": {
-        "count": 1488,
-        "avg_edge": 44.2
+        "count": 1512,
+        "avg_edge": 44.3
       },
       "sports": {
-        "count": 156,
-        "avg_edge": 33.9
+        "count": 157,
+        "avg_edge": 34.1
       }
     },
     "signal_sources": [
@@ -11264,11 +11241,11 @@
       },
       {
         "type": "consensus",
-        "label": "Cross Asset Divergence"
+        "label": "Extreme Fear"
       },
       {
         "type": "consensus",
-        "label": "Extreme Fear"
+        "label": "Cross Asset Divergence"
       },
       {
         "type": "consensus",

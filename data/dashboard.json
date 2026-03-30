@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-30T06:05:46.665449+00:00",
-  "next_update": "2026-03-30T07:00:00+00:00",
+  "generated_at": "2026-03-30T15:01:19.328311+00:00",
+  "next_update": "2026-03-30T21:00:00+00:00",
   "market_mood": {
     "composite": -0.5317,
     "cnn_fear_greed": {
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2049.3901,
-      "pnl_dollar": 33.79,
-      "pnl_percent": 11.26
+      "current_price": 2072.7722,
+      "pnl_dollar": 41.02,
+      "pnl_percent": 13.67
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67517.5781,
-      "pnl_dollar": 2.65,
-      "pnl_percent": 0.53
+      "current_price": 67811.0781,
+      "pnl_dollar": 7.01,
+      "pnl_percent": 1.4
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 836.44,
-    "total_pnl": 36.44,
-    "total_pnl_pct": 4.55
+    "total_current_value": 848.03,
+    "total_pnl": 48.03,
+    "total_pnl_pct": 6.0
   },
   "strategies": {
     "gekko": {
@@ -1943,6 +1943,26 @@
         "d": "2026-03-30",
         "total_value": 810.65,
         "total_pnl": 10.65
+      },
+      {
+        "d": "2026-03-30",
+        "total_value": 835.89,
+        "total_pnl": 35.89
+      },
+      {
+        "d": "2026-03-30",
+        "total_value": 836.8,
+        "total_pnl": 36.800000000000004
+      },
+      {
+        "d": "2026-03-30",
+        "total_value": 836.71,
+        "total_pnl": 36.71
+      },
+      {
+        "d": "2026-03-30",
+        "total_value": 838.97,
+        "total_pnl": 38.97
       }
     ]
   },
@@ -8400,11 +8420,6 @@
       },
       {
         "d": "2026-02-28",
-        "source": "technical_analysis",
-        "avg_score": -0.0409090909090909
-      },
-      {
-        "d": "2026-02-28",
         "source": "vix",
         "avg_score": 0.3427
       },
@@ -9782,36 +9797,99 @@
       }
     ],
     "ensemble_heatmap": {
+      "^VIX": {
+        "ensemble": 96.0,
+        "twitter_fear": 52.0
+      },
+      "TSLA": {
+        "ensemble": 96.0,
+        "options_unusual": 70.0,
+        "twitter_greed": 48.0
+      },
       "SPY": {
+        "ensemble": 96.0,
         "cross_asset_divergence": 0.72,
         "options_unusual": 70.0,
         "extreme_fear": 69.0,
-        "ensemble": 96.0,
         "twitter_greed": 52.0
+      },
+      "RHM.DE": {
+        "ensemble": 68.0,
+        "twitter_greed": 52.0
+      },
+      "NVDA": {
+        "ensemble": 96.0,
+        "twitter_greed": 52.0,
+        "options_unusual": 70.0
+      },
+      "MSFT": {
+        "ensemble": 96.0,
+        "twitter_greed": 50.0,
+        "options_unusual": 70.0
+      },
+      "JPM": {
+        "ensemble": 96.0,
+        "options_unusual": 70.0,
+        "twitter_greed": 45.0
+      },
+      "GOOGL": {
+        "ensemble": 96.0,
+        "options_unusual": 70.0,
+        "twitter_greed": 51.0
+      },
+      "CL=F": {
+        "ensemble": 71.0
+      },
+      "BTC-USD": {
+        "ensemble": 84.0,
+        "twitter_greed": 45.0,
+        "extreme_fear": 75.0
+      },
+      "BA.L": {
+        "ensemble": 78.0,
+        "twitter_greed": 50.0
+      },
+      "AMZN": {
+        "ensemble": 96.0,
+        "twitter_greed": 45.0,
+        "options_unusual": 70.0
+      },
+      "AAPL": {
+        "ensemble": 86.0,
+        "twitter_greed": 45.0,
+        "options_unusual": 70.0
       },
       "QQQ": {
         "cross_asset_divergence": 0.75,
-        "ensemble": 88.0,
+        "twitter_greed": 47.0,
         "options_unusual": 70.0,
         "extreme_fear": 69.0,
-        "twitter_greed": 55.0
+        "ensemble": 88.0
       },
       "SAAB-B.ST": {
-        "ensemble": 59.0,
-        "twitter_greed": 52.0
+        "twitter_greed": 50.0,
+        "ensemble": 59.0
       },
       "META": {
-        "ensemble": 88.0,
+        "twitter_greed": 47.0,
         "options_unusual": 70.0,
-        "twitter_greed": 55.0
+        "ensemble": 88.0
       },
       "LDO.MI": {
-        "ensemble": 59.0,
-        "twitter_greed": 57.0
+        "twitter_greed": 55.0,
+        "ensemble": 59.0
       },
       "HO.PA": {
-        "ensemble": 59.0,
-        "twitter_greed": 53.0
+        "twitter_greed": 47.0,
+        "ensemble": 59.0
+      },
+      "EURUSD=X": {
+        "twitter_fear": 55.0,
+        "ensemble": 59.0
+      },
+      "ETH-USD": {
+        "extreme_fear": 75.0,
+        "ensemble": 73.0
       },
       "GC=F": {
         "ensemble": 49.0,
@@ -9822,70 +9900,6 @@
       },
       "BTP10Y": {
         "ensemble": 59.0
-      },
-      "AAPL": {
-        "options_unusual": 70.0,
-        "ensemble": 66.0,
-        "twitter_greed": 50.0
-      },
-      "MSFT": {
-        "options_unusual": 70.0,
-        "ensemble": 96.0,
-        "twitter_greed": 53.0
-      },
-      "GOOGL": {
-        "options_unusual": 70.0,
-        "ensemble": 96.0,
-        "twitter_greed": 51.0
-      },
-      "AMZN": {
-        "options_unusual": 70.0,
-        "ensemble": 96.0,
-        "twitter_greed": 52.0
-      },
-      "NVDA": {
-        "options_unusual": 70.0,
-        "ensemble": 96.0,
-        "twitter_greed": 56.0
-      },
-      "TSLA": {
-        "options_unusual": 70.0,
-        "ensemble": 96.0,
-        "twitter_greed": 48.0
-      },
-      "JPM": {
-        "options_unusual": 70.0,
-        "ensemble": 96.0,
-        "twitter_greed": 45.0
-      },
-      "ETH-USD": {
-        "extreme_fear": 72.0,
-        "ensemble": 73.0,
-        "twitter_greed": 51.0
-      },
-      "BTC-USD": {
-        "extreme_fear": 72.0,
-        "ensemble": 63.0,
-        "twitter_greed": 53.0
-      },
-      "^VIX": {
-        "ensemble": 96.0,
-        "twitter_fear": 58.0
-      },
-      "RHM.DE": {
-        "ensemble": 42.0,
-        "twitter_greed": 56.0
-      },
-      "EURUSD=X": {
-        "ensemble": 59.0
-      },
-      "CL=F": {
-        "ensemble": 44.0,
-        "twitter_fear": 52.0
-      },
-      "BA.L": {
-        "ensemble": 58.0,
-        "twitter_greed": 55.0
       }
     },
     "google_trends": {
@@ -10169,8 +10183,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 33.78,
-      "pnl_pct": 11.26,
+      "pnl": 41.01,
+      "pnl_pct": 13.67,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -10182,8 +10196,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 2.65,
-      "pnl_pct": 0.53,
+      "pnl": 7.0,
+      "pnl_pct": 1.4,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -10666,7 +10680,7 @@
       },
       "description": "Downtrend \u2014 contrarian works but reduce sizing"
     },
-    "timestamp": "2026-03-30T08:01:03.018102"
+    "timestamp": "2026-03-30T12:02:17.149526"
   },
   "signal_heatmap": {
     "grid": [
@@ -10674,27 +10688,44 @@
         "instrument": "AAPL",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 0,
+          "ensemble": 86.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 45.0
         }
       },
       {
         "instrument": "AMZN",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 0,
+          "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 45.0
+        }
+      },
+      {
+        "instrument": "BA.L",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 78.0,
+          "extreme_fear": 0,
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 50.0
         }
       },
       {
         "instrument": "BTC-USD",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 0,
-          "extreme_fear": 72.0,
-          "options_unusual": 0
+          "ensemble": 84.0,
+          "extreme_fear": 75.0,
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 45.0
         }
       },
       {
@@ -10703,7 +10734,20 @@
           "cross_asset_divergence": 0,
           "ensemble": 59.0,
           "extreme_fear": 0,
-          "options_unusual": 0
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
+        }
+      },
+      {
+        "instrument": "CL=F",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 71.0,
+          "extreme_fear": 0,
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
         }
       },
       {
@@ -10711,8 +10755,21 @@
         "signals": {
           "cross_asset_divergence": 0,
           "ensemble": 0,
-          "extreme_fear": 72.0,
-          "options_unusual": 0
+          "extreme_fear": 75.0,
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
+        }
+      },
+      {
+        "instrument": "EURUSD=X",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 0,
+          "extreme_fear": 0,
+          "options_unusual": 0,
+          "twitter_fear": 55.0,
+          "twitter_greed": 0
         }
       },
       {
@@ -10721,7 +10778,9 @@
           "cross_asset_divergence": 0,
           "ensemble": 59.0,
           "extreme_fear": 0,
-          "options_unusual": 0
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
         }
       },
       {
@@ -10730,16 +10789,20 @@
           "cross_asset_divergence": 0,
           "ensemble": 49.0,
           "extreme_fear": 0,
-          "options_unusual": 0
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
         }
       },
       {
         "instrument": "GOOGL",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 0,
+          "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
         }
       },
       {
@@ -10748,16 +10811,20 @@
           "cross_asset_divergence": 0,
           "ensemble": 59.0,
           "extreme_fear": 0,
-          "options_unusual": 0
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 47.0
         }
       },
       {
         "instrument": "JPM",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 0,
+          "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
         }
       },
       {
@@ -10766,7 +10833,9 @@
           "cross_asset_divergence": 0,
           "ensemble": 59.0,
           "extreme_fear": 0,
-          "options_unusual": 0
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 55.0
         }
       },
       {
@@ -10775,25 +10844,31 @@
           "cross_asset_divergence": 0,
           "ensemble": 88.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 47.0
         }
       },
       {
         "instrument": "MSFT",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 0,
+          "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 50.0
         }
       },
       {
         "instrument": "NVDA",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 0,
+          "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 52.0
         }
       },
       {
@@ -10802,7 +10877,20 @@
           "cross_asset_divergence": 0.75,
           "ensemble": 88.0,
           "extreme_fear": 69.0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 47.0
+        }
+      },
+      {
+        "instrument": "RHM.DE",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 68.0,
+          "extreme_fear": 0,
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 52.0
         }
       },
       {
@@ -10811,25 +10899,42 @@
           "cross_asset_divergence": 0,
           "ensemble": 59.0,
           "extreme_fear": 0,
-          "options_unusual": 0
+          "options_unusual": 0,
+          "twitter_fear": 0,
+          "twitter_greed": 50.0
         }
       },
       {
         "instrument": "SPY",
         "signals": {
           "cross_asset_divergence": 0.72,
-          "ensemble": 0,
+          "ensemble": 96.0,
           "extreme_fear": 69.0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
         }
       },
       {
         "instrument": "TSLA",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 0,
+          "ensemble": 96.0,
           "extreme_fear": 0,
-          "options_unusual": 70.0
+          "options_unusual": 70.0,
+          "twitter_fear": 0,
+          "twitter_greed": 0
+        }
+      },
+      {
+        "instrument": "^VIX",
+        "signals": {
+          "cross_asset_divergence": 0,
+          "ensemble": 96.0,
+          "extreme_fear": 0,
+          "options_unusual": 0,
+          "twitter_fear": 52.0,
+          "twitter_greed": 0
         }
       }
     ],
@@ -10837,14 +10942,19 @@
       "cross_asset_divergence",
       "ensemble",
       "extreme_fear",
-      "options_unusual"
+      "options_unusual",
+      "twitter_fear",
+      "twitter_greed"
     ],
     "instruments": [
       "AAPL",
       "AMZN",
+      "BA.L",
       "BTC-USD",
       "BTP10Y",
+      "CL=F",
       "ETH-USD",
+      "EURUSD=X",
       "FTSEMIB.MI",
       "GC=F",
       "GOOGL",
@@ -10855,23 +10965,27 @@
       "MSFT",
       "NVDA",
       "QQQ",
+      "RHM.DE",
       "SAAB-B.ST",
       "SPY",
-      "TSLA"
+      "TSLA",
+      "^VIX"
     ],
     "signal_counts": {
-      "cross_asset_divergence": 4,
-      "ensemble": 8,
-      "options_unusual": 10,
-      "extreme_fear": 4
+      "ensemble": 21,
+      "cross_asset_divergence": 6,
+      "twitter_fear": 2,
+      "twitter_greed": 12,
+      "options_unusual": 20,
+      "extreme_fear": 8
     },
-    "total_signals": 26
+    "total_signals": 69
   },
   "polymarket": {
     "portfolio": {
       "usdc_balance": 130.46,
       "total_invested": 56.1,
-      "unrealized_pnl": 16.36,
+      "unrealized_pnl": 15.19,
       "realized_pnl": -10.43,
       "win_rate": 66.7,
       "total_trades": 8,
@@ -10908,12 +11022,12 @@
         "question": "Will Kimi Antonelli be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.075,
-        "current_price": 0.3515,
-        "current_value": 43.94,
+        "current_price": 0.3495,
+        "current_value": 43.69,
         "amount": 9.39,
         "shares": 125.0,
-        "pnl": 34.56,
-        "pnl_pct": 368.7,
+        "pnl": 34.31,
+        "pnl_pct": 366.0,
         "edge_remaining": null
       },
       {
@@ -10932,12 +11046,12 @@
         "question": "Will Oscar Piastri be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.06,
-        "current_price": 0.043,
-        "current_value": 7.17,
+        "current_price": 0.0375,
+        "current_value": 6.25,
         "amount": 10.0,
         "shares": 166.67,
-        "pnl": -2.83,
-        "pnl_pct": -28.3,
+        "pnl": -3.75,
+        "pnl_pct": -37.5,
         "edge_remaining": null
       }
     ],
@@ -11038,24 +11152,24 @@
     ],
     "categories": {
       "politics": {
-        "count": 172,
-        "avg_edge": 42.2
+        "count": 176,
+        "avg_edge": 42.4
       },
       "economics": {
-        "count": 77,
+        "count": 79,
         "avg_edge": 43.2
       },
       "other": {
-        "count": 2019,
+        "count": 2043,
         "avg_edge": 42.4
       },
       "crypto": {
-        "count": 1618,
+        "count": 1640,
         "avg_edge": 44.4
       },
       "sports": {
-        "count": 172,
-        "avg_edge": 34.5
+        "count": 175,
+        "avg_edge": 34.6
       }
     },
     "signal_sources": [

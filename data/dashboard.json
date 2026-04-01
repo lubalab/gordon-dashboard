@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T14:07:54.835198+00:00",
+  "generated_at": "2026-04-01T14:09:11.110181+00:00",
   "next_update": "2026-04-01T21:00:00+00:00",
   "market_mood": {
     "composite": -0.5686,
@@ -10884,7 +10884,7 @@
     "portfolio": {
       "usdc_balance": 130.46,
       "total_invested": 56.1,
-      "unrealized_pnl": 10.85,
+      "unrealized_pnl": 10.79,
       "realized_pnl": -10.43,
       "win_rate": 66.7,
       "total_trades": 8,
@@ -10921,12 +10921,12 @@
         "question": "Will Kimi Antonelli be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.075,
-        "current_price": 0.316,
-        "current_value": 39.5,
+        "current_price": 0.3155,
+        "current_value": 39.44,
         "amount": 9.39,
         "shares": 125.0,
-        "pnl": 30.12,
-        "pnl_pct": 321.3,
+        "pnl": 30.06,
+        "pnl_pct": 320.7,
         "edge_remaining": null
       },
       {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T01:15:25.588822+00:00",
+  "generated_at": "2026-04-01T01:17:55.648057+00:00",
   "next_update": "2026-04-01T07:00:00+00:00",
   "market_mood": {
     "composite": -0.561,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2105.3457,
-      "pnl_dollar": 51.09,
-      "pnl_percent": 17.03
+      "current_price": 2105.4658,
+      "pnl_dollar": 51.13,
+      "pnl_percent": 17.04
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 68205.9922,
-      "pnl_dollar": 12.88,
-      "pnl_percent": 2.58
+      "current_price": 68202.3203,
+      "pnl_dollar": 12.82,
+      "pnl_percent": 2.56
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 863.97,
-    "total_pnl": 63.97,
-    "total_pnl_pct": 8.0
+    "total_current_value": 863.95,
+    "total_pnl": 63.95,
+    "total_pnl_pct": 7.99
   },
   "strategies": {
     "gekko": {
@@ -9983,8 +9983,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 51.09,
-      "pnl_pct": 17.03,
+      "pnl": 51.12,
+      "pnl_pct": 17.04,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -9996,8 +9996,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 12.9,
-      "pnl_pct": 2.58,
+      "pnl": 12.8,
+      "pnl_pct": 2.56,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,

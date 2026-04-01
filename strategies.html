@@ -49,7 +49,36 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
 
   const pnlHistory = strats.pnl_history || [];
 
+  const alloc = data.daily_allocation || {};
+  const allocPositions = alloc.open_positions || alloc.positions || [];
+  const allocStats = alloc.summary || {
+    total_positions: allocPositions.length,
+    total_invested: allocPositions.reduce((s,p)=>s+(p.size_usd||0),0),
+    avg_leverage: allocPositions.length ? allocPositions.reduce((s,p)=>s+(p.leverage||1),0)/allocPositions.length : 1,
+    regime: allocPositions[0]?.regime || '—'
+  };
+
   c.innerHTML=`
+  ${allocPositions.length > 0 ? `<div class="card" style="margin-bottom:20px">
+    <div class="card-title">📊 Daily Allocation Engine <span style="font-size:0.75rem;color:var(--text-dim)">(eToro Demo)</span></div>
+    <div class="grid grid-4" style="margin:12px 0">
+      <div><div class="card-label">Positions</div><div style="font-size:1.4rem;font-weight:700">${allocStats.total_positions||allocPositions.length}</div></div>
+      <div><div class="card-label">Total Invested</div><div style="font-size:1.4rem;font-weight:700">$${(allocStats.total_invested||0).toLocaleString()}</div></div>
+      <div><div class="card-label">Avg Leverage</div><div style="font-size:1.4rem;font-weight:700">${(allocStats.avg_leverage||1).toFixed(1)}x</div></div>
+      <div><div class="card-label">Regime</div><div style="font-size:1rem;font-weight:700;color:${(allocStats.regime||'').includes('DOWN')?'var(--red)':allocStats.regime==='CRISIS'?'#ff4444':'var(--green)'}">${allocStats.regime||'—'}</div></div>
+    </div>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Instrument</th><th>Direction</th><th>Size</th><th>Leverage</th><th>Score</th><th>Date</th></tr></thead>
+      <tbody>${allocPositions.map(p=>`<tr>
+        <td><strong>${p.instrument}</strong></td>
+        <td>${dirBadge(p.direction)}</td>
+        <td>$${(p.size_usd||0).toLocaleString()}</td>
+        <td>${(p.leverage||1)}x</td>
+        <td style="color:${(p.composite_score||p.score||0)>=85?'var(--green)':(p.composite_score||p.score||0)>=70?'var(--gold,#d4af37)':'var(--text-dim)'}">${(p.composite_score||p.score||0).toFixed(1)}</td>
+        <td class="timestamp">${p.date||'—'}</td>
+      </tr>`).join('')}</tbody>
+    </table></div>
+  </div>` : ''}
   <div class="grid grid-2" style="margin-bottom:20px">
     ${stratCard('gekko',strats.gekko)}
     ${stratCard('buffett',strats.buffett)}

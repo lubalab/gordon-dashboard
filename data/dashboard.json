@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T14:09:11.110181+00:00",
+  "generated_at": "2026-04-01T14:14:32.406387+00:00",
   "next_update": "2026-04-01T21:00:00+00:00",
   "market_mood": {
     "composite": -0.5686,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2118.6431,
-      "pnl_dollar": 55.2,
-      "pnl_percent": 18.4
+      "current_price": 2117.5679,
+      "pnl_dollar": 54.87,
+      "pnl_percent": 18.29
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 68166.0078,
-      "pnl_dollar": 12.28,
-      "pnl_percent": 2.46
+      "current_price": 68150.2109,
+      "pnl_dollar": 12.05,
+      "pnl_percent": 2.41
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 867.48,
-    "total_pnl": 67.48,
-    "total_pnl_pct": 8.44
+    "total_current_value": 866.92,
+    "total_pnl": 66.92,
+    "total_pnl_pct": 8.37
   },
   "strategies": {
     "gekko": {
@@ -10082,8 +10082,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 55.2,
-      "pnl_pct": 18.4,
+      "pnl": 54.87,
+      "pnl_pct": 18.29,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -10095,8 +10095,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 12.3,
-      "pnl_pct": 2.46,
+      "pnl": 12.05,
+      "pnl_pct": 2.41,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -10884,7 +10884,7 @@
     "portfolio": {
       "usdc_balance": 130.46,
       "total_invested": 56.1,
-      "unrealized_pnl": 10.79,
+      "unrealized_pnl": 10.73,
       "realized_pnl": -10.43,
       "win_rate": 66.7,
       "total_trades": 8,
@@ -10897,12 +10897,12 @@
         "question": "Will Charles Leclerc be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.099,
-        "current_price": 0.0535,
-        "current_value": 10.39,
+        "current_price": 0.053,
+        "current_value": 10.29,
         "amount": 19.24,
         "shares": 194.2,
-        "pnl": -8.84,
-        "pnl_pct": -46.0,
+        "pnl": -8.93,
+        "pnl_pct": -46.5,
         "edge_remaining": null
       },
       {
@@ -10921,12 +10921,12 @@
         "question": "Will Kimi Antonelli be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.075,
-        "current_price": 0.3155,
-        "current_value": 39.44,
+        "current_price": 0.3165,
+        "current_value": 39.56,
         "amount": 9.39,
         "shares": 125.0,
-        "pnl": 30.06,
-        "pnl_pct": 320.7,
+        "pnl": 30.19,
+        "pnl_pct": 322.0,
         "edge_remaining": null
       },
       {
@@ -10945,12 +10945,12 @@
         "question": "Will Oscar Piastri be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.06,
-        "current_price": 0.042,
-        "current_value": 7.0,
+        "current_price": 0.0415,
+        "current_value": 6.92,
         "amount": 10.0,
         "shares": 166.67,
-        "pnl": -3.0,
-        "pnl_pct": -30.0,
+        "pnl": -3.08,
+        "pnl_pct": -30.8,
         "edge_remaining": null
       }
     ],

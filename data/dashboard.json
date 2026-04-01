@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T12:31:40.099677+00:00",
+  "generated_at": "2026-04-01T14:07:54.835198+00:00",
   "next_update": "2026-04-01T21:00:00+00:00",
   "market_mood": {
     "composite": -0.5686,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2130.9448,
-      "pnl_dollar": 59.01,
-      "pnl_percent": 19.67
+      "current_price": 2118.6431,
+      "pnl_dollar": 55.2,
+      "pnl_percent": 18.4
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 68492.6016,
-      "pnl_dollar": 17.13,
-      "pnl_percent": 3.43
+      "current_price": 68166.0078,
+      "pnl_dollar": 12.28,
+      "pnl_percent": 2.46
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 876.14,
-    "total_pnl": 76.14,
-    "total_pnl_pct": 9.52
+    "total_current_value": 867.48,
+    "total_pnl": 67.48,
+    "total_pnl_pct": 8.44
   },
   "strategies": {
     "gekko": {
@@ -2033,6 +2033,11 @@
         "d": "2026-04-01",
         "total_value": 879.57,
         "total_pnl": 79.57000000000001
+      },
+      {
+        "d": "2026-04-01",
+        "total_value": 867.98,
+        "total_pnl": 67.98
       }
     ]
   },
@@ -10077,8 +10082,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 59.01,
-      "pnl_pct": 19.67,
+      "pnl": 55.2,
+      "pnl_pct": 18.4,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -10090,8 +10095,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 17.15,
-      "pnl_pct": 3.43,
+      "pnl": 12.3,
+      "pnl_pct": 2.46,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -10879,7 +10884,7 @@
     "portfolio": {
       "usdc_balance": 130.46,
       "total_invested": 56.1,
-      "unrealized_pnl": 11.39,
+      "unrealized_pnl": 10.85,
       "realized_pnl": -10.43,
       "win_rate": 66.7,
       "total_trades": 8,
@@ -10928,24 +10933,24 @@
         "question": "Will Lando Norris be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.08,
-        "current_price": 0.0245,
-        "current_value": 3.06,
+        "current_price": 0.0215,
+        "current_value": 2.69,
         "amount": 10.0,
         "shares": 125.0,
-        "pnl": -6.94,
-        "pnl_pct": -69.4,
+        "pnl": -7.31,
+        "pnl_pct": -73.1,
         "edge_remaining": null
       },
       {
         "question": "Will Oscar Piastri be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.06,
-        "current_price": 0.043,
-        "current_value": 7.17,
+        "current_price": 0.042,
+        "current_value": 7.0,
         "amount": 10.0,
         "shares": 166.67,
-        "pnl": -2.83,
-        "pnl_pct": -28.3,
+        "pnl": -3.0,
+        "pnl_pct": -30.0,
         "edge_remaining": null
       }
     ],
@@ -11096,5 +11101,228 @@
         "label": "Twitter Fear"
       }
     ]
+  },
+  "daily_allocation": {
+    "open_positions": [
+      {
+        "instrument": "GOOGL",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 287.55999755859375,
+        "leverage": 2.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 90.3,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 90.3",
+        "date": "2026-04-01",
+        "etoro_order_id": "339981229"
+      },
+      {
+        "instrument": "AMZN",
+        "direction": "LONG",
+        "size_usd": 500.0,
+        "entry_price": 208.27000427246094,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 90.19,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 90.2",
+        "date": "2026-04-01",
+        "etoro_order_id": "339981230"
+      },
+      {
+        "instrument": "NVDA",
+        "direction": "LONG",
+        "size_usd": 500.0,
+        "entry_price": 174.39999389648438,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 90.04,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 90.0",
+        "date": "2026-04-01",
+        "etoro_order_id": "339981231"
+      },
+      {
+        "instrument": "JPM",
+        "direction": "LONG",
+        "size_usd": 500.0,
+        "entry_price": 294.1600036621094,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 90.0,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 90.0",
+        "date": "2026-04-01",
+        "etoro_order_id": "339981232"
+      },
+      {
+        "instrument": "MSFT",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 370.1700134277344,
+        "leverage": 2.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 89.9,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 89.9",
+        "date": "2026-04-01",
+        "etoro_order_id": "339981233"
+      },
+      {
+        "instrument": "TSLA",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 371.75,
+        "leverage": 2.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 89.5,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 89.5",
+        "date": "2026-04-01",
+        "etoro_order_id": "339991045"
+      },
+      {
+        "instrument": "SPY",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 650.3400268554688,
+        "leverage": 2.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 89.42,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 89.4",
+        "date": "2026-04-01",
+        "etoro_order_id": "339979140"
+      },
+      {
+        "instrument": "META",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 572.1300048828125,
+        "leverage": 2.0,
+        "conviction": 88.0,
+        "composite_score": 88.73,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 88.7",
+        "date": "2026-04-01",
+        "etoro_order_id": "339991046"
+      },
+      {
+        "instrument": "MSFT",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 370.170013,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 78.4,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 78.4",
+        "date": "2026-04-01",
+        "etoro_order_id": "339875533"
+      },
+      {
+        "instrument": "AMZN",
+        "direction": "LONG",
+        "size_usd": 500.0,
+        "entry_price": 208.259995,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 78.4,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 78.4",
+        "date": "2026-04-01",
+        "etoro_order_id": "339875534"
+      },
+      {
+        "instrument": "NVDA",
+        "direction": "LONG",
+        "size_usd": 500.0,
+        "entry_price": 174.399994,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 78.4,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 78.4",
+        "date": "2026-04-01",
+        "etoro_order_id": "339875535"
+      },
+      {
+        "instrument": "TSLA",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 371.75,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 78.4,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 78.4",
+        "date": "2026-04-01",
+        "etoro_order_id": "339875536"
+      },
+      {
+        "instrument": "JPM",
+        "direction": "LONG",
+        "size_usd": 500.0,
+        "entry_price": 294.23999,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 78.4,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 78.4",
+        "date": "2026-04-01",
+        "etoro_order_id": "339892641"
+      },
+      {
+        "instrument": "GOOGL",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 287.559998,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 78.38,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 78.4",
+        "date": "2026-04-01",
+        "etoro_order_id": "339875537"
+      },
+      {
+        "instrument": "SPY",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 650.23999,
+        "leverage": 1.0,
+        "conviction": 96.00000000000001,
+        "composite_score": 78.34,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 78.3",
+        "date": "2026-04-01",
+        "etoro_order_id": "339875538"
+      },
+      {
+        "instrument": "META",
+        "direction": "LONG",
+        "size_usd": 2000.0,
+        "entry_price": 572.200012,
+        "leverage": 1.0,
+        "conviction": 88.0,
+        "composite_score": 75.2,
+        "regime": "TRENDING_DOWN",
+        "reasoning": "Top candidate: score 75.2",
+        "date": "2026-04-01",
+        "etoro_order_id": "339875539"
+      }
+    ],
+    "closed_positions": [],
+    "summary": {
+      "total_invested": 23000.0,
+      "num_positions": 16,
+      "avg_leverage": 1.31,
+      "avg_conviction": 95.0,
+      "win_rate": null,
+      "total_closed": 0,
+      "winners": 0,
+      "current_regime": "TRENDING_DOWN"
+    }
   }
 }

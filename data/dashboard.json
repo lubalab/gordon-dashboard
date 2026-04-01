@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-03-31T20:08:25.979913+00:00",
-  "next_update": "2026-03-31T21:00:00+00:00",
+  "generated_at": "2026-04-01T01:13:11.343807+00:00",
+  "next_update": "2026-04-01T07:00:00+00:00",
   "market_mood": {
-    "composite": -0.5361,
+    "composite": -0.561,
     "cnn_fear_greed": {
       "value": 14.0571428571429,
       "label": "Extreme Fear"
@@ -16,7 +16,7 @@
       "label": "Elevated"
     },
     "google_trends": {
-      "composite": -0.1093,
+      "composite": -0.1842,
       "fear_total": null,
       "greed_total": null
     }
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2096.1411,
-      "pnl_dollar": 48.24,
-      "pnl_percent": 16.08
+      "current_price": 2105.1128,
+      "pnl_dollar": 51.02,
+      "pnl_percent": 17.01
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 67867.6094,
-      "pnl_dollar": 7.85,
-      "pnl_percent": 1.57
+      "current_price": 68187.0078,
+      "pnl_dollar": 12.59,
+      "pnl_percent": 2.52
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 856.09,
-    "total_pnl": 56.09,
-    "total_pnl_pct": 7.01
+    "total_current_value": 863.61,
+    "total_pnl": 63.61,
+    "total_pnl_pct": 7.95
   },
   "strategies": {
     "gekko": {
@@ -2008,6 +2008,11 @@
         "d": "2026-03-31",
         "total_value": 0.0,
         "total_pnl": 0.0
+      },
+      {
+        "d": "2026-04-01",
+        "total_value": 863.03,
+        "total_pnl": 63.03
       }
     ]
   },
@@ -8167,16 +8172,6 @@
     ],
     "sentiment_history_chart": [
       {
-        "d": "2026-03-01",
-        "source": "binance_futures",
-        "avg_score": -0.75697
-      },
-      {
-        "d": "2026-03-01",
-        "source": "wikipedia_pageviews",
-        "avg_score": -0.17870882352941178
-      },
-      {
         "d": "2026-03-02",
         "source": "binance_futures",
         "avg_score": -0.7252083333333333
@@ -9988,8 +9983,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 48.24,
-      "pnl_pct": 16.08,
+      "pnl": 51.03,
+      "pnl_pct": 17.01,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -10001,8 +9996,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 7.85,
-      "pnl_pct": 1.57,
+      "pnl": 12.6,
+      "pnl_pct": 2.52,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -10493,7 +10488,7 @@
         "instrument": "AAPL",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 86.0,
+          "ensemble": 61.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
@@ -10504,7 +10499,7 @@
         "instrument": "AMZN",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 96.0,
+          "ensemble": 48.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
@@ -10515,7 +10510,7 @@
         "instrument": "BA.L",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 78.0,
+          "ensemble": 45.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -10526,8 +10521,8 @@
         "instrument": "BTC-USD",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 84.0,
-          "extreme_fear": 75.0,
+          "ensemble": 45.0,
+          "extreme_fear": 73.0,
           "options_unusual": 0,
           "twitter_fear": 0,
           "twitter_greed": 48.0
@@ -10548,7 +10543,7 @@
         "instrument": "CL=F",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 71.0,
+          "ensemble": 45.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 49.0,
@@ -10560,7 +10555,7 @@
         "signals": {
           "cross_asset_divergence": 0,
           "ensemble": 45.0,
-          "extreme_fear": 75.0,
+          "extreme_fear": 73.0,
           "options_unusual": 0,
           "twitter_fear": 0,
           "twitter_greed": 45.0
@@ -10573,7 +10568,7 @@
           "ensemble": 65.0,
           "extreme_fear": 0,
           "options_unusual": 0,
-          "twitter_fear": 55.0,
+          "twitter_fear": 0,
           "twitter_greed": 0
         }
       },
@@ -10625,7 +10620,7 @@
         "instrument": "JPM",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 96.0,
+          "ensemble": 64.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
@@ -10640,7 +10635,7 @@
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
-          "twitter_greed": 55.0
+          "twitter_greed": 53.0
         }
       },
       {
@@ -10658,7 +10653,7 @@
         "instrument": "MSFT",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 96.0,
+          "ensemble": 42.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 0,
@@ -10679,7 +10674,7 @@
       {
         "instrument": "QQQ",
         "signals": {
-          "cross_asset_divergence": 0.8,
+          "cross_asset_divergence": 0.79,
           "ensemble": 75.0,
           "extreme_fear": 70.0,
           "options_unusual": 70.0,
@@ -10691,7 +10686,7 @@
         "instrument": "RHM.DE",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 68.0,
+          "ensemble": 45.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 0,
@@ -10712,7 +10707,7 @@
       {
         "instrument": "SPY",
         "signals": {
-          "cross_asset_divergence": 0.72,
+          "cross_asset_divergence": 0.7,
           "ensemble": 96.0,
           "extreme_fear": 70.0,
           "options_unusual": 70.0,
@@ -10724,7 +10719,7 @@
         "instrument": "TSLA",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 96.0,
+          "ensemble": 59.0,
           "extreme_fear": 0,
           "options_unusual": 70.0,
           "twitter_fear": 50.0,
@@ -10735,7 +10730,7 @@
         "instrument": "^VIX",
         "signals": {
           "cross_asset_divergence": 0,
-          "ensemble": 96.0,
+          "ensemble": 72.0,
           "extreme_fear": 0,
           "options_unusual": 0,
           "twitter_fear": 55.0,
@@ -10777,20 +10772,20 @@
       "^VIX"
     ],
     "signal_counts": {
-      "ensemble": 36,
-      "twitter_greed": 29,
-      "options_unusual": 20,
-      "cross_asset_divergence": 11,
-      "twitter_fear": 5,
-      "extreme_fear": 8
+      "ensemble": 23,
+      "twitter_greed": 17,
+      "options_unusual": 10,
+      "cross_asset_divergence": 5,
+      "twitter_fear": 3,
+      "extreme_fear": 4
     },
-    "total_signals": 109
+    "total_signals": 62
   },
   "polymarket": {
     "portfolio": {
       "usdc_balance": 130.46,
       "total_invested": 56.1,
-      "unrealized_pnl": 12.01,
+      "unrealized_pnl": 12.4,
       "realized_pnl": -10.43,
       "win_rate": 66.7,
       "total_trades": 8,
@@ -10803,12 +10798,12 @@
         "question": "Will Charles Leclerc be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.099,
-        "current_price": 0.0555,
-        "current_value": 10.78,
+        "current_price": 0.0545,
+        "current_value": 10.58,
         "amount": 19.24,
         "shares": 194.2,
-        "pnl": -8.45,
-        "pnl_pct": -43.9,
+        "pnl": -8.64,
+        "pnl_pct": -44.9,
         "edge_remaining": null
       },
       {
@@ -10827,36 +10822,36 @@
         "question": "Will Kimi Antonelli be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.075,
-        "current_price": 0.319,
-        "current_value": 39.88,
+        "current_price": 0.318,
+        "current_value": 39.75,
         "amount": 9.39,
         "shares": 125.0,
-        "pnl": 30.5,
-        "pnl_pct": 325.3,
+        "pnl": 30.38,
+        "pnl_pct": 324.0,
         "edge_remaining": null
       },
       {
         "question": "Will Lando Norris be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.08,
-        "current_price": 0.026,
-        "current_value": 3.25,
+        "current_price": 0.025,
+        "current_value": 3.12,
         "amount": 10.0,
         "shares": 125.0,
-        "pnl": -6.75,
-        "pnl_pct": -67.5,
+        "pnl": -6.88,
+        "pnl_pct": -68.8,
         "edge_remaining": null
       },
       {
         "question": "Will Oscar Piastri be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.06,
-        "current_price": 0.0435,
-        "current_value": 7.25,
+        "current_price": 0.0485,
+        "current_value": 8.08,
         "amount": 10.0,
         "shares": 166.67,
-        "pnl": -2.75,
-        "pnl_pct": -27.5,
+        "pnl": -1.92,
+        "pnl_pct": -19.2,
         "edge_remaining": null
       }
     ],

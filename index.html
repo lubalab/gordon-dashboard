@@ -108,6 +108,16 @@ fetch('data/dashboard.json?t='+Date.now()).then(r=>r.json()).then(data=>{
         <td style="color:${pclr};font-weight:600">${p.pnl_dollar!=null?((p.pnl_dollar>=0?'+':'')+fmt$(p.pnl_dollar)):'—'}</td>
         <td style="color:${pclr};font-weight:600">${p.pnl_percent!=null?((p.pnl_percent>=0?'+':'')+p.pnl_percent.toFixed(2)+'%'):'—'}</td>
         <td>${stratBadge(p.strategy||'—')}</td>
+      </tr>`}).join('')}${((data.daily_allocation||{}).open_positions||[]).map(p=>{return `<tr>
+        <td><strong>${p.instrument}</strong></td>
+        <td>${dirBadge(p.direction||'—')}</td>
+        <td>${p.entry_price?fmt$(p.entry_price):'—'}</td>
+        <td>—</td>
+        <td>${fmt$(p.size_usd)}</td>
+        <td>${p.leverage||1}x</td>
+        <td style="color:var(--text-dim)">—</td>
+        <td style="color:var(--text-dim)">—</td>
+        <td>${stratBadge('allocation')}</td>
       </tr>`}).join('')}</tbody>
     </table></div>
   </div>

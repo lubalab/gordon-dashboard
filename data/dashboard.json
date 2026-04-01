@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T14:14:32.406387+00:00",
+  "generated_at": "2026-04-01T14:17:32.576222+00:00",
   "next_update": "2026-04-01T21:00:00+00:00",
   "market_mood": {
     "composite": -0.5686,
@@ -34,9 +34,9 @@
       "opened_at": "2026-02-11 19:34:17",
       "etoro_order_id": "327237997",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 2117.5679,
-      "pnl_dollar": 54.87,
-      "pnl_percent": 18.29
+      "current_price": 2117.4695,
+      "pnl_dollar": 54.84,
+      "pnl_percent": 18.28
     },
     {
       "symbol": "BTC-USD",
@@ -50,16 +50,16 @@
       "opened_at": "2026-02-11 19:34:09",
       "etoro_order_id": "327237996",
       "notes": "Re-placed with Rate-based SL/TP",
-      "current_price": 68150.2109,
-      "pnl_dollar": 12.05,
-      "pnl_percent": 2.41
+      "current_price": 68157.9922,
+      "pnl_dollar": 12.16,
+      "pnl_percent": 2.43
     }
   ],
   "portfolio_summary": {
     "total_invested": 800.0,
-    "total_current_value": 866.92,
-    "total_pnl": 66.92,
-    "total_pnl_pct": 8.37
+    "total_current_value": 867.0,
+    "total_pnl": 67.0,
+    "total_pnl_pct": 8.38
   },
   "strategies": {
     "gekko": {
@@ -10082,8 +10082,8 @@
       "strategy": "gekko",
       "entry_price": 1940.14,
       "exit_price": null,
-      "pnl": 54.87,
-      "pnl_pct": 18.29,
+      "pnl": 54.84,
+      "pnl_pct": 18.28,
       "status": "open",
       "entry_time": "2026-02-11 19:34:17",
       "exit_time": null,
@@ -10095,8 +10095,8 @@
       "strategy": "gekko",
       "entry_price": 67339.0,
       "exit_price": null,
-      "pnl": 12.05,
-      "pnl_pct": 2.41,
+      "pnl": 12.15,
+      "pnl_pct": 2.43,
       "status": "open",
       "entry_time": "2026-02-11 19:34:09",
       "exit_time": null,
@@ -10884,7 +10884,7 @@
     "portfolio": {
       "usdc_balance": 130.46,
       "total_invested": 56.1,
-      "unrealized_pnl": 10.73,
+      "unrealized_pnl": 10.8,
       "realized_pnl": -10.43,
       "win_rate": 66.7,
       "total_trades": 8,
@@ -10921,12 +10921,12 @@
         "question": "Will Kimi Antonelli be the 2026 F1 Drivers Champion?",
         "side": "YES",
         "entry_price": 0.075,
-        "current_price": 0.3165,
-        "current_value": 39.56,
+        "current_price": 0.317,
+        "current_value": 39.62,
         "amount": 9.39,
         "shares": 125.0,
-        "pnl": 30.19,
-        "pnl_pct": 322.0,
+        "pnl": 30.25,
+        "pnl_pct": 322.7,
         "edge_remaining": null
       },
       {
